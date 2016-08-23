@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns:elas="urn:devutils:names:tc:xliff:document:1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="Properties\Resources.resx" source-language="en-US" target-language="ru-RU" datatype="resx">
+		<header>
+			<tool tool-version="1.0.11.0" tool-name="ELAS" tool-company="DevUtils.Net" tool-id="DevUtils.Elas.Tasks.Core, Version=1.0.11.0, Culture=neutral, PublicKeyToken=3cae0f4d0d366709" />
+		</header>
+		<body>
+			<trans-unit id="Title" translate="yes">
+				<source xml:space="preserve">Hello</source>
+				<target xml:space="preserve" state="new" />
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

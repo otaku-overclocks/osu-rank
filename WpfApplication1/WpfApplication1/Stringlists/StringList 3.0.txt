@@ -1,0 +1,54 @@
+The language you're translating to:
+Your username:
+
+--- Translate what's under this line ---
+
+Comparator=
+Difference=
+{#} rank=
+{#} ranks=
+Player {#}=
+
+{name} did not play this gamemode.=
+{name} does not exist. Did you make a typo?=
+Error=
+You didn't enter a name!=
+
+Language=
+
+Auto refresh=
+Delay=
+{#} minutes=
+{#} minute=
+Cancel=
+OK=
+Check on startup=
+Default player settings=
+Report a bug=
+Reset default values=
+
+Disabled=
+Enabled=
+
+Compare=
+Gamemode=
+One player=
+Search=
+We're sorry but it looks like the osu! servers are unavailable. Please try again later.=
+Settings=
+
+Accuracy=
+Enter a name=
+Level=
+Player name=
+Performance=
+Play count=
+Ranked score=
+Ranking=
+Total score=
+User ID=
+
+A new version is available! Do you want to download it?=
+Update available=
+
+translated by {name}=

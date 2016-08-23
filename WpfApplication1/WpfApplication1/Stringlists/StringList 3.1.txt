@@ -1,0 +1,7 @@
+Language you're translating to: 
+Your username:
+
+---- Translate under this line ----
+
+Save=
+Saved=

@@ -1,0 +1,122 @@
+﻿<Page x:Class="osu_rank.Options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Tx="http://unclassified.software/source/txtranslation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:osu_rank"
+        xmlns:properties="clr-namespace:osu_rank.Properties"
+        mc:Ignorable="d" 
+        Title="{Tx:T osu rank.Settings}" Height="Auto"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" d:DesignHeight="361" d:DesignWidth="576" Loaded="page_loaded">
+    <Page.Resources>
+        <Storyboard x:Key="settingsSaved">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="saved">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-586"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="586">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="saved">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.5" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+    <Grid Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="autoRefresh" Header="{Tx:T options.autorefresh.Auto refresh}" Margin="10,10,10,0" VerticalAlignment="Top" Height="124">
+            <Grid Margin="0">
+                <Label x:Name="AutorefreshStatus" Content="{Tx:T options.autorefresh.Delay, 15}" Margin="10,54,10,0" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top"/>
+                <Slider x:Name="delay" Margin="10,31,10,0" VerticalAlignment="Top" Minimum="1" Maximum="60" Value="15" SmallChange="1" IsSnapToTickEnabled="True" ValueChanged="delaySlider_ValueChanged"/>
+                <CheckBox x:Name="AutorefreshEnable" Content="{Tx:T options.state.Enabled}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True" Checked="autoRefresh_Enabled" Unchecked="autoRefresh_Disabled"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="playerSettings" Header="{Tx:T options.player settings.Default player settings}" Margin="10,10,10,0" Grid.Column="1" VerticalAlignment="Top">
+            <StackPanel Margin="0" VerticalAlignment="Top">
+                <Grid x:Name="defaultP1" Margin="5,5,10,4" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="p1Label" VerticalContentAlignment="Center" Padding="5,0" RenderTransformOrigin="0.5,0.5" Content="{Tx:T comparator.Player n, 1}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="26"/>
+                    <TextBox x:Name="p1Input" Grid.Column="1" Margin="5,0,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid x:Name="defaultP2" Margin="5,5,10,4" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="p2Label" VerticalContentAlignment="Center" Padding="5,0" RenderTransformOrigin="0.5,0.5" Content="{Tx:T comparator.Player n, 2}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="26"/>
+                    <TextBox x:Name="p2Input" Grid.Column="1" Margin="5,0,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center"/>
+                </Grid>
+                <Grid x:Name="defaultGamemode" Margin="5,5,10,4" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="gamemodeLabel" VerticalContentAlignment="Center" Padding="5,0" RenderTransformOrigin="0.5,0.5" Content="{Tx:T Key=osu rank.Gamemode}" VerticalAlignment="Top" HorizontalAlignment="Left" Height="29"/>
+                    <ComboBox x:Name="gamemodeDropdown" Margin="5,0,0,0" SelectedIndex="0" VerticalAlignment="Top" Grid.Column="1">
+                        <ComboBoxItem Content="osu!std"/>
+                        <ComboBoxItem Content="osu!taiko"/>
+                        <ComboBoxItem Content="osu!ctb"/>
+                        <ComboBoxItem Content="osu!mania"/>
+                    </ComboBox>
+                </Grid>
+                <CheckBox x:Name="startupCheck" Content="{Tx:T options.player settings.Check on startup}" HorizontalContentAlignment="Stretch" Padding="4,0,0,0" Margin="10,5,10,4" VerticalContentAlignment="Center"/>
+            </StackPanel>
+        </GroupBox>
+        <Grid Margin="10,149,10,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="label" Content="{Tx:TC Language}" Margin="10,8,5,8" Padding="1,3"/>
+            <ComboBox x:Name="LanguageDropdown" Grid.Column="1" Margin="5,5,10,5" VerticalAlignment="Top" VerticalContentAlignment="Center" Loaded="LanguageDropdown_Loaded" SelectedIndex="0">
+                <ComboBoxItem Content="(Default)"/>
+            </ComboBox>
+        </Grid>
+        <Button x:Name="resetButton" Content="{Tx:T options.Reset default values}" Margin="10,0,5,47" VerticalAlignment="Bottom" MinHeight="22" Padding="2" Click="Reset_Click"/>
+        <Button x:Name="reportBug" Content="{Tx:T options.Report a bug}" Margin="5,0,10,47" VerticalAlignment="Bottom" Padding="2" Click="ReportBug_Click" Grid.Column="1"/>
+        <Button x:Name="OKButton" Content="{Tx:T options.save}" Margin="10,0,10,10" VerticalAlignment="Bottom" Padding="1,2" Click="OK_Click" Grid.ColumnSpan="2"/>
+        <Label x:Name="saved" Content="{Tx:T options.saved}" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="47" Width="556" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Grid Margin="10,193,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="keyLabel" Content="{Tx:T options.API key}" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="0,0,5,0"/>
+            <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="testKey" Content="{Tx:T options.Test key}" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="6,0,0,0" IsEnabled="False" Click="testKey_Click"/>
+            <TextBox x:Name="keyBox" Grid.Column="1" Margin="0,3" TextWrapping="Wrap" Text="{Binding Source={x:Static properties:Settings.Default}, Path=apikey}" VerticalAlignment="Center" TextChanged="keyBox_TextChanged"/>
+        </Grid>
+    </Grid>
+</Page>

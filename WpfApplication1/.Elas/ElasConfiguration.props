@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<!-- DevUtils.Net ELAS Configuration file -->
+
+	<ItemGroup>
+		<!-- Add one or more Culture Name(s) in which you want to translate. http://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx -->
+		<ElasTargetCultures Include="ru-RU" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<DefaultLanguage Condition="'$(DefaultLanguage)' == ''">en-US</DefaultLanguage>
+	</PropertyGroup>
+
+	<!-- types and properties which will skipped for translate --> 
+	<ItemGroup>
+		<ElasPageMarkupLocalizability Include="System.Windows.FontStyle">
+			<Modifiability>Unmodifiable</Modifiability>
+		</ElasPageMarkupLocalizability>
+		<ElasPageMarkupLocalizability Include="System.Windows.FontWeight">
+			<Modifiability>Unmodifiable</Modifiability>
+		</ElasPageMarkupLocalizability>
+		<ElasPageMarkupLocalizability Include="System.Windows.Controls.TextBlock.FontSize">
+			<Modifiability>Unmodifiable</Modifiability>
+		</ElasPageMarkupLocalizability>
+	</ItemGroup>
+
+</Project>

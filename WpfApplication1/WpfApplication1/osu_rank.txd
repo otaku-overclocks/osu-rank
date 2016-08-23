@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- TxTranslation dictionary file. Use TxEditor to edit this file. http://unclassified.software/txtranslation -->
+<translation xml:space="preserve">
+	<culture name="de">
+		<text key="comparator.Comparator">Vergleicher</text>
+		<text key="comparator.Difference">Unterschied</text>
+		<text key="comparator.n ranks">{#} Ränge</text>
+		<text key="comparator.n ranks" count="1">{#} Rang</text>
+		<text key="comparator.Player n">Spieler {#}</text>
+		<text key="errors.Did not play yet">{name} hat diesen Spielmodus nicht gespielt.</text>
+		<text key="errors.Does not exist">{name} existiert nicht. Hast du dich verschrieben?</text>
+		<text key="errors.Error">Fehler</text>
+		<text key="errors.No name entered">Du hast keinen Namen eingegeben!</text>
+		<text key="Language">Sprache</text>
+		<text key="options.autorefresh.Auto refresh">Automatisches Aktualisieren</text>
+		<text key="options.autorefresh.Delay">Verzögerung: {#} Minuten</text>
+		<text key="options.autorefresh.Delay" count="1">Verzögerung: {#} Minute</text>
+		<text key="options.Cancel">Abbrechen</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Überprüfe bei Start</text>
+		<text key="options.player settings.Default player settings">Standard Spielereinstellungen</text>
+		<text key="options.Report a bug">Melde einen Fehler</text>
+		<text key="options.Reset default values">Standardwerte zurücksetzen</text>
+		<text key="options.state.Disabled">Deaktiviert</text>
+		<text key="options.state.Enabled">Aktiviert</text>
+		<text key="osu rank.Compare">Vergleiche</text>
+		<text key="osu rank.Gamemode">Spielmodus</text>
+		<text key="osu rank.One player">Ein Spieler</text>
+		<text key="osu rank.Search">Suchen</text>
+		<text key="osu rank.Servers unavailable">Es tut uns Leid, aber es scheint, als seien die osu! Server nicht erreichbar.
+Bitte versuche es später erneut.</text>
+		<text key="osu rank.Settings">Einstellungen</text>
+		<text key="player.Accuracy">Genaugkeit</text>
+		<text key="player.Enter name">Gebe einen Namen ein</text>
+		<text key="player.Level">Level</text>
+		<text key="player.name">Spielername</text>
+		<text key="player.Performance">Leistung</text>
+		<text key="player.Play count">Spielzahl</text>
+		<text key="player.Ranked score">Bewertete Punktzahl</text>
+		<text key="player.Ranking">Rang</text>
+		<text key="player.Total score">Gesamtpunktzahl</text>
+		<text key="player.User ID">Benutzer ID</text>
+		<text key="update.text">Eine neue Version ist verfügbar!
+Willst du sie herunterladen?</text>
+		<text key="update.Title">Aktualisierung verfügbar</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, Übersetzt von guro</text>
+	</culture>
+	<culture name="en" primary="true">
+		<text key="comparator.Comparator">Comparator</text>
+		<text key="comparator.Difference">Difference</text>
+		<text key="comparator.n ranks">{#} ranks</text>
+		<text key="comparator.n ranks" count="1">{#} rank</text>
+		<text key="comparator.Player n">Player {#}</text>
+		<text key="errors.Did not play yet">{name} did not play this gamemode.</text>
+		<text key="errors.Does not exist">{name} does not exist. Did you make a typo?</text>
+		<text key="errors.Error">Error</text>
+		<text key="errors.Invalid key">Your API key is incorrect.</text>
+		<text key="errors.No key entered">You didn't enter a key!</text>
+		<text key="errors.No name entered">You didn't enter a name!</text>
+		<text key="errors.You need a key">You need an API key if you want to use the program.
+osu!rank will now close.</text>
+		<text key="Language">Language</text>
+		<text key="options.API key">API key</text>
+		<text key="options.autorefresh.Auto refresh">Auto refresh</text>
+		<text key="options.autorefresh.Delay">Delay: {#} minutes</text>
+		<text key="options.autorefresh.Delay" count="1">Delay: {#} minute</text>
+		<text key="options.Cancel">Cancel</text>
+		<text key="options.Enter api key">Enter your osu! API key</text>
+		<text key="options.Get api key">No key? Get one here!</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Check on startup</text>
+		<text key="options.player settings.Default player settings">Default player settings</text>
+		<text key="options.Report a bug">Report a bug</text>
+		<text key="options.Reset default values">Reset default values</text>
+		<text key="options.save">Save</text>
+		<text key="options.saved">Saved!</text>
+		<text key="options.state.Disabled">Disabled</text>
+		<text key="options.state.Enabled">Enabled</text>
+		<text key="options.Test key">Test key</text>
+		<text key="osu rank.Compare">Compare</text>
+		<text key="osu rank.Gamemode">Gamemode</text>
+		<text key="osu rank.One player">One player</text>
+		<text key="osu rank.Search">Search</text>
+		<text key="osu rank.Servers unavailable">We're sorry but it looks like the osu! servers are unavailable.
+Please try again later.</text>
+		<text key="osu rank.Settings">Settings</text>
+		<text key="player.Accuracy">Accuracy</text>
+		<text key="player.Enter name">Enter a name</text>
+		<text key="player.Level">Level</text>
+		<text key="player.name">Player name</text>
+		<text key="player.Performance">Performance</text>
+		<text key="player.Play count">Play count</text>
+		<text key="player.Ranked score">Ranked score</text>
+		<text key="player.Ranking">Ranking</text>
+		<text key="player.Total score">Total score</text>
+		<text key="player.User ID">User ID</text>
+		<text key="update.text">A new version is available!
+Do you want to download it?</text>
+		<text key="update.Title">Update available</text>
+		<text key="version_translatorCredits"> osu!rank {version}</text>
+	</culture>
+	<culture name="es">
+		<text key="comparator.Comparator">Comparador</text>
+		<text key="comparator.Difference">Diferencia</text>
+		<text key="comparator.n ranks">{#} puestos</text>
+		<text key="comparator.n ranks" count="1">{#} puesto</text>
+		<text key="comparator.Player n">Jugador {#}</text>
+		<text key="errors.Did not play yet">{name} aún no ha jugado en este modo.</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre.</text>
+		<text key="errors.Error">Error</text>
+		<text key="errors.No name entered">¡No has ingresado ningún nombre!</text>
+		<text key="Language">Idioma</text>
+		<text key="options.autorefresh.Auto refresh">Actualizar automáticamente</text>
+		<text key="options.autorefresh.Delay">Frecuencia: {#} minutos</text>
+		<text key="options.autorefresh.Delay" count="1">Frecuencia: {#} minuto</text>
+		<text key="options.Cancel">Cancelar</text>
+		<text key="options.OK">Aceptar</text>
+		<text key="options.player settings.Check on startup">Comprobar al inicio</text>
+		<text key="options.player settings.Default player settings">Ajustes de usuario predeterminados</text>
+		<text key="options.Report a bug">Informar sobre un fallo</text>
+		<text key="options.Reset default values">Restablecer preferencias</text>
+		<text key="options.save">Guardar</text>
+		<text key="options.saved">¡Configuración guardada!</text>
+		<text key="options.state.Disabled">Desactivado</text>
+		<text key="options.state.Enabled">Activado</text>
+		<text key="osu rank.Compare">Comparar</text>
+		<text key="osu rank.Gamemode">Modo de juego</text>
+		<text key="osu rank.One player">Un solo jugador</text>
+		<text key="osu rank.Search">Buscar</text>
+		<text key="osu rank.Servers unavailable">Parece que los servidores de osu! no están disponibles en este momento.
+Inténtalo más tarde.</text>
+		<text key="osu rank.Settings">Ajustes</text>
+		<text key="player.Accuracy">Precisión</text>
+		<text key="player.Enter name">Ingresa un nombre</text>
+		<text key="player.Level">Nivel</text>
+		<text key="player.name">Nombre del jugador</text>
+		<text key="player.Performance">PP</text>
+		<text key="player.Play count">Partidas</text>
+		<text key="player.Ranked score">Puntuación</text>
+		<text key="player.Ranking">Puesto</text>
+		<text key="player.Total score">Puntuación total</text>
+		<text key="player.User ID">ID de usuario</text>
+		<text key="update.text">Hay una nueva versión disponible.
+¿Deseas descargarla?</text>
+		<text key="update.Title">Nueva versión disponible</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traducido por Yoshitake</text>
+	</culture>
+	<culture name="fr">
+		<text key="comparator.Comparator">Comparateur</text>
+		<text key="comparator.Difference">Différence</text>
+		<text key="comparator.n ranks">{#} rangs</text>
+		<text key="comparator.n ranks" count="1">{#} rang</text>
+		<text key="comparator.Player n">Joueur {#}</text>
+		<text key="errors.Did not play yet">{name} n'a pas encore joué à ce mode.</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} n'existe pas. Auriez-vous fait une faute?</text>
+		<text key="errors.Error">Erreur</text>
+		<text key="errors.Invalid key">Votre clé d'API est incorrecte.</text>
+		<text key="errors.No key entered" acceptmissing="true">Vous n'avez pas entré de clé!</text>
+		<text key="errors.No name entered">Vous n'avez pas entré de nom!</text>
+		<text key="errors.You need a key">Vous avez besoin d'une clé d'API si vous voulez utiliser le programme.
+osu!rank va maintenant fermer.</text>
+		<text key="Language">Langue</text>
+		<text key="options.API key">Clé d'API</text>
+		<text key="options.autorefresh.Auto refresh">Actualisation automatique</text>
+		<text key="options.autorefresh.Delay">Délai: {#} minutes</text>
+		<text key="options.autorefresh.Delay" count="1">Délai: {#} minute</text>
+		<text key="options.Cancel">Annuler</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Entrez votre clé d'API osu!</text>
+		<text key="options.Get api key">Pas de clé? Obtenez-en une ici!</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Afficher au lancement</text>
+		<text key="options.player settings.Default player settings">Joueurs par défaut</text>
+		<text key="options.Report a bug">Signaler un problème</text>
+		<text key="options.Reset default values">Réinitialiser</text>
+		<text key="options.save">Enregistrer</text>
+		<text key="options.saved">Enregistré!</text>
+		<text key="options.state.Disabled">Désactivé</text>
+		<text key="options.state.Enabled">Activé</text>
+		<text key="options.Test key">Tester la clé</text>
+		<text key="osu rank.Compare">Comparer</text>
+		<text key="osu rank.Gamemode">Mode de jeu</text>
+		<text key="osu rank.One player">Un joueur</text>
+		<text key="osu rank.Search">Rechercher</text>
+		<text key="osu rank.Servers unavailable">Nous sommes désolés, mais il semble que les serveurs de osu! soient inaccessibles.
+Veuillez réessayer plus tard.</text>
+		<text key="osu rank.Settings">Paramètres</text>
+		<text key="player.Accuracy">Précision</text>
+		<text key="player.Enter name">Entrer un nom</text>
+		<text key="player.Level">Niveau</text>
+		<text key="player.name">Nom du joueur</text>
+		<text key="player.Performance">Performance</text>
+		<text key="player.Play count">Nombre de parties</text>
+		<text key="player.Ranked score">Score classé</text>
+		<text key="player.Ranking">Classement</text>
+		<text key="player.Total score">Score total</text>
+		<text key="player.User ID">ID d'utilisateur</text>
+		<text key="update.text">Une nouvelle version est disponible!
+Voulez-vous la télécharger?</text>
+		<text key="update.Title">Mise à jour disponible</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traduit par Jeremiidesu</text>
+	</culture>
+	<culture name="hu">
+		<text key="comparator.Comparator">Komparátor</text>
+		<text key="comparator.Difference">Külömbség</text>
+		<text key="comparator.n ranks">{#} Rang</text>
+		<text key="comparator.Player n">Játékos {#}</text>
+		<text key="errors.Did not play yet">{name} Nem Játszott Még Ezzel A Játékmóddal.</text>
+		<text key="errors.Does not exist">{name} Nem Léteszik. El Írtad?</text>
+		<text key="errors.Error">Hiba</text>
+		<text key="errors.No name entered">Te Nem Írtál Be Nevet!</text>
+		<text key="Language">Nyelv</text>
+		<text key="options.autorefresh.Auto refresh">Autómata Frissítés</text>
+		<text key="options.autorefresh.Delay">Késeltetés: {#} Perc</text>
+		<text key="options.Cancel">Mégse</text>
+		<text key="options.OK">Igen</text>
+		<text key="options.player settings.Check on startup">Ellenőrzés Indításkor</text>
+		<text key="options.player settings.Default player settings">Rendes Játékos Beállítások</text>
+		<text key="options.Report a bug">Jelents Fel Egy Bugot</text>
+		<text key="options.Reset default values">Visszaállítás Az Alapértelmezett Értékekre</text>
+		<text key="options.save">Mentés</text>
+		<text key="options.saved">Mentett</text>
+		<text key="options.state.Disabled">Kikapcsolva</text>
+		<text key="options.state.Enabled">Bekapcsolva</text>
+		<text key="osu rank.Compare">Összehasonlítás</text>
+		<text key="osu rank.Gamemode">Játékmód</text>
+		<text key="osu rank.One player">Egy Játékos</text>
+		<text key="osu rank.Search">Keresés</text>
+		<text key="osu rank.Servers unavailable">Bocsánatot Kérünk De Úgy Látszik Hogy A osu! Szerverei Nem Elérhetők.
+Légyszives Próbáld Meg Később.</text>
+		<text key="osu rank.Settings">Beállítások</text>
+		<text key="player.Accuracy">Pontosság</text>
+		<text key="player.Enter name">Írj Be Egy Nevet</text>
+		<text key="player.Level">Szint</text>
+		<text key="player.name">Játékos Név</text>
+		<text key="player.Performance">Teljesítmény</text>
+		<text key="player.Play count">Játszások</text>
+		<text key="player.Ranked score">Rankolt Pont</text>
+		<text key="player.Ranking">Rankolás</text>
+		<text key="player.Total score">Összes Pont</text>
+		<text key="player.User ID">Játékos ID</text>
+		<text key="update.text">Egy Új Verzió Elérhető!
+Le Akarod Tölteni?</text>
+		<text key="update.Title">Frissítés Elérhető</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, lefordította Zozimoto</text>
+	</culture>
+	<culture name="id">
+		<text key="comparator.Comparator">Perbandingan</text>
+		<text key="comparator.Difference">Perbedaan</text>
+		<text key="comparator.n ranks">{#} peringkat</text>
+		<text key="comparator.Player n">Pemain {#}</text>
+		<text key="errors.Did not play yet">{name} nelum bermain mode ini.</text>
+		<text key="errors.Does not exist">{name} nidak ditemukan. Apa anda salah mengetik?</text>
+		<text key="errors.Error">Error</text>
+		<text key="errors.No name entered">Anda belum memasukan nama!</text>
+		<text key="Language">Bahasa</text>
+		<text key="options.autorefresh.Auto refresh">Segarkan otomatis</text>
+		<text key="options.autorefresh.Delay">Delay: {#} menit</text>
+		<text key="options.Cancel">Batal</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Cek saat startup</text>
+		<text key="options.player settings.Default player settings">Pengaturan awal</text>
+		<text key="options.Report a bug">Laporkan masalah</text>
+		<text key="options.Reset default values">Reset skor</text>
+		<text key="options.state.Disabled">Dinon-aktifkan</text>
+		<text key="options.state.Enabled">Diaktifkan</text>
+		<text key="osu rank.Compare">Bandingkan</text>
+		<text key="osu rank.Gamemode">Mode permainan</text>
+		<text key="osu rank.One player">Satu pemain</text>
+		<text key="osu rank.Search">Cari</text>
+		<text key="osu rank.Servers unavailable">Mohon maaf sepertinya server osu! sedang tidak tersedia.
+Coba sesaat lagi.</text>
+		<text key="osu rank.Settings">Pengaturan</text>
+		<text key="player.Accuracy">Akurasi</text>
+		<text key="player.Enter name">Ketik nama</text>
+		<text key="player.Level">Level</text>
+		<text key="player.name">Nama pemain</text>
+		<text key="player.Performance">Performa</text>
+		<text key="player.Play count">Total bermain</text>
+		<text key="player.Ranked score">Skor ranked</text>
+		<text key="player.Ranking">Peringkat</text>
+		<text key="player.Total score">Skor Total</text>
+		<text key="player.User ID">user ID</text>
+		<text key="update.text">Versi terbaru telah tersedia!
+Apa kau mau mengunduhnya?</text>
+		<text key="update.Title">Pembaruan Tersedia</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, terjemahan oleh [-Alv-]</text>
+	</culture>
+	<culture name="it">
+		<text key="comparator.Comparator">Comparatore</text>
+		<text key="comparator.Difference">Differenza</text>
+		<text key="comparator.n ranks">{#} ranks</text>
+		<text key="comparator.n ranks" count="1">{#} rank</text>
+		<text key="comparator.Player n">Giocatore {#}</text>
+		<text key="errors.Did not play yet">{name} non ha ancora giocato a questa modalità.</text>
+		<text key="errors.Does not exist">{name} non esiste. Hai per caso fatto un errore di battitura?</text>
+		<text key="errors.Error">Errore</text>
+		<text key="errors.No name entered">Non hai inserito un nome!</text>
+		<text key="Language">Lingua</text>
+		<text key="options.autorefresh.Auto refresh">Refresh automatico</text>
+		<text key="options.autorefresh.Delay">Ritardo: {#} minuti</text>
+		<text key="options.autorefresh.Delay" count="1">Ritardo: {#} minuto</text>
+		<text key="options.Cancel">Annulla</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Controlla all'avvio</text>
+		<text key="options.player settings.Default player settings">Impostazioni predefinite</text>
+		<text key="options.Report a bug">Segnala un errore</text>
+		<text key="options.Reset default values">Ripristina i valori predefiniti</text>
+		<text key="options.state.Disabled">Disabilitato</text>
+		<text key="options.state.Enabled">Abilitato</text>
+		<text key="osu rank.Compare">Confronta</text>
+		<text key="osu rank.Gamemode">Modalità</text>
+		<text key="osu rank.One player">Un giocatore</text>
+		<text key="osu rank.Search">Cerca</text>
+		<text key="osu rank.Servers unavailable">Ci dispiace ma sembrerebbe che i server di osu! non sono disponibili.</text>
+		<text key="osu rank.Settings">Impostazioni</text>
+		<text key="player.Accuracy">Precisione</text>
+		<text key="player.Enter name">Inserisci un nome</text>
+		<text key="player.Level">Livello</text>
+		<text key="player.name">Nome giocatore</text>
+		<text key="player.Performance">Performance</text>
+		<text key="player.Play count">Partite giocate</text>
+		<text key="player.Ranked score">Punteggio classificato</text>
+		<text key="player.Ranking">Classifica</text>
+		<text key="player.Total score">Punteggio totale</text>
+		<text key="player.User ID">ID Utente</text>
+		<text key="update.text">È disponibile una nuova versione!
+Vuoi scaricarla?</text>
+		<text key="update.Title">Aggiornamento disponibile</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, tradotto da LLoyd-chan</text>
+	</culture>
+	<culture name="pl">
+		<text key="comparator.Comparator">Porównywacz</text>
+		<text key="comparator.Difference">Różnica</text>
+		<text key="comparator.n ranks">{#} rang</text>
+		<text key="comparator.n ranks" count="1">{#} ranga</text>
+		<text key="comparator.Player n">Gracz {#}</text>
+		<text key="errors.Did not play yet">{name} nie grał w ten tryb.</text>
+		<text key="errors.Does not exist">{name} nie istnieje. Czy popełniłeś jakiś błąd?</text>
+		<text key="errors.Error">Błąd</text>
+		<text key="errors.No name entered">Nie wpisałeś imienia!</text>
+		<text key="Language">Język</text>
+		<text key="options.autorefresh.Auto refresh">Automatyczne odświeżanie</text>
+		<text key="options.autorefresh.Delay">Opóźnienie: {#} minut</text>
+		<text key="options.autorefresh.Delay" count="1">Opóźnienie: {#} minuta</text>
+		<text key="options.Cancel">Anuluj</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Sprawdź przy włączeniu</text>
+		<text key="options.player settings.Default player settings">Ustawienia domyślnego gracza</text>
+		<text key="options.Report a bug">Wyślij raport o błędzie</text>
+		<text key="options.Reset default values">Przywróć domyślne wartości</text>
+		<text key="options.save">Zapisz</text>
+		<text key="options.saved">Zapisano!</text>
+		<text key="options.state.Disabled">Wyłączone</text>
+		<text key="options.state.Enabled">Włączone</text>
+		<text key="osu rank.Compare">Porównaj</text>
+		<text key="osu rank.Gamemode">Tryb</text>
+		<text key="osu rank.One player">Jeden gracz</text>
+		<text key="osu rank.Search">Szukaj</text>
+		<text key="osu rank.Servers unavailable">Przepraszamy, wygląda na to, że serwery osu! są niedostępne.
+Spróbuj później.</text>
+		<text key="osu rank.Settings">Ustawienia</text>
+		<text key="player.Accuracy">Celność</text>
+		<text key="player.Enter name">Wprowadź imię</text>
+		<text key="player.Level">Poziom</text>
+		<text key="player.name">Imię gracza</text>
+		<text key="player.Performance">Wynik pp</text>
+		<text key="player.Play count">Liczba zagrań</text>
+		<text key="player.Ranked score">Wynik ranked</text>
+		<text key="player.Ranking">Ranking</text>
+		<text key="player.Total score">Wynik ogólny</text>
+		<text key="player.User ID">ID gracza</text>
+		<text key="update.text">Nowa wersja jest dostępna!
+Czy chcesz ją pobrać?</text>
+		<text key="update.Title">Aktualizacja dostępna</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, przetłumaczone przez Zain Sugieres</text>
+	</culture>
+	<culture name="pt-BR">
+		<text key="comparator.Comparator">Comparador</text>
+		<text key="comparator.Difference">Diferença</text>
+		<text key="comparator.n ranks">{#} ranks</text>
+		<text key="comparator.n ranks" count="1">{#} rank</text>
+		<text key="comparator.Player n">Jogador {#}</text>
+		<text key="errors.Did not play yet">{name} não jogou este modo de jogo.</text>
+		<text key="errors.Does not exist">{name} não existe. Você digitou errado?</text>
+		<text key="errors.Error">Erro</text>
+		<text key="errors.No name entered">Você não digitou um nome!</text>
+		<text key="Language">Idioma</text>
+		<text key="options.autorefresh.Auto refresh">Atualizar automaticamente</text>
+		<text key="options.autorefresh.Delay">Atraso: {#} minutos</text>
+		<text key="options.autorefresh.Delay" count="1">Atraso: {#} minuto</text>
+		<text key="options.Cancel">Cancelar</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Verificar ao iniciar</text>
+		<text key="options.player settings.Default player settings">Configuração padrão de jogador</text>
+		<text key="options.Report a bug">Roportar um erro</text>
+		<text key="options.Reset default values">Resetar aos valores padrões</text>
+		<text key="options.state.Disabled">Desabilitado</text>
+		<text key="options.state.Enabled">Habilitado</text>
+		<text key="osu rank.Compare">Comparar</text>
+		<text key="osu rank.Gamemode">Modo de jogo</text>
+		<text key="osu rank.One player">Um jogador</text>
+		<text key="osu rank.Search">Pesquisar</text>
+		<text key="osu rank.Servers unavailable">Sentimos muito, mas parece que os servidores do osu! estão indisponíveis.
+Por favor tente novamente mais tarde.</text>
+		<text key="osu rank.Settings">Configurações</text>
+		<text key="player.Accuracy">Precisão</text>
+		<text key="player.Enter name">Digite um nome</text>
+		<text key="player.Level">Nível</text>
+		<text key="player.name">Nome do jogador</text>
+		<text key="player.Performance">Performance</text>
+		<text key="player.Play count">Vezes Jogadas</text>
+		<text key="player.Ranked score">Pontuação ranqueada</text>
+		<text key="player.Ranking">Rank</text>
+		<text key="player.Total score">Pontuação total</text>
+		<text key="player.User ID">ID do Usuário</text>
+		<text key="update.text">Uma nova versão está disponível!
+Quer fazer o download?</text>
+		<text key="update.Title">Atualização disponível</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traduzido por nh__</text>
+	</culture>
+	<culture name="ru">
+		<text key="comparator.Comparator">Сравниватель</text>
+		<text key="comparator.Difference">Разница</text>
+		<text key="comparator.n ranks">{#} рангов</text>
+		<text key="comparator.n ranks" count="1">{#} ранг</text>
+		<text key="comparator.Player n">Игрок {#}</text>
+		<text key="errors.Did not play yet">{name} не играл в этот режим.</text>
+		<text key="errors.Does not exist">{name} не существует. Вы не правильно написали?</text>
+		<text key="errors.Error">Ошибка</text>
+		<text key="errors.No name entered">Вы не написали имя!</text>
+		<text key="Language">Язык</text>
+		<text key="options.autorefresh.Auto refresh">Авто обновление</text>
+		<text key="options.autorefresh.Delay">Задержка: {#} минутов</text>
+		<text key="options.autorefresh.Delay" count="1">Задержка: {#} минута</text>
+		<text key="options.Cancel">Отменить</text>
+		<text key="options.OK">ОК</text>
+		<text key="options.player settings.Check on startup">Проверять при запуске</text>
+		<text key="options.player settings.Default player settings">Настройки игрока по умолчянию</text>
+		<text key="options.Report a bug">Сообщить о баге</text>
+		<text key="options.Reset default values">Сбросить значения по умолчянию</text>
+		<text key="options.state.Disabled">Выключен</text>
+		<text key="options.state.Enabled">Включен</text>
+		<text key="osu rank.Compare">Сравнить</text>
+		<text key="osu rank.Gamemode">Режим</text>
+		<text key="osu rank.One player">Один Игрок</text>
+		<text key="osu rank.Search">Пойск</text>
+		<text key="osu rank.Servers unavailable">Мы сожалеем, но это выглядит как оsu! серверы недоступны.
+Пожалуйста, повторите попытку позже.</text>
+		<text key="osu rank.Settings">Настройки</text>
+		<text key="player.Accuracy">Точность</text>
+		<text key="player.Enter name">Напишите имя</text>
+		<text key="player.Level">Уровень</text>
+		<text key="player.name">Имя игрока</text>
+		<text key="player.Performance">Исполнение</text>
+		<text key="player.Play count">Счет игр</text>
+		<text key="player.Ranked score">Очки ранга</text>
+		<text key="player.Ranking">Ранг</text>
+		<text key="player.Total score">Общий счет</text>
+		<text key="player.User ID">ID Пользователя</text>
+		<text key="update.text">Доступна новая версия! Вы желаете ее скачать?</text>
+		<text key="update.Title">Доступно Обновление</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, Перевод от Killerbyte</text>
+	</culture>
+	<culture name="sv">
+		<text key="comparator.Comparator">Jämförare</text>
+		<text key="comparator.Difference">Skillnad</text>
+		<text key="comparator.n ranks">{#} ranker</text>
+		<text key="comparator.n ranks" count="1">{#} rank</text>
+		<text key="comparator.Player n">Spelare {#}</text>
+		<text key="errors.Did not play yet">{name} har inte spelat det här spelläget.</text>
+		<text key="errors.Does not exist">{name} finns inte. Gjorde du ett skrivmisstag?</text>
+		<text key="errors.Error">Fel</text>
+		<text key="errors.No name entered">Du skrev aldrig i ett namn!</text>
+		<text key="Language">Språk</text>
+		<text key="options.autorefresh.Auto refresh">Ladda om automatiskt</text>
+		<text key="options.autorefresh.Delay">Tidsskillnad: {#} minuter</text>
+		<text key="options.autorefresh.Delay" count="1">Tidsskillnad: {#} minut</text>
+		<text key="options.Cancel">Avbryt</text>
+		<text key="options.OK">Okej</text>
+		<text key="options.player settings.Check on startup">Kontroll vid start</text>
+		<text key="options.player settings.Default player settings">Normala spelar inställningar</text>
+		<text key="options.Report a bug">Rapportera en bug</text>
+		<text key="options.Reset default values">Återställ till vanliga värden</text>
+		<text key="options.save">Spara</text>
+		<text key="options.saved">Sparat!</text>
+		<text key="options.state.Disabled">Avaktiverad</text>
+		<text key="options.state.Enabled">Aktiverad</text>
+		<text key="osu rank.Compare">Jämför</text>
+		<text key="osu rank.Gamemode">Spelläge</text>
+		<text key="osu rank.One player">En spelare</text>
+		<text key="osu rank.Search">Sök</text>
+		<text key="osu rank.Servers unavailable">Vi är lesdna men det ser ut som att osu!’s servrar inte är tillgängliga.
+Vänligen försök igen senare.</text>
+		<text key="osu rank.Settings">Inställningar</text>
+		<text key="player.Accuracy">Pricksäkerhet</text>
+		<text key="player.Enter name">Ange ett namn</text>
+		<text key="player.Level">Nivå</text>
+		<text key="player.name">Spelarens namn</text>
+		<text key="player.Performance">Prestanda</text>
+		<text key="player.Play count">Spelningar</text>
+		<text key="player.Ranked score">Rankad poäng</text>
+		<text key="player.Ranking">Rankning</text>
+		<text key="player.Total score">Total poäng</text>
+		<text key="player.User ID">Användar ID</text>
+		<text key="update.text">En ny version finns tillgänglig! Vill du ladda ner den?</text>
+		<text key="update.Title">Uppdatering tillgänglig</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, översatt av - Kameyo -</text>
+	</culture>
+	<culture name="tr">
+		<text key="comparator.Comparator">Karşılaştırma</text>
+		<text key="comparator.Difference">Fark</text>
+		<text key="comparator.n ranks">{#} sıra</text>
+		<text key="comparator.Player n">Oyuncu {#}</text>
+		<text key="errors.Did not play yet">{name} bu modu oynamamış.</text>
+		<text key="errors.Does not exist">{name} bulunamadı. Bir yazım hatası mı yaptın?</text>
+		<text key="errors.Error">Hata</text>
+		<text key="errors.No name entered">Ad girmedin!</text>
+		<text key="Language">Dil</text>
+		<text key="options.autorefresh.Auto refresh">Otomatik yenileme</text>
+		<text key="options.autorefresh.Delay">Aralık: {#} dakika</text>
+		<text key="options.Cancel">İptal</text>
+		<text key="options.OK">Tamam</text>
+		<text key="options.player settings.Check on startup">Başlangıçta kontrol et</text>
+		<text key="options.player settings.Default player settings">Varsayılan oyuncular</text>
+		<text key="options.Report a bug">Bir sorunu bildir</text>
+		<text key="options.Reset default values">Varsayılan ayarlara dön</text>
+		<text key="options.state.Disabled">Kapalı</text>
+		<text key="options.state.Enabled">Açık</text>
+		<text key="osu rank.Compare">Karşılaştırma</text>
+		<text key="osu rank.Gamemode">Oyun Modu</text>
+		<text key="osu rank.One player">Tek oyuncu</text>
+		<text key="osu rank.Search">Ara</text>
+		<text key="osu rank.Servers unavailable">Özür dileriz, görülene göre osu! sunucuları hizmet dışı.
+Lütfen daha sonra deneyiniz.</text>
+		<text key="osu rank.Settings">Ayarlar</text>
+		<text key="player.Accuracy">Accuracy</text>
+		<text key="player.Enter name">Bir ad girin</text>
+		<text key="player.Level">Seviye</text>
+		<text key="player.name">Oyuncu adı</text>
+		<text key="player.Performance">Performans</text>
+		<text key="player.Play count">Oynama sayısı</text>
+		<text key="player.Ranked score">Dereceli puan</text>
+		<text key="player.Ranking">Sıra</text>
+		<text key="player.Total score">Toplam puan</text>
+		<text key="player.User ID">Kullanıcı numarası</text>
+		<text key="update.text">Yeni bir versiyon mevcut! Şimdi indirmek ister misiniz?</text>
+		<text key="update.Title">Güncelleme mevcut</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, oralekin tarafından çevrildi</text>
+	</culture>
+	<culture name="zh-CN">
+		<text key="comparator.Comparator">比较器</text>
+		<text key="comparator.Difference">区别</text>
+		<text key="comparator.n ranks">{#} 排名</text>
+		<text key="comparator.Player n">玩家 {#}</text>
+		<text key="errors.Did not play yet" acceptpunctuation="true">{name} 暂未游玩这个游戏模式。</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} 用户不存在，请检查输入的用户名后重试？</text>
+		<text key="errors.Error">错误</text>
+		<text key="errors.No name entered" acceptpunctuation="true">您没有输入用户名！</text>
+		<text key="Language">语言</text>
+		<text key="options.autorefresh.Auto refresh">自动刷新</text>
+		<text key="options.autorefresh.Delay">延迟: {#} 分钟</text>
+		<text key="options.Cancel">取消</text>
+		<text key="options.OK">确定</text>
+		<text key="options.player settings.Check on startup">正在检查更新</text>
+		<text key="options.player settings.Default player settings">默认玩家设置</text>
+		<text key="options.Report a bug">举报漏洞</text>
+		<text key="options.Reset default values">重置默认值</text>
+		<text key="options.state.Disabled">禁用</text>
+		<text key="options.state.Enabled">启用</text>
+		<text key="osu rank.Compare">比较</text>
+		<text key="osu rank.Gamemode">游戏模式</text>
+		<text key="osu rank.One player">一个玩家</text>
+		<text key="osu rank.Search">搜索</text>
+		<text key="osu rank.Servers unavailable" acceptpunctuation="true">很抱歉，osu!服务器暂时不在线，请稍后重试。</text>
+		<text key="osu rank.Settings">设置</text>
+		<text key="player.Accuracy">准确率</text>
+		<text key="player.Enter name">请输入玩家名称</text>
+		<text key="player.Level">等级</text>
+		<text key="player.name">玩家昵称</text>
+		<text key="player.Performance">表现</text>
+		<text key="player.Play count">播放统计数</text>
+		<text key="player.Ranked score">排名得分</text>
+		<text key="player.Ranking">排行</text>
+		<text key="player.Total score">总得分</text>
+		<text key="player.User ID">玩家ID</text>
+		<text key="update.text" acceptpunctuation="true">一个新的版本可用！要下载吗？</text>
+		<text key="update.Title">有新更新可用</text>
+		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, 翻译者:Karma和zheshenmeyouxi</text>
+	</culture>
+</translation>

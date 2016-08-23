@@ -1,0 +1,18 @@
+﻿Language you're translating to: 
+Your username:
+
+---- Translate under this line ----
+
+Your API key is incorrect.=
+You didn't enter a key!=
+
+API key=
+Enter your osu! API key=
+No key? Get one here!=
+You need an API key if you want to use the program.=
+osu!rank will now close.=
+
+Test key=
+Your API key is incorrect.=
+
+About=
