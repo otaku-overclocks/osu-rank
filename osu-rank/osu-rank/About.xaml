@@ -15,7 +15,7 @@
       d:DesignHeight="361" d:DesignWidth="576" Loaded="page_loaded">
 
     <Grid>
-        <Label x:Name="about" Content="osu!rank" HorizontalAlignment="Center" Margin="249,10,249,0" VerticalAlignment="Top" FontSize="17.333"/>
+        <Label x:Name="about" Content="osu!rank" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="17.333"/>
         <Label x:Name="whoDidThis" Content="Developed by Jeremiidesu" HorizontalAlignment="Center" Margin="0,38,0,0" VerticalAlignment="Top"/>
         <Grid Margin="0,70,0,0">
             <Grid.ColumnDefinitions>

@@ -25,8 +25,8 @@ namespace osurank
         public About()
         {
             InitializeComponent();
-            about.Content = "osu!rank " + Assembly.GetExecutingAssembly().GetName().Version.Major 
-                                        + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor 
+            about.Content = "osu!rank " + Assembly.GetExecutingAssembly().GetName().Version.Major
+                                        + "." + Assembly.GetExecutingAssembly().GetName().Version.Minor
                                         + "." + Assembly.GetExecutingAssembly().GetName().Version.Build;
         }
 
