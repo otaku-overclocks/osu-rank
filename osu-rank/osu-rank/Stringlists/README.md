@@ -13,7 +13,7 @@ A bolded line means the language is up to date.
 | Italian              | LLoyd-chan            | 3.0                  |
 | Russian              | Killerbyte            | 3.0                  |
 | Indonesian           | [-Alv-]               | 3.0                  |
-| Hungarian            | Zozimoto              | 3.1                  |
+| **Hungarian**        | **Zozimoto**          | **4.0**              |
 | Portuguese (Brasil)  | nh__                  | 3.0                  |
 | Turkish              | oralekin              | 3.0                  |
 | Spanish              | Yoshitake             | 3.1                  |
