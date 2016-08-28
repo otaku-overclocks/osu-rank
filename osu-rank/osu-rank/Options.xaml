@@ -95,9 +95,8 @@
                 <ComboBoxItem Content="(Default)"/>
             </ComboBox>
         </Grid>
-        <Button x:Name="resetButton" Content="{Tx:T options.Reset default values}" Margin="10,0,5,47" VerticalAlignment="Bottom" MinHeight="22" Padding="2" Click="Reset_Click"/>
-        <Button x:Name="reportBug" Content="{Tx:T options.Report a bug}" Margin="5,0,10,47" VerticalAlignment="Bottom" Padding="2" Click="ReportBug_Click" Grid.Column="1"/>
-        <Button x:Name="OKButton" Content="{Tx:T options.save}" Margin="10,0,10,10" VerticalAlignment="Bottom" Padding="1,2" Click="OK_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="resetButton" Content="{Tx:T options.Reset default values}" Margin="10,0,10,10" VerticalAlignment="Bottom" MinHeight="22" Padding="2" Click="Reset_Click"/>
+        <Button x:Name="OKButton" Content="{Tx:T options.save}" Margin="10,0,10,10" VerticalAlignment="Bottom" Padding="1,2" Click="OK_Click" Grid.Column="1"/>
         <Label x:Name="saved" Content="{Tx:T options.saved}" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="47" Width="556" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
             <Label.RenderTransform>
                 <TransformGroup>
