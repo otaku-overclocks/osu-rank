@@ -15,4 +15,4 @@ osu!rank will now close.=
 Test key=
 Your API key is incorrect.=
 
-About=
+About osu!rank=
