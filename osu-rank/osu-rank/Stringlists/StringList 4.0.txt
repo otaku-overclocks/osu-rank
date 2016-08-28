@@ -13,6 +13,5 @@ You need an API key if you want to use the program.=
 osu!rank will now close.=
 
 Test key=
-Your API key is incorrect.=
 
 About osu!rank=
