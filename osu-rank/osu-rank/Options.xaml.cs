@@ -111,6 +111,7 @@ namespace osurank
             }
             Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
             #endregion
+            loadSettings();
             Storyboard animation = TryFindResource("settingsSaved") as Storyboard;
             animation.Begin();
         }
