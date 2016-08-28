@@ -68,6 +68,7 @@ namespace osurank
             goOnePlayer.FontWeight = FontWeights.Regular;
             goComparator.FontWeight = FontWeights.Regular;
             goSettings.FontWeight = FontWeights.Regular;
+            goAbout.FontWeight = FontWeights.Regular;
         }
 
         
@@ -189,6 +190,16 @@ namespace osurank
         private void keyPrompt_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("http://osu.ppy.sh/p/api");
+        }
+
+        private void goAbout_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            drawerUnbold();
+            Label lbl = sender as Label;
+            lbl.FontWeight = FontWeights.Bold;
+            actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.About");
+            WindowContent.Navigate(new About());
+            closeDrawer();
         }
     }
 }

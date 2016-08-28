@@ -324,10 +324,11 @@
                 <DropShadowEffect BlurRadius="14" Direction="270" ShadowDepth="4.5" Opacity="0.5" RenderingBias="Quality"/>
             </Grid.Effect>
             <StackPanel x:Name="drawerNavigation" Margin="5,60,5,5">
-                <Label x:Name="goOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"    MouseDown="goOneUser_Click" FontWeight="Bold"/>
-                <Label x:Name="goComparator" Content="{Tx:T comparator.Comparator}" Padding="10" MouseDown="goCompare_Click" FontWeight="Normal"/>
+                <Label x:Name="goOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goOneUser_Click" FontWeight="Bold"/>
+                <Label x:Name="goComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goCompare_Click" FontWeight="Normal"/>
                 <Label x:Name="goSettings" Content="{Tx:T osu rank.Settings}" Padding="10"       MouseDown="goSettings_Click" FontWeight="Normal"/>
-            </StackPanel>
+                    <Label x:Name="goAbout" Content="{Tx:T osu rank.About}" Padding="10"  MouseDown="goAbout_MouseDown" FontWeight="Normal"/>
+                </StackPanel>
             <Label x:Name="label_Copy" Content="osu!rank" Margin="60,0,0,0" VerticalAlignment="Top" Height="60" d:LayoutOverrides="Width" VerticalContentAlignment="Center" FontSize="16" />
         </Grid>
         <Grid x:Name="drawerButton" HorizontalAlignment="Left" Height="60" Width="60" MouseDown="menuMouseDown" VerticalAlignment="Top" Background="#00000000">
