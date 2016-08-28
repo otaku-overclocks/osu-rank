@@ -14,12 +14,12 @@ using System.Windows.Shapes;
 using System.Reflection;
 using System.Globalization;
 using Unclassified.TxLib;
-using osu_rank.Properties;
+using osurank.Properties;
 using System.Diagnostics;
 using System.Windows.Media.Animation;
 using System.Net;
 
-namespace osu_rank
+namespace osurank
 {
     /// <summary>
     /// Logique d'interaction pour Options.xaml
@@ -100,6 +100,7 @@ namespace osu_rank
         private void OK_Click(object sender, RoutedEventArgs e)
         {
             saveSettings();
+            #region language
             if (Settings.Default.LanguageCode != "")
             {
                 System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo(Settings.Default.LanguageCode);
@@ -108,6 +109,8 @@ namespace osu_rank
             {
                 System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
             }
+            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
+            #endregion
             Storyboard animation = TryFindResource("settingsSaved") as Storyboard;
             animation.Begin();
         }

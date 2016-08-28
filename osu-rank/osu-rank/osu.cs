@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using System.Windows;
 using Unclassified.TxLib;
 
-namespace osu_rank
+namespace osurank
 {
     public class osu
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace osu_rank.Properties {
+namespace osurank.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

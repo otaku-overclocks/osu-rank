@@ -14,12 +14,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Unclassified.TxLib;
-using osu_rank.Properties;
+using osurank.Properties;
 using System.Windows.Threading;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 
-namespace osu_rank                                                                                                                                       
+namespace osurank                                                                                                                                       
 {
     /// <summary>                                                                                                                                        
     /// Logique d'interaction pour MainWindow.xaml                                                                                                       
@@ -80,15 +80,6 @@ namespace osu_rank
 
         private void page_loaded(object sender, RoutedEventArgs e)
         {
-            if (Settings.Default.LanguageCode != "")
-            {
-                System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo(Settings.Default.LanguageCode);
-            }
-            else if (Settings.Default.LanguageCode == "")
-            {
-                System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
-            }
-            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
             if (App.HasCheckedForUpdates == false)
             {
                 App.HasCheckedForUpdates = true;

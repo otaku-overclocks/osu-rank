@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Tx="http://unclassified.software/source/txtranslation"
-        x:Name="OneUserWindow" mc:Ignorable="d" x:Class="osu_rank.OneUser"
+        x:Name="OneUserWindow" mc:Ignorable="d" x:Class="osurank.OneUser"
         Title="osu!rank"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"

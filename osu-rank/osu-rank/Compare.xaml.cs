@@ -12,11 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Unclassified.TxLib;
-using osu_rank.Properties;
+using osurank.Properties;
 using System.Globalization;
 using System.Windows.Threading;
 
-namespace osu_rank
+namespace osurank
 {
     /// <summary>
     /// Logique d'interaction pour Compare.xaml
@@ -285,14 +285,6 @@ namespace osu_rank
 
         private void page_loaded(object sender, RoutedEventArgs e)
         {
-            if (Settings.Default.LanguageCode != "")
-            {
-                System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo(Settings.Default.LanguageCode);
-            }
-            else if (Settings.Default.LanguageCode == "")
-            {
-                System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
-            }
             RenderOptions.SetBitmapScalingMode(p1_avatar, BitmapScalingMode.HighQuality);   // Completes what the designer can't do
             RenderOptions.SetBitmapScalingMode(p2_avatar, BitmapScalingMode.HighQuality);   // 
             this.Title = this.Title + " - osu!rank";                                        // 

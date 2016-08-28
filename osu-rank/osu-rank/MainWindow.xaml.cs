@@ -15,10 +15,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Unclassified.TxLib;
-using osu_rank.Properties;
+using osurank.Properties;
 using System.Diagnostics;
+using System.Globalization;
 
-namespace osu_rank
+namespace osurank
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -138,6 +139,22 @@ namespace osu_rank
             {
                 apiDialog.IsOpen = true;
             }
+            #region language
+            if (Settings.Default.LanguageCode != "")
+            {
+                System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo(Settings.Default.LanguageCode);
+            }
+            else if (Settings.Default.LanguageCode == "")
+            {
+                System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
+            }
+            string[] resourceNames = this.GetType().Assembly.GetManifestResourceNames();
+            foreach (string resourceName in resourceNames)
+            {
+                Console.WriteLine(resourceName);
+            }
+            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
+            #endregion
         }
 
         private void keyPrompt_Click(object sender, RoutedEventArgs e)

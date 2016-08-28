@@ -6,9 +6,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Globalization;
-using osu_rank.Properties;
+using osurank.Properties;
 
-namespace osu_rank
+namespace osurank
 {
     /// <summary>
     /// Logique d'interaction pour App.xaml

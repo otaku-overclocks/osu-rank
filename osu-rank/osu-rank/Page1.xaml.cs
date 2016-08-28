@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace osu_rank
+namespace osurank
 {
     /// <summary>
     /// Logique d'interaction pour Page1.xaml
