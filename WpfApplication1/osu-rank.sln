@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu!rank_next", "WpfApplication1\osu!rank_next.csproj", "{81186FED-8E05-4578-B8D1-B1464A5DD942}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osu-rank", "osu-rank\osu-rank.csproj", "{81186FED-8E05-4578-B8D1-B1464A5DD942}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
