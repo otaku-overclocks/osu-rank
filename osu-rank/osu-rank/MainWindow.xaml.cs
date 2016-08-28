@@ -18,6 +18,7 @@ using Unclassified.TxLib;
 using osurank.Properties;
 using System.Diagnostics;
 using System.Globalization;
+using System.Net.NetworkInformation;
 
 namespace osurank
 {
@@ -135,6 +136,34 @@ namespace osurank
 
         private void windowLoaded(object sender, RoutedEventArgs e)
         {
+            if (App.HasCheckedForUpdates == false)
+            {
+                App.HasCheckedForUpdates = true;
+                try
+                {
+                    string webVersion = new System.Net.WebClient().DownloadString("https://raw.githubusercontent.com/Jeremiidesu/osu-rank/master/osu-rank/osu-rank/version.txt");
+                    if (Convert.ToInt32(webVersion) > App.version)
+                    { // New release available
+                        var updateYesNo = MessageBox.Show(Tx.T("update.text"), Tx.T("update.Title"), MessageBoxButton.YesNo, MessageBoxImage.Information);
+                        if (updateYesNo == MessageBoxResult.Yes)
+                        {
+                            Process.Start("https://github.com/Jeremiidesu/osu-rank/releases");
+                        }
+                    }
+                }
+                catch (Exception) { }
+            }
+            Ping myPing = new Ping();
+            string host = "osu.ppy.sh";
+            byte[] buffer = new byte[32];
+            int timeout = 5000;
+            PingOptions pingOptions = new PingOptions();
+            PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+            if (reply.Status != IPStatus.Success)
+            {
+                MessageBox.Show(Tx.T("osu rank.Servers unavailable"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
+                Environment.Exit(0);
+            }
             if (Settings.Default.apikey=="")
             {
                 apiDialog.IsOpen = true;
