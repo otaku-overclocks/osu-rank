@@ -77,6 +77,7 @@ osu!rank will now close.</text>
 		<text key="options.state.Disabled">Disabled</text>
 		<text key="options.state.Enabled">Enabled</text>
 		<text key="options.Test key">Test key</text>
+		<text key="osu rank.About">About osu!rank</text>
 		<text key="osu rank.Compare">Compare</text>
 		<text key="osu rank.Gamemode">Gamemode</text>
 		<text key="osu rank.One player">One player</text>
@@ -177,6 +178,7 @@ osu!rank va maintenant fermer.</text>
 		<text key="options.state.Disabled">Désactivé</text>
 		<text key="options.state.Enabled">Activé</text>
 		<text key="options.Test key">Tester la clé</text>
+		<text key="osu rank.About">A propos de osu!rank</text>
 		<text key="osu rank.Compare">Comparer</text>
 		<text key="osu rank.Gamemode">Mode de jeu</text>
 		<text key="osu rank.One player">Un joueur</text>
@@ -207,20 +209,29 @@ Voulez-vous la télécharger?</text>
 		<text key="errors.Did not play yet">{name} Nem Játszott Még Ezzel A Játékmóddal.</text>
 		<text key="errors.Does not exist">{name} Nem Léteszik. El Írtad?</text>
 		<text key="errors.Error">Hiba</text>
+		<text key="errors.Invalid key">A Te API Kulcsod Helytelen.</text>
+		<text key="errors.No key entered">Te Nem Írtál Be Egy Kulcsot!</text>
 		<text key="errors.No name entered">Te Nem Írtál Be Nevet!</text>
+		<text key="errors.You need a key">Kell Neked Egy API Kulcs Ha Akarod Használni A Programot.
+osu!rank Most Be Fog Záródni.</text>
 		<text key="Language">Nyelv</text>
+		<text key="options.API key">API Kulcs</text>
 		<text key="options.autorefresh.Auto refresh">Autómata Frissítés</text>
 		<text key="options.autorefresh.Delay">Késeltetés: {#} Perc</text>
 		<text key="options.Cancel">Mégse</text>
+		<text key="options.Enter api key">Írd Be Az API Kulcsodat</text>
+		<text key="options.Get api key">Nincs Kulcs? Szerezz Egyet Itt!</text>
 		<text key="options.OK">Igen</text>
 		<text key="options.player settings.Check on startup">Ellenőrzés Indításkor</text>
 		<text key="options.player settings.Default player settings">Rendes Játékos Beállítások</text>
 		<text key="options.Report a bug">Jelents Fel Egy Bugot</text>
 		<text key="options.Reset default values">Visszaállítás Az Alapértelmezett Értékekre</text>
 		<text key="options.save">Mentés</text>
-		<text key="options.saved">Mentett</text>
+		<text key="options.saved">Mentett!</text>
 		<text key="options.state.Disabled">Kikapcsolva</text>
 		<text key="options.state.Enabled">Bekapcsolva</text>
+		<text key="options.Test key">Teszt Kulcs</text>
+		<text key="osu rank.About">osu!rankról</text>
 		<text key="osu rank.Compare">Összehasonlítás</text>
 		<text key="osu rank.Gamemode">Játékmód</text>
 		<text key="osu rank.One player">Egy Játékos</text>
