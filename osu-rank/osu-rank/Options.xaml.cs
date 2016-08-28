@@ -111,14 +111,12 @@ namespace osurank
             }
             Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
             #endregion
-            loadSettings();
+            if (Settings.Default.RefreshEnable == false)
+                AutorefreshStatus.Content = Tx.T("options.state.Disabled");
+            else
+                AutorefreshStatus.Content = Tx.T("options.autorefresh.Delay", Convert.ToInt32(delay.Value));
             Storyboard animation = TryFindResource("settingsSaved") as Storyboard;
             animation.Begin();
-        }
-
-        private void ReportBug_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://osu.ppy.sh/forum/t/478865");
         }
 
         private void Reset_Click(object sender, RoutedEventArgs e)
