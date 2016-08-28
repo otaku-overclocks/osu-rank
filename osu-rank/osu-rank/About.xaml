@@ -12,10 +12,46 @@
       TextElement.FontWeight="Medium"
       TextElement.FontSize="14"
       FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
-      d:DesignHeight="361" d:DesignWidth="576">
+      d:DesignHeight="361" d:DesignWidth="576" Loaded="page_loaded">
 
     <Grid>
-        <Label x:Name="about" Content="osu!rank" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" FontSize="17.333"/>
-
+        <Label x:Name="about" Content="osu!rank" HorizontalAlignment="Center" Margin="249,10,249,0" VerticalAlignment="Top" FontSize="17.333"/>
+        <Label x:Name="whoDidThis" Content="Developed by Jeremiidesu" HorizontalAlignment="Center" Margin="0,38,0,0" VerticalAlignment="Top"/>
+        <Grid Margin="0,70,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="goGeetHub" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionButton}" Width="36" Height="36" Click="goGeetHub_Click">
+                <materialDesign:PackIcon Kind="GithubCircle" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" />
+            </Button>
+            <Button x:Name="goTopic" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionButton}" Width="36" Height="36" Click="goTopic_Click">
+                <Image x:Name="osuSmall" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Source="osu-small.png" />
+            </Button>
+            <Label x:Name="GeetHubLabel" Content="Check the source on GitHub" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
+            <Label x:Name="TopicLabel" Content="Check out the osu! forums topic" HorizontalAlignment="Left" Margin="51,112,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
+            <ScrollViewer Grid.Column="1" HorizontalAlignment="Left" Height="234" Margin="10,47,0,0" VerticalAlignment="Top" Width="291">
+                <StackPanel x:Name="allDemTranslators">
+                    <TextBlock x:Name="label2"        Margin="3" Text="English and French by me"/>
+                    <TextBlock x:Name="label2_Copy"   Margin="3" Text="Italian by LLoyd-chan"/>
+                    <TextBlock x:Name="label2_Copy1"  Margin="3" Text="Russian by Killerbyte"/>
+                    <TextBlock x:Name="label2_Copy2"  Margin="3" Text="Indonesian by [-Alv-]"/>
+                    <TextBlock x:Name="label2_Copy3"  Margin="3" Text="Hungarian by Zozimoto"/>
+                    <TextBlock x:Name="label2_Copy4"  Margin="3" Text="Portuguese (Brasil) by nh__"/>
+                    <TextBlock x:Name="label2_Copy5"  Margin="3" Text="Turkish by oralekin"/>
+                    <TextBlock x:Name="label2_Copy6"  Margin="3" Text="Spanish by Yoshitake"/>
+                    <TextBlock x:Name="label2_Copy7"  Margin="3" Text="German by guro"/>
+                    <TextBlock x:Name="label2_Copy8"  Margin="3" Text="Chinese (Simplified) by Karma and zheshenmeyouxi" TextWrapping="Wrap"/>
+                    <TextBlock x:Name="label2_Copy9"  Margin="3" Text="Polish by Zain Sugieres"/>
+                    <TextBlock x:Name="label2_Copy10" Margin="3" Text="Swedish by - Kameyo -"/>
+                </StackPanel>
+            </ScrollViewer>
+            <Label x:Name="TranslatorsTitle" Content="Translators" Grid.Column="1" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="goContribute" Style="{StaticResource MaterialDesignFlatButton}" Content="Fluent? Contribute here!" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Click="goContribute_Click"/>
+            <Button x:Name="reportBug" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionButton}" Width="36" Height="36" Click="reportBug_Click">
+                <materialDesign:PackIcon Kind="Bug" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" />
+            </Button>
+            <Label x:Name="BugLabel" Content="Report a bug" HorizontalAlignment="Left" Margin="51,61,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
+        </Grid>
     </Grid>
 </Page>
