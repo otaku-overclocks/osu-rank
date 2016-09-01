@@ -13,13 +13,13 @@ A bolded line means the language is up to date.
 | **English**          | **Jeremiidesu**       | **4.0**              |
 | **French**           | **Jeremiidesu**       | **4.0**              |
 | Italian              | LLoyd-chan            | 3.0                  |
-| Russian              | Killerbyte            | 3.0                  |
+| **Russian**          | **Killerbyte**        | **4.0**              |
 | Indonesian           | [-Alv-]               | 3.0                  |
 | **Hungarian**        | **Zozimoto**          | **4.0**              |
 | Portuguese (Brasil)  | nh__                  | 3.0                  |
 | Turkish              | oralekin              | 3.0                  |
 | Spanish              | Yoshitake             | 3.1                  |
 | German               | guro                  | 3.0                  |
-| Chinese (Simplified) | Karma, zheshenmeyouxi | 3.0                  |
+| Chinese (Simplified) | Karma, zheshenmeyouxi | 4.0 *(-3.1)*           |
 | Polish               | Zain Sugieres         | 3.1                  |
 | Swedish              | - Kameyo -            | 3.1                  |
