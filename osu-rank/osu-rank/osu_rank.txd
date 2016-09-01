@@ -438,19 +438,30 @@ Quer fazer o download?</text>
 		<text key="errors.Did not play yet">{name} не играл в этот режим.</text>
 		<text key="errors.Does not exist">{name} не существует. Вы не правильно написали?</text>
 		<text key="errors.Error">Ошибка</text>
+		<text key="errors.Invalid key">Ваш ключ API не неправильный.</text>
+		<text key="errors.No key entered">Вы не ввели ключ!</text>
 		<text key="errors.No name entered">Вы не написали имя!</text>
+		<text key="errors.You need a key">Вам нужен ключ API если вы хотите использовать программу.
+osu!rank сейчас закроется.</text>
 		<text key="Language">Язык</text>
+		<text key="options.API key">Ключ API</text>
 		<text key="options.autorefresh.Auto refresh">Авто обновление</text>
 		<text key="options.autorefresh.Delay">Задержка: {#} минутов</text>
 		<text key="options.autorefresh.Delay" count="1">Задержка: {#} минута</text>
 		<text key="options.Cancel">Отменить</text>
+		<text key="options.Enter api key">Напишите ваш ключ osu! API</text>
+		<text key="options.Get api key">Нет ключа? Возьмите один сдесь!</text>
 		<text key="options.OK">ОК</text>
 		<text key="options.player settings.Check on startup">Проверять при запуске</text>
 		<text key="options.player settings.Default player settings">Настройки игрока по умолчянию</text>
 		<text key="options.Report a bug">Сообщить о баге</text>
 		<text key="options.Reset default values">Сбросить значения по умолчянию</text>
+		<text key="options.save">Сохранить</text>
+		<text key="options.saved">Сохранено!</text>
 		<text key="options.state.Disabled">Выключен</text>
 		<text key="options.state.Enabled">Включен</text>
+		<text key="options.Test key">Тест ключ</text>
+		<text key="osu rank.About">Об osu!rank</text>
 		<text key="osu rank.Compare">Сравнить</text>
 		<text key="osu rank.Gamemode">Режим</text>
 		<text key="osu rank.One player">Один Игрок</text>
