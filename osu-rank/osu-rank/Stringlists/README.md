@@ -2,6 +2,8 @@
 * Look first if your language is in the table below.
 * If it is, you can update it if its line isn't bolded
 * Just translate all the files with an higher version number than the current one, then open an issue with translated strings
+* If it's not there, just translate all the files. 
+* Open an issue with the translations so I can add it into the program for the next update :)
 
 ## Translation support
 A bolded line means the language is up to date.
