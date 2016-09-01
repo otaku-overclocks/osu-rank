@@ -577,11 +577,18 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="errors.Did not play yet" acceptpunctuation="true">{name} 暂未游玩这个游戏模式。</text>
 		<text key="errors.Does not exist" acceptpunctuation="true">{name} 用户不存在，请检查输入的用户名后重试？</text>
 		<text key="errors.Error">错误</text>
+		<text key="errors.Invalid key">你的API密钥不正确.</text>
+		<text key="errors.No key entered">您没有输入密钥!</text>
 		<text key="errors.No name entered" acceptpunctuation="true">您没有输入用户名！</text>
+		<text key="errors.You need a key">此程序需API密钥启动.
+osu!rank现在将关闭.</text>
 		<text key="Language">语言</text>
+		<text key="options.API key">API钥</text>
 		<text key="options.autorefresh.Auto refresh">自动刷新</text>
 		<text key="options.autorefresh.Delay">延迟: {#} 分钟</text>
 		<text key="options.Cancel">取消</text>
+		<text key="options.Enter api key">输入您的 OSU! API密钥</text>
+		<text key="options.Get api key">没有API密钥？在这里！</text>
 		<text key="options.OK">确定</text>
 		<text key="options.player settings.Check on startup">正在检查更新</text>
 		<text key="options.player settings.Default player settings">默认玩家设置</text>
@@ -589,6 +596,8 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="options.Reset default values">重置默认值</text>
 		<text key="options.state.Disabled">禁用</text>
 		<text key="options.state.Enabled">启用</text>
+		<text key="options.Test key">测试密钥</text>
+		<text key="osu rank.About">关于osu!rank</text>
 		<text key="osu rank.Compare">比较</text>
 		<text key="osu rank.Gamemode">游戏模式</text>
 		<text key="osu rank.One player">一个玩家</text>
