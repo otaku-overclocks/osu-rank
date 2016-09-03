@@ -1,8 +1,11 @@
 # osu!rank
 Small open-source utility to show your rank or compare two players without the need to open the website
+
 Requires you to use your own API key, available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated)
 
-Our discord server is located right [here](https://discord.gg/Uydavrp). Come and say hi!
+Our discord server is located right [here](https://discord.gg/Uydavrp). Come and say hi (or drop some feedback)! 
+
+[osu!forums topic](https://osu.ppy.sh/forum/t/478865)
 What it can do
 --------------
 ### Check your own stats:
@@ -26,6 +29,7 @@ It also displays the avatar of the user.
 What it doesn't do (but might happen)
 ------------------------------------
 * Retrieve your top plays
+* Check for multiple users at once
 
 What it won't ever do
 ---------------------
