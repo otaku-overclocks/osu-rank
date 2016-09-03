@@ -20,6 +20,6 @@ A bolded line means the language is up to date.
 | Turkish              | oralekin              | 3.0                  |
 | Spanish              | Yoshitake             | 3.1                  |
 | German               | guro                  | 3.0                  |
-| Chinese (Simplified) | Karma, zheshenmeyouxi | 4.0 *(-3.1)*           |
+| **Chinese (Simplified)** | **Karma, zheshenmeyouxi** | **4.0**              |
 | Polish               | Zain Sugieres         | 3.1                  |
 | Swedish              | - Kameyo -            | 3.1                  |
