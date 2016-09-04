@@ -33,4 +33,8 @@ What it doesn't do (but might happen)
 
 What it won't ever do
 ---------------------
-* Compare more than two players (looks quite hard to implement the way i'm doing things)
+* Compare more than two players (looks quite hard to implement the way i'm doing things)*
+
+If you want to build yourself
+-----------------------------
+You'll need Visual Studio 2015 to open the solution
