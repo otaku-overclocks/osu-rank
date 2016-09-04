@@ -19,7 +19,7 @@ namespace osurank
         public static readonly CultureInfo systemCulture = CultureInfo.CurrentCulture;
         // Needed for update logic
         public static bool HasCheckedForUpdates = false;
-        public static int version = 20;
+        public static int version = 21;
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
