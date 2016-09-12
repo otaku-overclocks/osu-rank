@@ -21,7 +21,7 @@ namespace osurank
                     if (showErrors==true) MessageBox.Show(Tx.T("errors.Does not exist", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                     return null;
                 }
-                else if (Convert.ToString(userdata[0].pp_rank) == "null")
+                else if (userdata[0].pp_rank == null)
                 {
                     if (showErrors == true) MessageBox.Show(Tx.T("errors.Did not play yet", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Exclamation);
                     return null;

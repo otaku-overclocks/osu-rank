@@ -61,12 +61,14 @@ namespace osurank
             diff_totalscore.Content = "0";
             diff_rankedscore.Content = "0";
         }
-
         private void fetchUserData(string player_name1, string player_name2, int gamemode_index, bool show_errors = true)
         {
             // retrieve userdata
             dynamic userdata1 = osu.GetUser(player: player_name1, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors);
+            dynamic userdata2 = osu.GetUser(player: player_name2, gamemode: gamemode_index, apikey: Settings.Default.apikey);
             dynamic player1 = null;
+            dynamic player2 = null;
+
             if (userdata1[0]!=null)
             {
                 player1 = userdata1[0];
@@ -81,9 +83,6 @@ namespace osurank
             }
             
            
-            
-            dynamic userdata2 = osu.GetUser(player: player_name2, gamemode: gamemode_index, apikey: Settings.Default.apikey);
-            dynamic player2 = null;
             if (userdata2[0] != null)
             {
                 player2 = userdata2[0];
