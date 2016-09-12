@@ -15,6 +15,7 @@ using Unclassified.TxLib;
 using osurank.Properties;
 using System.Globalization;
 using System.Windows.Threading;
+using Newtonsoft.Json.Linq;
 
 namespace osurank
 {
@@ -69,7 +70,9 @@ namespace osurank
             dynamic player1 = null;
             dynamic player2 = null;
 
-            if ((player1 is char)|(player2 is char)){return;} // Fix
+            // do nothing if player did not play, clear difference
+            if (userdata1[0].pp_rank == null) { return; }
+            if (userdata2[0].pp_rank == null) { return; }
 
             if (userdata1[0] != null)
             {
