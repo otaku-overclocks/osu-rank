@@ -69,7 +69,9 @@ namespace osurank
             dynamic player1 = null;
             dynamic player2 = null;
 
-            if (userdata1[0]!=null)
+            if ((player1 is char)|(player2 is char)){return;} // Fix
+
+            if (userdata1[0] != null)
             {
                 player1 = userdata1[0];
                 p1_avatar.Source = new ImageSourceConverter().ConvertFromString("http://a.ppy.sh/" + player1.user_id) as ImageSource;
@@ -96,7 +98,7 @@ namespace osurank
                 p2_rankedscore.Content = Convert.ToInt64(player2.ranked_score).ToString("n", NFInoDecimal);
             }
             playerAllregular(1); playerAllregular(2);
-            if (player1 == player2 && player1!=null)
+            if (player1 == player2 && player1 != null)
             {
                 playerAllbold(1);
                 playerAllbold(2);
