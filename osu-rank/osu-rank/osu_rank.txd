@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- TxTranslation dictionary file. Use TxEditor to edit this file. http://unclassified.software/txtranslation -->
 <translation xml:space="preserve">
 	<culture name="de">
@@ -594,6 +594,8 @@ osu!rank现在将关闭.</text>
 		<text key="options.player settings.Default player settings">默认玩家设置</text>
 		<text key="options.Report a bug">举报漏洞</text>
 		<text key="options.Reset default values">重置默认值</text>
+		<text key="options.save">保存</text>
+		<text key="options.saved">已保存！</text>
 		<text key="options.state.Disabled">禁用</text>
 		<text key="options.state.Enabled">启用</text>
 		<text key="options.Test key">测试密钥</text>
