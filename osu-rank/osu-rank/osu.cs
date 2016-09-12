@@ -24,7 +24,7 @@ namespace osurank
                 else if (userdata[0].pp_rank == null)
                 {
                     if (showErrors == true) MessageBox.Show(Tx.T("errors.Did not play yet", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                    return null;
+                    return " ";
                 }
                 else return userdata;
             }
