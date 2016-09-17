@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Globalization;
 using osurank.Properties;
+using System.Windows.Threading;
 
 namespace osurank
 {
@@ -19,7 +20,7 @@ namespace osurank
         public static readonly CultureInfo systemCulture = CultureInfo.CurrentCulture;
         // Needed for update logic
         public static bool HasCheckedForUpdates = false;
-        public static int version = 21;
+        public static int version = 22;
 
         private void App_Startup(object sender, StartupEventArgs e)
         {

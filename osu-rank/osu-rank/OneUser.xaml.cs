@@ -57,7 +57,7 @@ namespace osurank
             dynamic userdata = osu.GetUser(player: player_name, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors)[0];
 
             // do nothing if player did not play or player is invalid
-            if (Convert.ToString(userdata) == "SpecificStringForThisThingOnly") { return; }
+            if (Convert.ToString(userdata) == Convert.ToString(int.MaxValue) ) { return; }
             if (userdata.pp_rank == null) {return;}
             if (userdata == null) { return; }
 

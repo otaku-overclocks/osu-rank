@@ -71,8 +71,11 @@ namespace osurank
             dynamic player2 = null;
 
             // do nothing if player did not play or player is invalid
+            if (Convert.ToString(userdata1[0]) == Convert.ToString(int.MaxValue)) { return; }
+            if (Convert.ToString(userdata2[0]) == Convert.ToString(int.MaxValue)) { return; }
             if (userdata1[0].pp_rank == null | userdata1 == null) { return; }
             if (userdata2[0].pp_rank == null | userdata2 == null) { return; }
+            
 
             if (userdata1[0] != null)
             {
