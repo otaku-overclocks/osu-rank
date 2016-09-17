@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Globalization;
 using osurank.Properties;
-using System.Windows.Threading;
 
 namespace osurank
 {
