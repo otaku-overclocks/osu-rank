@@ -70,9 +70,9 @@ namespace osurank
             dynamic player1 = null;
             dynamic player2 = null;
 
-            // do nothing if player did not play, clear difference
-            if (userdata1[0].pp_rank == null) { return; }
-            if (userdata2[0].pp_rank == null) { return; }
+            // do nothing if player did not play or player is invalid
+            if (userdata1[0].pp_rank == null | userdata1 == null) { return; }
+            if (userdata2[0].pp_rank == null | userdata2 == null) { return; }
 
             if (userdata1[0] != null)
             {

@@ -55,7 +55,12 @@ namespace osurank
         private void fetchUserData(string player_name, int gamemode_index, bool show_errors = true)
         {
             dynamic userdata = osu.GetUser(player: player_name, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors)[0];
+
+            // do nothing if player did not play or player is invalid
+            if (Convert.ToString(userdata) == "SpecificStringForThisThingOnly") { return; }
             if (userdata.pp_rank == null) {return;}
+            if (userdata == null) { return; }
+
             playername.Content = Convert.ToString(userdata.username);
             Avatar.Source = new ImageSourceConverter().ConvertFromString("http://a.ppy.sh/" + userdata.user_id) as ImageSource;
             globalrank.Content = "#" + userdata.pp_rank;

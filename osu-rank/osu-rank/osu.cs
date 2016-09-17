@@ -19,7 +19,7 @@ namespace osurank
                 if (Convert.ToString(userdata) == "[]" || userdata == null)
                 {
                     if (showErrors==true) MessageBox.Show(Tx.T("errors.Does not exist", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
-                    return null;
+                    return userdata;
                 }
                 else if (userdata[0].pp_rank == null)
                 {
