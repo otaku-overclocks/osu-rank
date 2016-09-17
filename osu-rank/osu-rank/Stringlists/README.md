@@ -17,7 +17,7 @@ A bolded line means the language is up to date.
 | Indonesian           | [-Alv-]               | 3.0                  |
 | **Hungarian**        | **Zozimoto**          | **4.0**              |
 | Portuguese (Brasil)  | nh__                  | 3.0                  |
-| Turkish              | oralekin              | 3.0                  |
+| **Turkish**          | **oralekin**          | **4.0**              |
 | Spanish              | Yoshitake             | 3.1                  |
 | German               | guro                  | 3.0                  |
 | **Chinese (Simplified)** | **Karma, zheshenmeyouxi** | **4.0**              |
