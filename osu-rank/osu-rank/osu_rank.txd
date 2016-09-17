@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- TxTranslation dictionary file. Use TxEditor to edit this file. http://unclassified.software/txtranslation -->
 <translation xml:space="preserve">
 	<culture name="de">
@@ -536,18 +536,29 @@ Vänligen försök igen senare.</text>
 		<text key="errors.Did not play yet">{name} bu modu oynamamış.</text>
 		<text key="errors.Does not exist">{name} bulunamadı. Bir yazım hatası mı yaptın?</text>
 		<text key="errors.Error">Hata</text>
+		<text key="errors.Invalid key">API kodunuz yanlış.</text>
+		<text key="errors.No key entered">Kod girmediniz!</text>
 		<text key="errors.No name entered">Ad girmedin!</text>
+		<text key="errors.You need a key">Bu programı kullanmak için bir API koduna ihtiyacınız var.
+osu!rank kapanıyor.</text>
 		<text key="Language">Dil</text>
+		<text key="options.API key">API kodu</text>
 		<text key="options.autorefresh.Auto refresh">Otomatik yenileme</text>
 		<text key="options.autorefresh.Delay">Aralık: {#} dakika</text>
 		<text key="options.Cancel">İptal</text>
+		<text key="options.Enter api key">osu! API kodunuzu giiniz</text>
+		<text key="options.Get api key">Kodunuz yok mu? Buradan alın!</text>
 		<text key="options.OK">Tamam</text>
 		<text key="options.player settings.Check on startup">Başlangıçta kontrol et</text>
 		<text key="options.player settings.Default player settings">Varsayılan oyuncular</text>
 		<text key="options.Report a bug">Bir sorunu bildir</text>
 		<text key="options.Reset default values">Varsayılan ayarlara dön</text>
+		<text key="options.save">Kaydet</text>
+		<text key="options.saved">Kaydedildi!</text>
 		<text key="options.state.Disabled">Kapalı</text>
 		<text key="options.state.Enabled">Açık</text>
+		<text key="options.Test key">Test kodu</text>
+		<text key="osu rank.About">osu!rank ile ilgili</text>
 		<text key="osu rank.Compare">Karşılaştırma</text>
 		<text key="osu rank.Gamemode">Oyun Modu</text>
 		<text key="osu rank.One player">Tek oyuncu</text>
@@ -588,14 +599,14 @@ osu!rank现在将关闭.</text>
 		<text key="options.autorefresh.Delay">延迟: {#} 分钟</text>
 		<text key="options.Cancel">取消</text>
 		<text key="options.Enter api key">输入您的 OSU! API密钥</text>
-		<text key="options.Get api key">没有API密钥？在这里！</text>
+		<text key="options.Get api key">没有API密钥?在这里!</text>
 		<text key="options.OK">确定</text>
 		<text key="options.player settings.Check on startup">正在检查更新</text>
 		<text key="options.player settings.Default player settings">默认玩家设置</text>
 		<text key="options.Report a bug">举报漏洞</text>
 		<text key="options.Reset default values">重置默认值</text>
 		<text key="options.save">保存</text>
-		<text key="options.saved">已保存！</text>
+		<text key="options.saved">已保存!</text>
 		<text key="options.state.Disabled">禁用</text>
 		<text key="options.state.Enabled">启用</text>
 		<text key="options.Test key">测试密钥</text>

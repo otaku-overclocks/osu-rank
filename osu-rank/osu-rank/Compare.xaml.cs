@@ -15,6 +15,7 @@ using Unclassified.TxLib;
 using osurank.Properties;
 using System.Globalization;
 using System.Windows.Threading;
+using Newtonsoft.Json.Linq;
 
 namespace osurank
 {
@@ -69,7 +70,14 @@ namespace osurank
             dynamic player1 = null;
             dynamic player2 = null;
 
-            if (userdata1[0]!=null)
+            // do nothing if player did not play or player is invalid
+            if (Convert.ToString(userdata1[0]) == Convert.ToString(int.MaxValue)) { return; }
+            if (Convert.ToString(userdata2[0]) == Convert.ToString(int.MaxValue)) { return; }
+            if (userdata1[0].pp_rank == null | userdata1 == null) { return; }
+            if (userdata2[0].pp_rank == null | userdata2 == null) { return; }
+            
+
+            if (userdata1[0] != null)
             {
                 player1 = userdata1[0];
                 p1_avatar.Source = new ImageSourceConverter().ConvertFromString("http://a.ppy.sh/" + player1.user_id) as ImageSource;
@@ -96,7 +104,7 @@ namespace osurank
                 p2_rankedscore.Content = Convert.ToInt64(player2.ranked_score).ToString("n", NFInoDecimal);
             }
             playerAllregular(1); playerAllregular(2);
-            if (player1 == player2 && player1!=null)
+            if (player1 == player2 && player1 != null)
             {
                 playerAllbold(1);
                 playerAllbold(2);
