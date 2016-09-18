@@ -10,19 +10,30 @@
 		<text key="errors.Did not play yet">{name} hat diesen Spielmodus nicht gespielt.</text>
 		<text key="errors.Does not exist">{name} existiert nicht. Hast du dich verschrieben?</text>
 		<text key="errors.Error">Fehler</text>
+		<text key="errors.Invalid key">Dein API Schlüssel ist falsch.</text>
+		<text key="errors.No key entered">Du hast keinen Schlüssel eingegeben!</text>
 		<text key="errors.No name entered">Du hast keinen Namen eingegeben!</text>
+		<text key="errors.You need a key">Du benötigst einen API Schlüssel, wenn du das Programm verwenden möchtest.
+osu!rank wird sich nun schließen.</text>
 		<text key="Language">Sprache</text>
+		<text key="options.API key">API Schlüssel</text>
 		<text key="options.autorefresh.Auto refresh">Automatisches Aktualisieren</text>
 		<text key="options.autorefresh.Delay">Verzögerung: {#} Minuten</text>
 		<text key="options.autorefresh.Delay" count="1">Verzögerung: {#} Minute</text>
 		<text key="options.Cancel">Abbrechen</text>
+		<text key="options.Enter api key">Gib deinen osu! API Schlüssel ein</text>
+		<text key="options.Get api key">Keinen Schlüssel? Hole dir hier einen!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Überprüfe bei Start</text>
 		<text key="options.player settings.Default player settings">Standard Spielereinstellungen</text>
 		<text key="options.Report a bug">Melde einen Fehler</text>
 		<text key="options.Reset default values">Standardwerte zurücksetzen</text>
+		<text key="options.save">Speichern</text>
+		<text key="options.saved">Gespeichert!</text>
 		<text key="options.state.Disabled">Deaktiviert</text>
 		<text key="options.state.Enabled">Aktiviert</text>
+		<text key="options.Test key">Schlüssel testen</text>
+		<text key="osu rank.About">Über osu!rank</text>
 		<text key="osu rank.Compare">Vergleiche</text>
 		<text key="osu rank.Gamemode">Spielmodus</text>
 		<text key="osu rank.One player">Ein Spieler</text>
@@ -262,18 +273,29 @@ Le Akarod Tölteni?</text>
 		<text key="errors.Did not play yet">{name} nelum bermain mode ini.</text>
 		<text key="errors.Does not exist">{name} nidak ditemukan. Apa anda salah mengetik?</text>
 		<text key="errors.Error">Error</text>
+		<text key="errors.Invalid key">Kunci API anda salah.</text>
+		<text key="errors.No key entered">Anda belum memasukkan kunci!</text>
 		<text key="errors.No name entered">Anda belum memasukan nama!</text>
+		<text key="errors.You need a key">Anda membutuhkan kunci API jika ingin menggunakan program.
+osu!rank akan ditutup.</text>
 		<text key="Language">Bahasa</text>
+		<text key="options.API key">Kunci API</text>
 		<text key="options.autorefresh.Auto refresh">Segarkan otomatis</text>
 		<text key="options.autorefresh.Delay">Delay: {#} menit</text>
 		<text key="options.Cancel">Batal</text>
+		<text key="options.Enter api key">Masukkan kunci API osu! anda</text>
+		<text key="options.Get api key">Belum memiliki kunci? Dapatkan disini!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Cek saat startup</text>
 		<text key="options.player settings.Default player settings">Pengaturan awal</text>
 		<text key="options.Report a bug">Laporkan masalah</text>
 		<text key="options.Reset default values">Reset skor</text>
+		<text key="options.save">Simpan</text>
+		<text key="options.saved">Tersimpan!</text>
 		<text key="options.state.Disabled">Dinon-aktifkan</text>
 		<text key="options.state.Enabled">Diaktifkan</text>
+		<text key="options.Test key">Uji kunci</text>
+		<text key="osu rank.About">Tentang osu!rank</text>
 		<text key="osu rank.Compare">Bandingkan</text>
 		<text key="osu rank.Gamemode">Mode permainan</text>
 		<text key="osu rank.One player">Satu pemain</text>
@@ -348,12 +370,19 @@ Vuoi scaricarla?</text>
 		<text key="errors.Did not play yet">{name} nie grał w ten tryb.</text>
 		<text key="errors.Does not exist">{name} nie istnieje. Czy popełniłeś jakiś błąd?</text>
 		<text key="errors.Error">Błąd</text>
+		<text key="errors.Invalid key">Twój klucz API jest niepoprawny.</text>
+		<text key="errors.No key entered">Nie wprowadziłeś klucza!</text>
 		<text key="errors.No name entered">Nie wpisałeś imienia!</text>
+		<text key="errors.You need a key">Potrzebujesz klucza API żeby korzystać z programu.
+osu!rank wyłączy się.</text>
 		<text key="Language">Język</text>
+		<text key="options.API key">Klucz API</text>
 		<text key="options.autorefresh.Auto refresh">Automatyczne odświeżanie</text>
 		<text key="options.autorefresh.Delay">Opóźnienie: {#} minut</text>
 		<text key="options.autorefresh.Delay" count="1">Opóźnienie: {#} minuta</text>
 		<text key="options.Cancel">Anuluj</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Wprowadź swój klucz API osu!</text>
+		<text key="options.Get api key">Nie masz klucza? Zdobądź jeden tutaj!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Sprawdź przy włączeniu</text>
 		<text key="options.player settings.Default player settings">Ustawienia domyślnego gracza</text>
@@ -363,6 +392,8 @@ Vuoi scaricarla?</text>
 		<text key="options.saved">Zapisano!</text>
 		<text key="options.state.Disabled">Wyłączone</text>
 		<text key="options.state.Enabled">Włączone</text>
+		<text key="options.Test key">Klucz testowy</text>
+		<text key="osu rank.About">O osu!rank</text>
 		<text key="osu rank.Compare">Porównaj</text>
 		<text key="osu rank.Gamemode">Tryb</text>
 		<text key="osu rank.One player">Jeden gracz</text>
@@ -394,19 +425,30 @@ Czy chcesz ją pobrać?</text>
 		<text key="errors.Did not play yet">{name} não jogou este modo de jogo.</text>
 		<text key="errors.Does not exist">{name} não existe. Você digitou errado?</text>
 		<text key="errors.Error">Erro</text>
+		<text key="errors.Invalid key">Sua chave API está incorreta.</text>
+		<text key="errors.No key entered">Você não inseriu uma chave!</text>
 		<text key="errors.No name entered">Você não digitou um nome!</text>
+		<text key="errors.You need a key">Você precisa de uma chave API caso queira usar o programa.
+osu!rank será fechado agora.</text>
 		<text key="Language">Idioma</text>
+		<text key="options.API key">Chave API</text>
 		<text key="options.autorefresh.Auto refresh">Atualizar automaticamente</text>
 		<text key="options.autorefresh.Delay">Atraso: {#} minutos</text>
 		<text key="options.autorefresh.Delay" count="1">Atraso: {#} minuto</text>
 		<text key="options.Cancel">Cancelar</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Insira sua chave API do osu!</text>
+		<text key="options.Get api key">Não possuí uma chave? Consiga uma aqui!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Verificar ao iniciar</text>
 		<text key="options.player settings.Default player settings">Configuração padrão de jogador</text>
 		<text key="options.Report a bug">Roportar um erro</text>
 		<text key="options.Reset default values">Resetar aos valores padrões</text>
+		<text key="options.save">Salvar</text>
+		<text key="options.saved">Salvo!</text>
 		<text key="options.state.Disabled">Desabilitado</text>
 		<text key="options.state.Enabled">Habilitado</text>
+		<text key="options.Test key">Chave de teste</text>
+		<text key="osu rank.About">Sobre o osu!rank</text>
 		<text key="osu rank.Compare">Comparar</text>
 		<text key="osu rank.Gamemode">Modo de jogo</text>
 		<text key="osu rank.One player">Um jogador</text>
