@@ -120,12 +120,19 @@ Do you want to download it?</text>
 		<text key="errors.Did not play yet">{name} aún no ha jugado en este modo.</text>
 		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre.</text>
 		<text key="errors.Error">Error</text>
+		<text key="errors.Invalid key">Ha introducido una clave inválida.</text>
+		<text key="errors.No key entered">Introduzca una clave!</text>
 		<text key="errors.No name entered">¡No has ingresado ningún nombre!</text>
+		<text key="errors.You need a key">Se necesita una clave API para utilizar el programa.
+osu!rank se cerrará.</text>
 		<text key="Language">Idioma</text>
+		<text key="options.API key">Clave API</text>
 		<text key="options.autorefresh.Auto refresh">Actualizar automáticamente</text>
 		<text key="options.autorefresh.Delay">Frecuencia: {#} minutos</text>
 		<text key="options.autorefresh.Delay" count="1">Frecuencia: {#} minuto</text>
 		<text key="options.Cancel">Cancelar</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Introduzca su clave API de osu!</text>
+		<text key="options.Get api key">¿No tiene una? Pídala aquí!</text>
 		<text key="options.OK">Aceptar</text>
 		<text key="options.player settings.Check on startup">Comprobar al inicio</text>
 		<text key="options.player settings.Default player settings">Ajustes de usuario predeterminados</text>
@@ -135,6 +142,8 @@ Do you want to download it?</text>
 		<text key="options.saved">¡Configuración guardada!</text>
 		<text key="options.state.Disabled">Desactivado</text>
 		<text key="options.state.Enabled">Activado</text>
+		<text key="options.Test key">Clave de prueba</text>
+		<text key="osu rank.About">Sobre osu!rank</text>
 		<text key="osu rank.Compare">Comparar</text>
 		<text key="osu rank.Gamemode">Modo de juego</text>
 		<text key="osu rank.One player">Un solo jugador</text>
@@ -666,7 +675,7 @@ osu!rank现在将关闭.</text>
 		<text key="osu rank.Gamemode">游戏模式</text>
 		<text key="osu rank.One player">一个玩家</text>
 		<text key="osu rank.Search">搜索</text>
-		<text key="osu rank.Servers unavailable" acceptpunctuation="true">很抱歉，osu!服务器暂时不在线，请稍后重试。</text>
+		<text key="osu rank.Servers unavailable" acceptpunctuation="true">很抱歉，osu!服务器暂时不在线，请稍后重试.</text>
 		<text key="osu rank.Settings">设置</text>
 		<text key="player.Accuracy">准确率</text>
 		<text key="player.Enter name">请输入玩家名称</text>
