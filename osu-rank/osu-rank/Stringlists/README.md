@@ -12,7 +12,7 @@ A bolded line means the language is up to date.
 |----------------------|-----------------------|----------------------|
 | **English**          | **Jeremiidesu**       | **4.0**              |
 | **French**           | **Jeremiidesu**       | **4.0**              |
-| Italian              | LLoyd-chan            | 3.0                  |
+| **Italian**          | **LLoyd-chan**        | **4.0**                  |
 | **Russian**          | **Killerbyte**        | **4.0**              |
 | **Indonesian**       | **[-Alv-]**           | **4.0**              |
 | **Hungarian**        | **Zozimoto**          | **4.0**              |
