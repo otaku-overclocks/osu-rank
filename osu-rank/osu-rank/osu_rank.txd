@@ -109,7 +109,7 @@ Please try again later.</text>
 		<text key="update.text">A new version is available!
 Do you want to download it?</text>
 		<text key="update.Title">Update available</text>
-		<text key="version_translatorCredits"> osu!rank {version}</text>
+		<text key="version_translatorCredits">osu!rank {version}</text>
 	</culture>
 	<culture name="es">
 		<text key="comparator.Comparator">Comparador</text>
@@ -118,7 +118,7 @@ Do you want to download it?</text>
 		<text key="comparator.n ranks" count="1">{#} puesto</text>
 		<text key="comparator.Player n">Jugador {#}</text>
 		<text key="errors.Did not play yet">{name} aún no ha jugado en este modo.</text>
-		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre.</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre?</text>
 		<text key="errors.Error">Error</text>
 		<text key="errors.Invalid key">Ha introducido una clave inválida.</text>
 		<text key="errors.No key entered">Introduzca una clave!</text>
@@ -336,19 +336,30 @@ Apa kau mau mengunduhnya?</text>
 		<text key="errors.Did not play yet">{name} non ha ancora giocato a questa modalità.</text>
 		<text key="errors.Does not exist">{name} non esiste. Hai per caso fatto un errore di battitura?</text>
 		<text key="errors.Error">Errore</text>
+		<text key="errors.Invalid key">La chiave API è errata.</text>
+		<text key="errors.No key entered">Non hai inserito la chiave!</text>
 		<text key="errors.No name entered">Non hai inserito un nome!</text>
+		<text key="errors.You need a key">Hai bisogno di una chiave APi per usare questo programma.
+osu!rank si chiuderà a breve.</text>
 		<text key="Language">Lingua</text>
+		<text key="options.API key">Chiave API</text>
 		<text key="options.autorefresh.Auto refresh">Refresh automatico</text>
 		<text key="options.autorefresh.Delay">Ritardo: {#} minuti</text>
 		<text key="options.autorefresh.Delay" count="1">Ritardo: {#} minuto</text>
 		<text key="options.Cancel">Annulla</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Inserisci la tua chiave API di osu!</text>
+		<text key="options.Get api key">Non hai una chiave? Puoi prenderne una qui!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Controlla all'avvio</text>
 		<text key="options.player settings.Default player settings">Impostazioni predefinite</text>
 		<text key="options.Report a bug">Segnala un errore</text>
 		<text key="options.Reset default values">Ripristina i valori predefiniti</text>
+		<text key="options.save">Salva</text>
+		<text key="options.saved">Salvato!</text>
 		<text key="options.state.Disabled">Disabilitato</text>
 		<text key="options.state.Enabled">Abilitato</text>
+		<text key="options.Test key">Chiave di prova</text>
+		<text key="osu rank.About">Riguardo a osu!rank</text>
 		<text key="osu rank.Compare">Confronta</text>
 		<text key="osu rank.Gamemode">Modalità</text>
 		<text key="osu rank.One player">Un giocatore</text>
@@ -645,12 +656,12 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="comparator.Difference">区别</text>
 		<text key="comparator.n ranks">{#} 排名</text>
 		<text key="comparator.Player n">玩家 {#}</text>
-		<text key="errors.Did not play yet" acceptpunctuation="true">{name} 暂未游玩这个游戏模式。</text>
-		<text key="errors.Does not exist" acceptpunctuation="true">{name} 用户不存在，请检查输入的用户名后重试？</text>
+		<text key="errors.Did not play yet" acceptpunctuation="true">{name} 暂未游玩这个游戏模式.</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} 用户不存在. 请检查输入的用户名后重试?</text>
 		<text key="errors.Error">错误</text>
 		<text key="errors.Invalid key">你的API密钥不正确.</text>
 		<text key="errors.No key entered">您没有输入密钥!</text>
-		<text key="errors.No name entered" acceptpunctuation="true">您没有输入用户名！</text>
+		<text key="errors.No name entered" acceptpunctuation="true">您没有输入用户名!</text>
 		<text key="errors.You need a key">此程序需API密钥启动.
 osu!rank现在将关闭.</text>
 		<text key="Language">语言</text>
@@ -687,7 +698,7 @@ osu!rank现在将关闭.</text>
 		<text key="player.Ranking">排行</text>
 		<text key="player.Total score">总得分</text>
 		<text key="player.User ID">玩家ID</text>
-		<text key="update.text" acceptpunctuation="true">一个新的版本可用！要下载吗？</text>
+		<text key="update.text" acceptpunctuation="true">一个新的版本可用!要下载吗?</text>
 		<text key="update.Title">有新更新可用</text>
 		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, 翻译者:Karma和zheshenmeyouxi</text>
 	</culture>
