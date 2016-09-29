@@ -249,6 +249,7 @@
     <Resource Include="Stringlists\StringList 4.0.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Stringlists\README.md" />
     <None Include="version.txt" />
   </ItemGroup>
   <ItemGroup>
