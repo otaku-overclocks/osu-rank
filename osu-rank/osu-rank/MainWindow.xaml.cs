@@ -137,6 +137,7 @@ namespace osurank
 
         private void windowLoaded(object sender, RoutedEventArgs e)
         {
+            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
             if (App.HasCheckedForUpdates == false)
             {
                 App.HasCheckedForUpdates = true;
@@ -183,7 +184,6 @@ namespace osurank
             {
                 Console.WriteLine(resourceName);
             }
-            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
             #endregion
         }
 
