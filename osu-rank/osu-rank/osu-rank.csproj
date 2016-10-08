@@ -258,6 +258,11 @@
   <ItemGroup>
     <Resource Include="osu_+Heptagon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="A%402x.png" />
+    <Resource Include="S%402x.png" />
+    <Resource Include="X%402x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.28.3\build\Fody.targets" Condition="Exists('..\packages\Fody.1.28.3\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

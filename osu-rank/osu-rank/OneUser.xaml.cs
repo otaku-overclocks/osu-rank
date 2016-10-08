@@ -68,14 +68,15 @@ namespace osurank
 
             rankedScore.Content = Tx.TC("player.Ranked score") + " " + Convert.ToInt64(userdata.ranked_score).ToString("n", NFInoDecimal);
             playCount.Content = Tx.TC("player.Play count") + " " + Convert.ToInt32(userdata.playcount).ToString("n", NFInoDecimal);
-            acc.Content = Tx.TC("player.Accuracy") + " " + Math.Round(Convert.ToDouble(userdata.accuracy), 2) + "%";
-            pp.Content = Tx.TC("player.Performance") + " " + Convert.ToDouble(userdata.pp_raw).ToString("n", NFInoDecimal) + " pp";
+            acc.Content = Math.Round(Convert.ToDouble(userdata.accuracy), 2) + "%";
+            pp.Content = Convert.ToDouble(userdata.pp_raw).ToString("n", NFIperformance) + " pp";
             totalScore.Content = Tx.TC("player.Total score") + " " + Convert.ToInt64(userdata.total_score).ToString("n", NFInoDecimal);
             level.Content = Tx.TC("player.Level") + " " + Convert.ToDouble(userdata.level).ToString("n", NFInoDecimal) + " (" + ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100).ToString("n", NFInoDecimal) + "%)";
             grades.Content = "SS / S / A: " + Convert.ToInt32(userdata.count_rank_ss).ToString("n", NFInoDecimal) + " / "
                                                 + Convert.ToInt32(userdata.count_rank_s).ToString("n", NFInoDecimal) + " / "
                                                 + Convert.ToInt32(userdata.count_rank_a).ToString("n", NFInoDecimal);
             userID.Content = Tx.TC("player.User ID") + " " + userdata.user_id;
+            levelProgress.Value = ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100);
         }
 
         private void timerReset()
