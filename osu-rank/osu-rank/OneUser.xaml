@@ -50,29 +50,102 @@
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label x:Name="playername" Content="{Tx:T player.Enter name}" HorizontalAlignment="Left" Margin="10,10,0,0" FontSize="18" FontWeight="Bold" Height="35" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="playername" Content="{Tx:T player.Enter name}" HorizontalAlignment="Left" Margin="5,10,0,0" FontSize="18" FontWeight="Bold" Height="35" VerticalAlignment="Top" Grid.Column="1"/>
                 <Image x:Name="Avatar" Margin="10,5" Source="http://a.ppy.sh/1" Height="80">
                     <Image.Effect>
                         <DropShadowEffect Direction="270" Opacity="0.25" RenderingBias="Quality" BlurRadius="6" ShadowDepth="3"/>
                     </Image.Effect>
                 </Image>
-                <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,15,10,0" VerticalAlignment="Top">
-                    <Label x:Name="globalrank" HorizontalAlignment="Right" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" Content="#0" Padding="5,0"/>
-                    <Label x:Name="countryRank" HorizontalAlignment="Right" VerticalAlignment="Top" Content="#0 (N/A)" Padding="5,0" FontStyle="Italic" Margin="0,22,0,0"/>
+                <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,5,0" VerticalAlignment="Top">
+                    <Grid VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="globalrank" HorizontalAlignment="Right" FontSize="18" FontWeight="Bold" VerticalAlignment="Top" Content="#0" Padding="5,0" Grid.Column="1" Margin="0"/>
+                        <Label x:Name="globalrank_Copy" HorizontalAlignment="Right" FontSize="18" FontWeight="Normal" VerticalAlignment="Top" Content="+1337" Padding="5,0" Margin="0,0,5,0" Foreground="#DD00A80F"/>
+                    </Grid>
+                    <Grid HorizontalAlignment="Right" Margin="0,22,0,0" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="countryRank" VerticalAlignment="Top" Content="#0 (N/A)" Padding="5,0" FontStyle="Italic" HorizontalAlignment="Right" Grid.ColumnSpan="2" Grid.Column="2"/>
+                        <Label x:Name="countryRank_diff" VerticalAlignment="Top" Content="+420" Padding="5,0" FontStyle="Italic" HorizontalAlignment="Right" Margin="0,0,5,0" FontWeight="Normal" Foreground="#DD00A80F"/>
+                    </Grid>
                 </Grid>
                 <Label x:Name="level" Content="{Tx:TC player.Level}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="10,64,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
                 <ProgressBar x:Name="levelProgress" Grid.Column="1" Margin="10,86,10,0" VerticalAlignment="Top" Value="-1"/>
             </Grid>
-            <Label x:Name="rankedScore" Content="{Tx:TC player.Ranked score}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="10,10,0,0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="playCount" Content="{Tx:TC player.Play count}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="10,54,0,0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="acc" VerticalContentAlignment="Center" Grid.Row="1" Padding="0" Background="{x:Null}" Margin="0,10,10,0" HorizontalAlignment="Right" VerticalAlignment="Top" Content="69.69%" FontSize="16"/>
-            <Label x:Name="totalScore" Content="{Tx:TC player.Total score}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="10,32,0,0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="grades" Content="SS / S / A:" VerticalContentAlignment="Center" Grid.Row="1" Padding="0" Background="{x:Null}" Margin="10,98,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="userID" Content="{Tx:TC player.User ID}" VerticalContentAlignment="Center" Grid.Row="1" Padding="0" Background="{x:Null}" Margin="10,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Image x:Name="X" Margin="232,51,0,0" Source="X@2x.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" Height="100" Grid.Row="1" />
-            <Image x:Name="S" Margin="332,51,0,0" Width="100" Source="S@2x.png" Height="100" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Image x:Name="A" Margin="432,51,0,0" Width="100" Source="A@2x.png" Height="100" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label x:Name="pp" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="0,34,10,0" VerticalAlignment="Top" Content="13,376.66pp" FontSize="16" Grid.Row="1" HorizontalAlignment="Right"/>
+            <Label x:Name="userID" Content="{Tx:TC player.User ID}" VerticalContentAlignment="Center" Grid.Row="1" Padding="0" Background="{x:Null}" Margin="0,0,10,32" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Light" FontStyle="Italic"/>
+            <Image x:Name="X_pic" Margin="10,82,0,0" Source="X@2x.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" Height="59" Grid.Row="1" RenderTransformOrigin="0.96,0.52" />
+            <Image x:Name="S_pic" Margin="149,82,0,0" Width="59" Source="S@2x.png" Height="59" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image x:Name="A_pic" Margin="288,82,0,0" Width="59" Source="A@2x.png" Height="59" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Grid HorizontalAlignment="Left" Height="59" Margin="74,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="SS" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="69"/>
+                <Label x:Name="SS_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="-42" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="59" Margin="213,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="S" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="1337"/>
+                <Label x:Name="S_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="+30" Grid.Column="1" Foreground="#DD00A80F" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="59" Margin="352,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="A" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="420"/>
+                <Label x:Name="A_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="-666" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="rankedScore" Content="{Tx:TC player.Ranked score}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="rankedScore_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Content="+123,456,789" Margin="5,0,0,0" Foreground="#DD00A80F"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="totalScore" Content="{Tx:TC player.Total score}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="totalScore_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Content="+123,456,789" Margin="5,0,0,0" Foreground="#DD00A80F"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Margin="10,54,0,0" Grid.Row="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="playCount" Content="{Tx:TC player.Play count}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="playcount_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Content="+666" Margin="5,0,0,0" Foreground="#DD00A80F"/>
+            </Grid>
+            <Label x:Name="lastRefresh" VerticalContentAlignment="Center" Grid.Row="1" Padding="0" Background="{x:Null}" Margin="0,0,10,10" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Light" FontStyle="Italic" Content="Last updated: tomorrow"/>
+            <Grid HorizontalAlignment="Right" Margin="0,10,10,0" Grid.Row="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="acc" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Top" Content="69.69%" FontSize="16" Grid.Column="1"/>
+                <Label x:Name="acc_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Top" Content="-13.37%" FontSize="16" Margin="0,0,5,0" Foreground="#DDDA0000"/>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Margin="0,32,10,0" Grid.Row="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="pp" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="13,376.66pp" FontSize="16" HorizontalAlignment="Right" Grid.Column="1"/>
+                <Label x:Name="pp_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="+727pp" FontSize="16" HorizontalAlignment="Right" Margin="0,0,5,0" Foreground="#DD00A80F"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>
