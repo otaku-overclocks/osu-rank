@@ -1,7 +1,7 @@
-# osu!rank
+# osu!rank 4.2.0
 Small open-source utility to show your rank or compare two players without the need to open the website
 
-Requires you to use your own API key, available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated)
+Requires you to use your own API key, available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated.
 
 Our discord server is located right [here](https://discord.gg/Uydavrp). Come and say hi (or drop some feedback)! 
 
@@ -17,7 +17,7 @@ What it can do
 * Your SS/S/A
 * Your UID <-- mainly to fill the space, but just in case it can still be useful
 
-### Compare two players on:
+### Compare two players on their:
 * Rank
 * Ranked and total scores
 * Accuracy
@@ -29,12 +29,11 @@ It also displays the avatar of the user.
 What it doesn't do (but might happen)
 ------------------------------------
 * Retrieve your top plays
-* Check for multiple users at once
 
 What it won't ever do
 ---------------------
-* Compare more than two players (looks quite hard to implement the way i'm doing things)*
+* Compare more than two players (looks quite hard to implement the way i'm doing things)
 
-If you want to build yourself
------------------------------
+If you want to build yourself...
+--------------------------------
 You'll need Visual Studio 2015 to open the solution
