@@ -109,8 +109,11 @@ namespace osurank
         {
             // so many needed variables
             long RscoreDiff, Scorediff;
-            int PCdiff,rankdiff,countryrankdiff,Sdiff,SSdiff,Adiff;
+            int PCdiff, rankdiff, countryrankdiff, Sdiff, SSdiff, Adiff;
             double ppDiff, accDiff;
+            SolidColorBrush decreaseColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#DDDA0000"));
+            SolidColorBrush increaseColor = (SolidColorBrush)(new BrushConverter().ConvertFrom("#DD00A80F"));
+            SolidColorBrush noChangeColor = Brushes.DimGray;
 
             // difference calculation 
             RscoreDiff = (long)after.ranked_score - (long)before.ranked_score;
@@ -125,10 +128,172 @@ namespace osurank
             accDiff = (double)after.accuracy - (double)before.accuracy;
 
             // display these values
+            #region rankedscore
             if (RscoreDiff > 0)
             {
                 rankedScore_diff.Content = "+" + RscoreDiff.ToString("n", NFInoDecimal);
+                rankedScore_diff.Foreground = increaseColor;
             }
+            else if (RscoreDiff == 0)
+            {
+                rankedScore_diff.Content = "~0";
+                rankedScore_diff.Foreground = noChangeColor;
+            }
+            else
+            {
+                rankedScore_diff.Content = RscoreDiff.ToString("n", NFInoDecimal);
+                rankedScore_diff.Foreground = decreaseColor;
+            }
+            #endregion
+            #region totalscore
+            if (Scorediff > 0)
+            {
+                totalScore_diff.Content = "+" + Scorediff.ToString("n", NFInoDecimal);
+                totalScore_diff.Foreground = increaseColor;
+            }
+            else if (Scorediff == 0)
+            {
+                totalScore_diff.Content = "~0";
+                totalScore_diff.Foreground = noChangeColor;
+            }
+            else
+            {
+                totalScore_diff.Content = Scorediff.ToString("n", NFInoDecimal);
+                totalScore_diff.Foreground = decreaseColor;
+            }
+            #endregion
+            #region playcount
+            if (PCdiff > 0)
+            {
+                playcount_diff.Content = "+" + PCdiff.ToString("n", NFInoDecimal);
+                playcount_diff.Foreground = increaseColor;
+            }
+            else if (PCdiff == 0)
+            {
+                playcount_diff.Content = "~0";
+                playcount_diff.Foreground = noChangeColor;
+            }
+            else
+            {
+                MessageBox.Show("Wow, playcount decreased? That's insane fam!");
+                MessageBox.Show("This probably shouldn't happen tbh");
+            }
+            #endregion
+            #region globalrank
+            if (rankdiff > 0)
+            {
+                globalrank_Copy.Content = "+" + rankdiff.ToString("n", NFInoDecimal);
+                globalrank_Copy.Foreground = increaseColor;
+            }
+            else if (rankdiff == 0)
+            {
+                globalrank_Copy.Content = "~0";
+                globalrank_Copy.Foreground = noChangeColor;
+            }
+            else
+            {
+                globalrank_Copy.Content = rankdiff.ToString("n", NFInoDecimal);
+                globalrank_Copy.Foreground = decreaseColor;
+            }
+            #endregion
+            #region countryrank
+            if (countryrankdiff > 0)
+            {
+                countryRank_diff.Content = "+" + countryrankdiff.ToString("n", NFInoDecimal);
+                countryRank_diff.Foreground = increaseColor;
+            }
+            else if (countryrankdiff == 0)
+            {
+                countryRank_diff.Content = "~0";
+                countryRank_diff.Foreground = noChangeColor;
+            }
+            else
+            {
+                countryRank_diff.Content = countryrankdiff.ToString("n", NFInoDecimal);
+                countryRank_diff.Foreground = decreaseColor;
+            }
+            #endregion
+            #region s diff
+            if (Sdiff > 0)
+            {
+                S_diff.Content = "+" + Sdiff.ToString("n", NFInoDecimal);
+                S_diff.Foreground = increaseColor;
+            }
+            else if (Sdiff < 0)
+            {
+                MessageBox.Show("less S for u xd");
+            }
+            else
+            {
+                S_diff.Content = "~0";
+                S_diff.Foreground = noChangeColor;
+            }
+            #endregion
+            #region ss diff
+            if (SSdiff > 0)
+            {
+                SS_diff.Content = "+" + SSdiff.ToString("n", NFInoDecimal);
+                S_diff.Foreground = increaseColor;
+            }
+            else if (SSdiff < 0)
+            {
+                MessageBox.Show("less SS for u xd");
+            }
+            else
+            {
+                SS_diff.Content = "~0";
+                SS_diff.Foreground = noChangeColor;
+            }
+            #endregion
+            #region a diff
+            if (Adiff > 0)
+            {
+                A_diff.Content = "+" + Adiff.ToString("n", NFInoDecimal);
+                A_diff.Foreground = increaseColor;
+            }
+            else if (Adiff < 0)
+            {
+                MessageBox.Show("less A for u xd");
+            }
+            else
+            {
+                A_diff.Content = "~0";
+                A_diff.Foreground = noChangeColor;
+            }
+            #endregion
+            #region pp
+            if (ppDiff > 0)
+            {
+                pp_diff.Content = "+" + ppDiff.ToString("n", NFInoDecimal);
+                pp_diff.Foreground = increaseColor;
+            }
+            else if (ppDiff < 0)
+            {
+                MessageBox.Show("PP DENIED XDDDDDDDDDDD");
+            }
+            else
+            {
+                pp_diff.Content = "~0";
+                pp_diff.Foreground = noChangeColor;
+            }
+            #endregion
+            #region acc diff
+            if (accDiff > 0)
+            {
+                acc_diff.Content = "+" + accDiff.ToString("n", NFInoDecimal);
+                acc_diff.Foreground = increaseColor;
+            }
+            else if (accDiff < 0)
+            {
+                acc_diff.Content = accDiff.ToString("n", NFInoDecimal);
+                acc_diff.Foreground = decreaseColor;
+            }
+            else
+            {
+                acc_diff.Content = "~0";
+                acc_diff.Foreground = noChangeColor;
+            }
+            #endregion
         }
 
         private void page_loaded(object sender, RoutedEventArgs e)

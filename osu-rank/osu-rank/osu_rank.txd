@@ -330,7 +330,7 @@ Apa kau mau mengunduhnya?</text>
 	<culture name="it">
 		<text key="comparator.Comparator">Comparatore</text>
 		<text key="comparator.Difference">Differenza</text>
-		<text key="comparator.n ranks">{#} ranks</text>
+		<text key="comparator.n ranks">{#} posizioni</text>
 		<text key="comparator.n ranks" count="1">{#} rank</text>
 		<text key="comparator.Player n">Giocatore {#}</text>
 		<text key="errors.Did not play yet">{name} non ha ancora giocato a questa modalità.</text>
