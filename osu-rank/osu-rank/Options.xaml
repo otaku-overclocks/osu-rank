@@ -6,7 +6,7 @@
         xmlns:Tx="http://unclassified.software/source/txtranslation"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:osurank"
-        xmlns:properties="clr-namespace:osurank.Properties"
+        xmlns:properties="clr-namespace:osu_rank.Properties"
         mc:Ignorable="d" 
         Title="{Tx:T osu rank.Settings}" Height="Auto"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"

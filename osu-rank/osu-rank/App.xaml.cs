@@ -6,7 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Globalization;
-using osurank.Properties;
+using osu_rank.Properties;
+using Unclassified.TxLib;
 
 namespace osurank
 {
@@ -28,6 +29,24 @@ namespace osurank
                 Settings.Default.Upgrade();
                 Settings.Default.CanUpgrade = false;
             }
+
+            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
+            #region language
+            if (Settings.Default.LanguageCode != "")
+            {
+                System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo(Settings.Default.LanguageCode);
+            }
+            else if (Settings.Default.LanguageCode == "")
+            {
+                System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
+            }
+            string[] resourceNames = this.GetType().Assembly.GetManifestResourceNames();
+            foreach (string resourceName in resourceNames)
+            {
+                Console.WriteLine(resourceName);
+            }
+            Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName);
+            #endregion
         }
     }
 }

@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Unclassified.TxLib;
-using osurank.Properties;
 using System.Globalization;
 using System.Windows.Threading;
 using Newtonsoft.Json.Linq;
+using osu_rank.Properties;
 
 namespace osurank
 {

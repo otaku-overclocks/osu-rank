@@ -14,10 +14,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Unclassified.TxLib;
-using osurank.Properties;
 using System.Windows.Threading;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
+using osu_rank.Properties;
 
 namespace osurank                                                                                                                                       
 {
