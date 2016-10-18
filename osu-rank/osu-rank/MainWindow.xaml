@@ -272,7 +272,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="keyBox" Height="23" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                <TextBox x:Name="keyBox" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Padding="0" MaxLines="1"/>
                 <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="1" Margin="0,10,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
