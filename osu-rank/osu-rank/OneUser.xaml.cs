@@ -36,6 +36,7 @@ namespace osurank
         // variables for variation labels
         string previousUsername;
         dynamic previousRefresh;
+        int previousGamemode;
         // ------ END VARIABLES ------
 
         private void autoRefresh_Tick(object sender, EventArgs e)
@@ -58,13 +59,13 @@ namespace osurank
         private void fetchUserData(string player_name, int gamemode_index, bool show_errors = true)
         {
             bool samename = false;
-            if (player_name==previousUsername)
-            {
-                previousRefresh = userdata;
-                samename = true;
-            }
+            bool samemode = false;
+            if (player_name == previousUsername) samename = true;
+            if (gamemode_index == previousGamemode) samemode = true;
+            if (samemode==true && samename==true) previousRefresh = userdata;
             userdata = osu.GetUser(player: player_name, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors)[0];
             previousUsername = player_name;
+            previousGamemode = gamemode_index;
             // do nothing if player did not play or player is invalid
             if (Convert.ToString(userdata) == Convert.ToString(int.MaxValue) ) { return; }
             if (userdata.pp_rank == null) {return;}
@@ -89,7 +90,7 @@ namespace osurank
             A.Content = Convert.ToInt32(userdata.count_rank_a).ToString("n", NFInoDecimal);
             userID.Content = Tx.TC("player.User ID") + " " + userdata.user_id;
             levelProgress.Value = ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100);
-            if (samename==true)
+            if (samename==true && samemode==true)
             {
                 updateVariation(previousRefresh,userdata);
             }
@@ -221,7 +222,8 @@ namespace osurank
             }
             else if (Sdiff < 0)
             {
-                MessageBox.Show("less S for u xd");
+                S_diff.Content = Sdiff.ToString("n", NFInoDecimal);
+                S_diff.Foreground = decreaseColor;
             }
             else
             {
@@ -233,11 +235,12 @@ namespace osurank
             if (SSdiff > 0)
             {
                 SS_diff.Content = "+" + SSdiff.ToString("n", NFInoDecimal);
-                S_diff.Foreground = increaseColor;
+                SS_diff.Foreground = increaseColor;
             }
             else if (SSdiff < 0)
             {
-                MessageBox.Show("less SS for u xd");
+                SS_diff.Content = SSdiff.ToString("n", NFInoDecimal);
+                SS_diff.Foreground = decreaseColor;
             }
             else
             {
@@ -253,7 +256,8 @@ namespace osurank
             }
             else if (Adiff < 0)
             {
-                MessageBox.Show("less A for u xd");
+                A_diff.Content = Adiff.ToString("n", NFInoDecimal);
+                A_diff.Foreground = decreaseColor;
             }
             else
             {
@@ -264,12 +268,14 @@ namespace osurank
             #region pp
             if (ppDiff > 0)
             {
-                pp_diff.Content = "+" + ppDiff.ToString("n", NFInoDecimal);
+                pp_diff.Content = "+" + ppDiff.ToString("n", NFIperformance);
                 pp_diff.Foreground = increaseColor;
             }
             else if (ppDiff < 0)
             {
-                MessageBox.Show("PP DENIED XDDDDDDDDDDD");
+                MessageBox.Show("less pp 4 u, u little shit");
+                pp_diff.Content = ppDiff.ToString("n", NFIperformance);
+                pp_diff.Foreground = decreaseColor;
             }
             else
             {
@@ -280,17 +286,23 @@ namespace osurank
             #region acc diff
             if (accDiff > 0)
             {
-                acc_diff.Content = "+" + accDiff.ToString("n", NFInoDecimal);
+                acc_diff.Content = "+" + accDiff.ToString("n", NFIperformance);
                 acc_diff.Foreground = increaseColor;
             }
             else if (accDiff < 0)
             {
-                acc_diff.Content = accDiff.ToString("n", NFInoDecimal);
+                acc_diff.Content = accDiff.ToString("n", NFIperformance);
                 acc_diff.Foreground = decreaseColor;
             }
             else
             {
                 acc_diff.Content = "~0";
+                acc_diff.Foreground = noChangeColor;
+            }
+            if ((string)acc_diff.Content==String.Concat("0",NFIperformance.NumberDecimalSeparator,"00") || 
+                (string)acc_diff.Content == String.Concat("+0", NFIperformance.NumberDecimalSeparator ,"00"))
+            {
+                acc_diff.Content = "~0.00";
                 acc_diff.Foreground = noChangeColor;
             }
             #endregion
