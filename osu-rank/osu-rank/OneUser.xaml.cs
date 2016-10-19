@@ -26,8 +26,10 @@ namespace osurank
     /// </summary>                                                                                                                                       
     public partial class OneUser : Page                                                                                                                
     {
-        // ----- START VARIABLES -----
+        #region variables
         DispatcherTimer autoRefresh = new DispatcherTimer();
+        DispatcherTimer lastUpdatedRefresher = new DispatcherTimer();
+        TimeSpan lastRefreshedAgo = new TimeSpan(0, 0, 0);
         NumberFormatInfo NFInoDecimal = (NumberFormatInfo)CultureInfo.CurrentCulture.NumberFormat.Clone();
         NumberFormatInfo NFIperformance = (NumberFormatInfo)CultureInfo.CurrentCulture.NumberFormat.Clone();
         string username = Settings.Default.DefaultPlayer;
@@ -37,7 +39,7 @@ namespace osurank
         string previousUsername;
         dynamic previousRefresh;
         int previousGamemode;
-        // ------ END VARIABLES ------
+        #endregion
 
         private void autoRefresh_Tick(object sender, EventArgs e)
         {
@@ -96,8 +98,14 @@ namespace osurank
             }
             else
             {
-                //insert reset code here
+                resetVariation();
             }
+            lastUpdatedRefresher.Stop();
+            lastRefreshedAgo = new TimeSpan(0);
+            lastRefresh.Visibility = Visibility.Visible;
+            string currentTime = lastRefreshedAgo.ToString();
+            lastRefresh.Content = Tx.T("osu rank.auto refresh.updated ago", "time", currentTime);
+            lastUpdatedRefresher.Start();
         }
 
         private void timerReset()
@@ -127,6 +135,18 @@ namespace osurank
             Adiff = (int)after.count_rank_a - (int)before.count_rank_a;
             ppDiff = (double)after.pp_raw - (double)before.pp_raw;
             accDiff = (double)after.accuracy - (double)before.accuracy;
+
+            // show back again the hidden labels
+            rankedScore_diff.Visibility = Visibility.Visible;
+            totalScore_diff.Visibility = Visibility.Visible;
+            playcount_diff.Visibility = Visibility.Visible;
+            globalrank_diff.Visibility = Visibility.Visible;
+            countryRank_diff.Visibility = Visibility.Visible;
+            S_diff.Visibility = Visibility.Visible;
+            SS_diff.Visibility = Visibility.Visible;
+            A_diff.Visibility = Visibility.Visible;
+            pp_diff.Visibility = Visibility.Visible;
+            acc_diff.Visibility = Visibility.Visible;
 
             // display these values
             #region rankedscore
@@ -183,18 +203,18 @@ namespace osurank
             #region globalrank
             if (rankdiff > 0)
             {
-                globalrank_Copy.Content = "+" + rankdiff.ToString("n", NFInoDecimal);
-                globalrank_Copy.Foreground = increaseColor;
+                globalrank_diff.Content = "+" + rankdiff.ToString("n", NFInoDecimal);
+                globalrank_diff.Foreground = increaseColor;
             }
             else if (rankdiff == 0)
             {
-                globalrank_Copy.Content = "~0";
-                globalrank_Copy.Foreground = noChangeColor;
+                globalrank_diff.Content = "~0";
+                globalrank_diff.Foreground = noChangeColor;
             }
             else
             {
-                globalrank_Copy.Content = rankdiff.ToString("n", NFInoDecimal);
-                globalrank_Copy.Foreground = decreaseColor;
+                globalrank_diff.Content = rankdiff.ToString("n", NFInoDecimal);
+                globalrank_diff.Foreground = decreaseColor;
             }
             #endregion
             #region countryrank
@@ -308,6 +328,20 @@ namespace osurank
             #endregion
         }
 
+        private void resetVariation()
+        {
+            rankedScore_diff.Visibility = Visibility.Hidden;
+            totalScore_diff.Visibility = Visibility.Hidden;
+            playcount_diff.Visibility = Visibility.Hidden;
+            globalrank_diff.Visibility = Visibility.Hidden;
+            countryRank_diff.Visibility = Visibility.Hidden;
+            S_diff.Visibility = Visibility.Hidden;
+            SS_diff.Visibility = Visibility.Hidden;
+            A_diff.Visibility = Visibility.Hidden;
+            pp_diff.Visibility = Visibility.Hidden;
+            acc_diff.Visibility = Visibility.Hidden;
+        }
+
         private void page_loaded(object sender, RoutedEventArgs e)
         {
             
@@ -326,6 +360,9 @@ namespace osurank
             autoRefresh.Tick += new EventHandler(autoRefresh_Tick);
             autoRefresh.Interval = new TimeSpan(0, Settings.Default.RefreshDelay, 0);
 
+            lastUpdatedRefresher.Tick += new EventHandler(LastUpdated_Tick);
+            lastUpdatedRefresher.Interval = new TimeSpan(0, 0, 1);
+
             nameInput.Text = Settings.Default.DefaultPlayer;
             gamemodeDropdown.SelectedIndex = Settings.Default.DefaultGamemode;
             if (Settings.Default.StartupCheck == true)
@@ -338,6 +375,13 @@ namespace osurank
                 else
                     autoRefresh.IsEnabled = false;
             }
+        }
+
+        private void LastUpdated_Tick(object sender, EventArgs e)
+        {
+            lastRefreshedAgo = lastRefreshedAgo + new TimeSpan(0,0,1);
+            string currentTime = lastRefreshedAgo.ToString();
+            lastRefresh.Content = Tx.T("osu rank.auto refresh.updated ago", "time", currentTime);
         }
     }
 }
