@@ -83,7 +83,7 @@ namespace osurank
             acc.Content = Math.Round(Convert.ToDouble(userdata.accuracy), 2) + "%";
             pp.Content = Convert.ToDouble(userdata.pp_raw).ToString("n", NFIperformance) + " pp";
             totalScore.Content = Tx.TC("player.Total score") + " " + Convert.ToInt64(userdata.total_score).ToString("n", NFInoDecimal);
-            level.Content = Tx.TC("player.Level") + " " + Convert.ToDouble(userdata.level).ToString("n", NFInoDecimal) + " (" + ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100).ToString("n", NFInoDecimal) + "%)";
+            level.Content = Tx.TC("player.Level") + " " + Math.Truncate(Convert.ToDouble(userdata.level)) + " (" + ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100).ToString("n", NFInoDecimal) + "%)";
             /* grades.Content = "SS / S / A: " + Convert.ToInt32(userdata.count_rank_ss).ToString("n", NFInoDecimal) + " / "
                                                 + Convert.ToInt32(userdata.count_rank_s).ToString("n", NFInoDecimal) + " / "
                                                 + Convert.ToInt32(userdata.count_rank_a).ToString("n", NFInoDecimal); */
@@ -106,6 +106,7 @@ namespace osurank
             string currentTime = lastRefreshedAgo.ToString();
             lastRefresh.Content = Tx.T("osu rank.auto refresh.updated ago", "time", currentTime);
             lastUpdatedRefresher.Start();
+            
         }
 
         private void timerReset()
