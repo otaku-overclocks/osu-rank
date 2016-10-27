@@ -22,4 +22,4 @@ A bolded line means the language is up to date.
 | German                 | guro                  | 4.0                  |
 | Chinese (Simplified    | Karma, zheshenmeyouxi | 4.0                  |
 | **Polish**             | **Zain Sugieres**     | **4.3**              |
-| Swedish                | - Kameyo -            | 4.0                  |
+| **Swedish**            | **- Kameyo -**        | **4.3**              |

@@ -573,6 +573,7 @@ osu!rank kommer nu att stängas.</text>
 		<text key="options.state.Enabled">Aktiverad</text>
 		<text key="options.Test key">Test nyckel</text>
 		<text key="osu rank.About">Om osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Uppdaterades för {time} timmar sedan</text>
 		<text key="osu rank.Compare">Jämför</text>
 		<text key="osu rank.Gamemode">Spelläge</text>
 		<text key="osu rank.One player">En spelare</text>
