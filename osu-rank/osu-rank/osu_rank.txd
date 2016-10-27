@@ -356,6 +356,7 @@ osu!rank si chiuderà a breve.</text>
 		<text key="options.state.Enabled">Abilitato</text>
 		<text key="options.Test key">Chiave di prova</text>
 		<text key="osu rank.About">Riguardo a osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Ultimo aggiornamento {time}</text>
 		<text key="osu rank.Compare">Confronta</text>
 		<text key="osu rank.Gamemode">Modalità</text>
 		<text key="osu rank.One player">Un giocatore</text>
