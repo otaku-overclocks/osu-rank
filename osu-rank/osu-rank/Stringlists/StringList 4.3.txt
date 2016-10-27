@@ -4,4 +4,4 @@ Your username:
 ---- Translate under this line ----
 
 Updated {time} ago= 
-    (Example: "Updated 06:24:59 ago")
+    (Example: "Updated 00:14:59 ago")
