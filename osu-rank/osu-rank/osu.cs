@@ -16,18 +16,26 @@ namespace osurank
         {
             if (player != "")
             {
-                dynamic userdata = JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://osu.ppy.sh/api/get_user?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey));
-                if (Convert.ToString(userdata) == "[]" || userdata == null)
+                try {
+                    dynamic userdata = JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://osu.ppy.sh/api/get_user?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey));
+                    if (Convert.ToString(userdata) == "[]" || userdata == null)
+                    {
+                        if (showErrors == true) MessageBox.Show(Tx.T("errors.Does not exist", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
+                        return maxIntgr;
+                    }
+                    else if (userdata[0].pp_rank == null)
+                    {
+                        if (showErrors == true) MessageBox.Show(Tx.T("errors.Did not play yet", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                        return maxIntgr;
+                    }
+                    else return userdata;
+                }
+                catch (Exception)
                 {
-                    if (showErrors == true) MessageBox.Show(Tx.T("errors.Does not exist", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show(Tx.T("osu rank.Servers unavailable"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
+                    Environment.Exit(0);
                     return maxIntgr;
                 }
-                else if (userdata[0].pp_rank == null)
-                {
-                    if (showErrors == true) MessageBox.Show(Tx.T("errors.Did not play yet", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                    return maxIntgr;
-                }
-                else return userdata;
             }
             else
             {
