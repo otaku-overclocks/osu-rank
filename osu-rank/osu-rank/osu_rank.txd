@@ -54,7 +54,6 @@ Bitte versuche es später erneut.</text>
 		<text key="update.text">Eine neue Version ist verfügbar!
 Willst du sie herunterladen?</text>
 		<text key="update.Title">Aktualisierung verfügbar</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, Übersetzt von guro</text>
 	</culture>
 	<culture name="en" primary="true">
 		<text key="comparator.Comparator">Comparator</text>
@@ -110,7 +109,6 @@ Please try again later.</text>
 		<text key="update.text">A new version is available!
 Do you want to download it?</text>
 		<text key="update.Title">Update available</text>
-		<text key="version_translatorCredits">osu!rank {version}</text>
 	</culture>
 	<culture name="es">
 		<text key="comparator.Comparator">Comparador</text>
@@ -165,7 +163,6 @@ Inténtalo más tarde.</text>
 		<text key="update.text">Hay una nueva versión disponible.
 ¿Deseas descargarla?</text>
 		<text key="update.Title">Nueva versión disponible</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traducido por Yoshitake</text>
 	</culture>
 	<culture name="fr">
 		<text key="comparator.Comparator">Comparateur</text>
@@ -221,7 +218,6 @@ Veuillez réessayer plus tard.</text>
 		<text key="update.text">Une nouvelle version est disponible!
 Voulez-vous la télécharger?</text>
 		<text key="update.Title">Mise à jour disponible</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traduit par Jeremiidesu</text>
 	</culture>
 	<culture name="hu">
 		<text key="comparator.Comparator">Komparátor</text>
@@ -274,7 +270,6 @@ Légyszives Próbáld Meg Később.</text>
 		<text key="update.text">Egy Új Verzió Elérhető!
 Le Akarod Tölteni?</text>
 		<text key="update.Title">Frissítés Elérhető</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, lefordította Zozimoto</text>
 	</culture>
 	<culture name="id">
 		<text key="comparator.Comparator">Perbandingan</text>
@@ -327,7 +322,6 @@ Coba sesaat lagi.</text>
 		<text key="update.text">Versi terbaru telah tersedia!
 Apa kau mau mengunduhnya?</text>
 		<text key="update.Title">Pembaruan Tersedia</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, terjemahan oleh [-Alv-]</text>
 	</culture>
 	<culture name="it">
 		<text key="comparator.Comparator">Comparatore</text>
@@ -381,7 +375,6 @@ osu!rank si chiuderà a breve.</text>
 		<text key="update.text">È disponibile una nuova versione!
 Vuoi scaricarla?</text>
 		<text key="update.Title">Aggiornamento disponibile</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, tradotto da LLoyd-chan</text>
 	</culture>
 	<culture name="pl">
 		<text key="comparator.Comparator">Porównywacz</text>
@@ -416,6 +409,7 @@ osu!rank wyłączy się.</text>
 		<text key="options.state.Enabled">Włączone</text>
 		<text key="options.Test key">Klucz testowy</text>
 		<text key="osu rank.About">O osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Aktualizowano {time} temu</text>
 		<text key="osu rank.Compare">Porównaj</text>
 		<text key="osu rank.Gamemode">Tryb</text>
 		<text key="osu rank.One player">Jeden gracz</text>
@@ -436,7 +430,6 @@ Spróbuj później.</text>
 		<text key="update.text">Nowa wersja jest dostępna!
 Czy chcesz ją pobrać?</text>
 		<text key="update.Title">Aktualizacja dostępna</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, przetłumaczone przez Zain Sugieres</text>
 	</culture>
 	<culture name="pt-BR">
 		<text key="comparator.Comparator">Comparador</text>
@@ -471,6 +464,7 @@ osu!rank será fechado agora.</text>
 		<text key="options.state.Enabled">Habilitado</text>
 		<text key="options.Test key">Chave de teste</text>
 		<text key="osu rank.About">Sobre o osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Atualizado {time} atrás</text>
 		<text key="osu rank.Compare">Comparar</text>
 		<text key="osu rank.Gamemode">Modo de jogo</text>
 		<text key="osu rank.One player">Um jogador</text>
@@ -491,7 +485,6 @@ Por favor tente novamente mais tarde.</text>
 		<text key="update.text">Uma nova versão está disponível!
 Quer fazer o download?</text>
 		<text key="update.Title">Atualização disponível</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traduzido por nh__</text>
 	</culture>
 	<culture name="ru">
 		<text key="comparator.Comparator">Сравниватель</text>
@@ -545,7 +538,6 @@ osu!rank сейчас закроется.</text>
 		<text key="player.User ID">ID Пользователя</text>
 		<text key="update.text">Доступна новая версия! Вы желаете ее скачать?</text>
 		<text key="update.Title">Доступно Обновление</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, Перевод от Killerbyte</text>
 	</culture>
 	<culture name="sv">
 		<text key="comparator.Comparator">Jämförare</text>
@@ -599,7 +591,6 @@ Vänligen försök igen senare.</text>
 		<text key="player.User ID">Användar ID</text>
 		<text key="update.text">En ny version finns tillgänglig! Vill du ladda ner den?</text>
 		<text key="update.Title">Uppdatering tillgänglig</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, översatt av - Kameyo -</text>
 	</culture>
 	<culture name="tr">
 		<text key="comparator.Comparator">Karşılaştırma</text>
@@ -651,7 +642,6 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="player.User ID">Kullanıcı numarası</text>
 		<text key="update.text">Yeni bir versiyon mevcut! Şimdi indirmek ister misiniz?</text>
 		<text key="update.Title">Güncelleme mevcut</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, oralekin tarafından çevrildi</text>
 	</culture>
 	<culture name="zh-CN">
 		<text key="comparator.Comparator">比较器</text>
@@ -702,6 +692,5 @@ osu!rank现在将关闭.</text>
 		<text key="player.User ID">玩家ID</text>
 		<text key="update.text" acceptpunctuation="true">一个新的版本可用!要下载吗?</text>
 		<text key="update.Title">有新更新可用</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, 翻译者:Karma和zheshenmeyouxi</text>
 	</culture>
 </translation>
