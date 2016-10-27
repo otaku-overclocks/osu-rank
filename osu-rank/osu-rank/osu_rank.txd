@@ -89,12 +89,6 @@ osu!rank will now close.</text>
 		<text key="options.state.Enabled">Enabled</text>
 		<text key="options.Test key">Test key</text>
 		<text key="osu rank.About">About osu!rank</text>
-		<text key="osu rank.auto refresh.hour">{h} hours</text>
-		<text key="osu rank.auto refresh.hour" count="1">{h} hour</text>
-		<text key="osu rank.auto refresh.minute">{m} minutes</text>
-		<text key="osu rank.auto refresh.minute" count="1">{m} minute</text>
-		<text key="osu rank.auto refresh.second">{s} seconds</text>
-		<text key="osu rank.auto refresh.second" count="1">{s} second</text>
 		<text key="osu rank.auto refresh.updated ago">Updated {time} ago</text>
 		<text key="osu rank.Compare">Compare</text>
 		<text key="osu rank.Gamemode">Gamemode</text>
@@ -206,12 +200,6 @@ osu!rank va maintenant fermer.</text>
 		<text key="options.state.Enabled">Activé</text>
 		<text key="options.Test key">Tester la clé</text>
 		<text key="osu rank.About">A propos de osu!rank</text>
-		<text key="osu rank.auto refresh.hour">{h} heures</text>
-		<text key="osu rank.auto refresh.hour" count="1">{h} heure</text>
-		<text key="osu rank.auto refresh.minute">{m} minutes</text>
-		<text key="osu rank.auto refresh.minute" count="1">{m} minute</text>
-		<text key="osu rank.auto refresh.second">{s} secondes</text>
-		<text key="osu rank.auto refresh.second" count="1">{s} seconde</text>
 		<text key="osu rank.auto refresh.updated ago">Mis à jour il y a {time}</text>
 		<text key="osu rank.Compare">Comparer</text>
 		<text key="osu rank.Gamemode">Mode de jeu</text>
