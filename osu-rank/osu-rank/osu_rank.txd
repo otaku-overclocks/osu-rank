@@ -125,7 +125,7 @@ Do you want to download it?</text>
 		<text key="comparator.n ranks" count="1">{#} puesto</text>
 		<text key="comparator.Player n">Jugador {#}</text>
 		<text key="errors.Did not play yet">{name} aún no ha jugado en este modo.</text>
-		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre?</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre.</text>
 		<text key="errors.Error">Error</text>
 		<text key="errors.Invalid key">Ha introducido una clave inválida.</text>
 		<text key="errors.No key entered">Introduzca una clave!</text>
