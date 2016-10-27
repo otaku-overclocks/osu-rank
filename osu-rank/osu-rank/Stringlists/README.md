@@ -10,16 +10,16 @@ A bolded line means the language is up to date.
 
 | Language             | Translators           | Last updated version |
 |----------------------|-----------------------|----------------------|
-| **English**          | **Jeremiidesu**       | **4.0**              |
-| **French**           | **Jeremiidesu**       | **4.0**              |
-| **Italian**          | **LLoyd-chan**        | **4.0**                  |
-| **Russian**          | **Killerbyte**        | **4.0**              |
-| **Indonesian**       | **[-Alv-]**           | **4.0**              |
-| **Hungarian**        | **Zozimoto**          | **4.0**              |
-| **Portuguese (Brasil)**  | **nh__**          | **4.0**              |
-| **Turkish**          | **oralekin**          | **4.0**              |
-| **Spanish**          | **Yoshitake**         | **4.0**                  |
-| **German**           | **guro**              | **4.0**              |
-| **Chinese (Simplified)** | **Karma, zheshenmeyouxi** | **4.0**      |
-| **Polish**           | **Zain Sugieres**     | **4.0**              |
-| **Swedish**          | **- Kameyo -**        | **4.0**              |
+| **English**          | **Jeremiidesu**       | **4.3**              |
+| **French**           | **Jeremiidesu**       | **4.3**              |
+| Italian          | LLoyd-chan        | 4.0                  |
+| Russian          | Killerbyte        | 4.0              |
+| Indonesian       | Alv           | 4.0              |
+| Hungarian        | Zozimoto          | 4.0              |
+| **Portuguese (Brasil)**  | **nh__**          | **4.3**              |
+| Turkish          | oralekin          | 4.0              |
+| Spanish          | Yoshitake         | 4.0                  |
+| German           | guro              | 4.0              |
+| Chinese (Simplified | Karma, zheshenmeyouxi | 4.0      |
+| **Polish**           | **Zain Sugieres**     | **4.3**              |
+| Swedish          | - Kameyo -        | 4.0             |
