@@ -332,15 +332,25 @@ namespace osurank
         private void resetVariation()
         {
             rankedScore_diff.Visibility = Visibility.Hidden;
+            rankedScore_diff.Content = "";
             totalScore_diff.Visibility = Visibility.Hidden;
+            totalScore_diff.Content = "";
             playcount_diff.Visibility = Visibility.Hidden;
+            playcount_diff.Content = "";
             globalrank_diff.Visibility = Visibility.Hidden;
+            globalrank_diff.Content = "";
             countryRank_diff.Visibility = Visibility.Hidden;
+            countryRank_diff.Content = "";
             S_diff.Visibility = Visibility.Hidden;
+            S_diff.Content = "";
             SS_diff.Visibility = Visibility.Hidden;
+            SS_diff.Content = "";
             A_diff.Visibility = Visibility.Hidden;
+            A_diff.Content = "";
             pp_diff.Visibility = Visibility.Hidden;
+            pp_diff.Content = "";
             acc_diff.Visibility = Visibility.Hidden;
+            acc_diff.Content = "";
         }
 
         private void page_loaded(object sender, RoutedEventArgs e)

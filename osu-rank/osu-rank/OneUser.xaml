@@ -78,33 +78,9 @@
                 <ProgressBar x:Name="levelProgress" Grid.Column="1" Margin="10,86,10,0" VerticalAlignment="Top" Value="-1"/>
                 <Label x:Name="userID" Content="{Tx:TC player.User ID}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="0,0,10,19" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Light" FontStyle="Italic" Grid.Column="1"/>
             </Grid>
-            <Image x:Name="X_pic" Margin="10,82,0,0" Source="X@2x.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" Height="59" Grid.Row="1" RenderTransformOrigin="0.96,0.52" />
-            <Image x:Name="S_pic" Margin="149,82,0,0" Width="59" Source="S@2x.png" Height="59" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Image x:Name="A_pic" Margin="288,82,0,0" Width="59" Source="A@2x.png" Height="59" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Grid HorizontalAlignment="Left" Height="59" Margin="74,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <Label x:Name="SS" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="0"/>
-                <Label x:Name="SS_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="-42" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0" Visibility="Hidden"/>
-            </Grid>
-            <Grid HorizontalAlignment="Left" Height="59" Margin="213,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <Label x:Name="S" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="0"/>
-                <Label x:Name="S_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="+30" Grid.Column="1" Foreground="#DD00A80F" Margin="5,0,0,0" Visibility="Hidden"/>
-            </Grid>
-            <Grid HorizontalAlignment="Left" Height="59" Margin="352,82,0,0" Grid.Row="1" VerticalAlignment="Top" Width="70">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <Label x:Name="A" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="0"/>
-                <Label x:Name="A_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Content="-666" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0" Visibility="Hidden"/>
-            </Grid>
+            <Image x:Name="X_pic" Margin="10,84,0,0" Source="X@2x.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" Height="32" Grid.Row="1" RenderTransformOrigin="0.96,0.52" />
+            <Image x:Name="S_pic" Margin="116,84,0,0" Width="96" Source="S@2x.png" Height="32" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image x:Name="A_pic" Margin="227,84,0,0" Width="96" Source="A@2x.png" Height="32" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Grid HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -145,6 +121,36 @@
                 </Grid.ColumnDefinitions>
                 <Label x:Name="pp" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="0pp" FontSize="16" HorizontalAlignment="Right" Grid.Column="1"/>
                 <Label x:Name="pp_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="+727pp" FontSize="16" HorizontalAlignment="Right" Margin="0,0,5,0" Foreground="#DD00A80F" Visibility="Hidden"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="20" Margin="10,121,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96">
+                <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="SS" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="0"/>
+                    <Label x:Name="SS_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0" Visibility="Hidden"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="20" Margin="116,121,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96">
+                <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="S" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="0"/>
+                    <Label x:Name="S_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="" Grid.Column="1" Foreground="#DD00A80F" Margin="5,0,0,0" Visibility="Hidden"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="20" Margin="227,121,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96">
+                <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="A" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="0" Height="19"/>
+                    <Label x:Name="A_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0" Visibility="Hidden"/>
+                </Grid>
             </Grid>
         </Grid>
     </Grid>
