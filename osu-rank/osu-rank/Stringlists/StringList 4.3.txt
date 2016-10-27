@@ -1,0 +1,7 @@
+﻿Language you're translating to: 
+Your username:
+
+---- Translate under this line ----
+
+Updated {time} ago= 
+    (Example: "Updated 06:24:59 ago")

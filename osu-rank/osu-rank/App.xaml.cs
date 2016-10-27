@@ -20,7 +20,7 @@ namespace osurank
         public static readonly CultureInfo systemCulture = CultureInfo.CurrentCulture;
         // Needed for update logic
         public static bool HasCheckedForUpdates = false;
-        public static int version = 24;
+        public static int version = 25;
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
@@ -40,12 +40,13 @@ namespace osurank
             {
                 System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
             }
+            /* don't use useless debug code in released build
             string[] resourceNames = this.GetType().Assembly.GetManifestResourceNames();
             foreach (string resourceName in resourceNames)
             {
                 Console.WriteLine(resourceName);
             }
-            Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName);
+            Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName); */
             #endregion
         }
     }

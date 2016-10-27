@@ -263,6 +263,9 @@
     <Resource Include="S%402x.png" />
     <Resource Include="X%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Stringlists\StringList 4.3.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.28.3\build\Fody.targets" Condition="Exists('..\packages\Fody.1.28.3\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
