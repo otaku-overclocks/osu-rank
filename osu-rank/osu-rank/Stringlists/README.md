@@ -16,7 +16,7 @@ A bolded line means the language is up to date.
 | Russian                | Killerbyte            | 4.0                  |
 | Indonesian             | Alv                   | 4.0                  |
 | Hungarian              | Zozimoto              | 4.0                  |
-| **Portuguese (Brasil)**| **nh__**              | **4.3**              |
+| **Portuguese (Brasil)**| **nh__, Tark**        | **4.3**              |
 | Turkish                | oralekin              | 4.0                  |
 | Spanish                | Yoshitake             | 4.0                  |
 | German                 | guro                  | 4.0                  |

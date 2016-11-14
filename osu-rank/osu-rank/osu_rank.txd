@@ -441,50 +441,50 @@ Czy chcesz ją pobrać?</text>
 		<text key="errors.Did not play yet">{name} não jogou este modo de jogo.</text>
 		<text key="errors.Does not exist">{name} não existe. Você digitou errado?</text>
 		<text key="errors.Error">Erro</text>
-		<text key="errors.Invalid key">Sua chave API está incorreta.</text>
+		<text key="errors.Invalid key">A sua chave da API está incorreta.</text>
 		<text key="errors.No key entered">Você não inseriu uma chave!</text>
-		<text key="errors.No name entered">Você não digitou um nome!</text>
-		<text key="errors.You need a key">Você precisa de uma chave API caso queira usar o programa.
+		<text key="errors.No name entered">Você não inseriu um nome!</text>
+		<text key="errors.You need a key">Você precisa de uma chave da API caso deseje usar o programa.
 osu!rank será fechado agora.</text>
 		<text key="Language">Idioma</text>
-		<text key="options.API key">Chave API</text>
+		<text key="options.API key">Chave da API</text>
 		<text key="options.autorefresh.Auto refresh">Atualizar automaticamente</text>
 		<text key="options.autorefresh.Delay">Atraso: {#} minutos</text>
 		<text key="options.autorefresh.Delay" count="1">Atraso: {#} minuto</text>
 		<text key="options.Cancel">Cancelar</text>
-		<text key="options.Enter api key" acceptpunctuation="true">Insira sua chave API do osu!</text>
-		<text key="options.Get api key">Não possuí uma chave? Consiga uma aqui!</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Insira a sua chave da API do osu!</text>
+		<text key="options.Get api key">Não possui uma chave? Consiga uma aqui!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Verificar ao iniciar</text>
-		<text key="options.player settings.Default player settings">Configuração padrão de jogador</text>
-		<text key="options.Report a bug">Roportar um erro</text>
-		<text key="options.Reset default values">Resetar aos valores padrões</text>
+		<text key="options.player settings.Default player settings">Configurações de jogador padrão</text>
+		<text key="options.Report a bug">Relatar um bug</text>
+		<text key="options.Reset default values">Restaurar padrões</text>
 		<text key="options.save">Salvar</text>
 		<text key="options.saved">Salvo!</text>
 		<text key="options.state.Disabled">Desabilitado</text>
 		<text key="options.state.Enabled">Habilitado</text>
 		<text key="options.Test key">Chave de teste</text>
 		<text key="osu rank.About">Sobre o osu!rank</text>
-		<text key="osu rank.auto refresh.updated ago">Atualizado {time} atrás</text>
+		<text key="osu rank.auto refresh.updated ago">Atualizado há {time} atrás</text>
 		<text key="osu rank.Compare">Comparar</text>
 		<text key="osu rank.Gamemode">Modo de jogo</text>
 		<text key="osu rank.One player">Um jogador</text>
-		<text key="osu rank.Search">Pesquisar</text>
-		<text key="osu rank.Servers unavailable">Sentimos muito, mas parece que os servidores do osu! estão indisponíveis.
+		<text key="osu rank.Search">Buscar</text>
+		<text key="osu rank.Servers unavailable">Lamentamos, mas parece que os servidores do osu! estão indisponíveis.
 Por favor tente novamente mais tarde.</text>
 		<text key="osu rank.Settings">Configurações</text>
 		<text key="player.Accuracy">Precisão</text>
-		<text key="player.Enter name">Digite um nome</text>
+		<text key="player.Enter name">Insira um nome</text>
 		<text key="player.Level">Nível</text>
 		<text key="player.name">Nome do jogador</text>
-		<text key="player.Performance">Performance</text>
-		<text key="player.Play count">Vezes Jogadas</text>
+		<text key="player.Performance">Desempenho</text>
+		<text key="player.Play count">Vezes jogadas</text>
 		<text key="player.Ranked score">Pontuação ranqueada</text>
 		<text key="player.Ranking">Rank</text>
 		<text key="player.Total score">Pontuação total</text>
-		<text key="player.User ID">ID do Usuário</text>
+		<text key="player.User ID">ID de usuário</text>
 		<text key="update.text">Uma nova versão está disponível!
-Quer fazer o download?</text>
+Deseja baixar agora?</text>
 		<text key="update.Title">Atualização disponível</text>
 	</culture>
 	<culture name="ru">
