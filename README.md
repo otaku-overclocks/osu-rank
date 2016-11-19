@@ -26,7 +26,7 @@ What it can do
 
 It also displays the avatar of the user.
 
-What it doesn't do (but might happen)
+What it doesn't do (but might happen if asked, drop an issue if interested)
 ------------------------------------
 * Retrieve your top plays
 
