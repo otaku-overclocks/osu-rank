@@ -37,7 +37,7 @@
                     <TextBlock x:Name="label2_Copy1"  Margin="3" Text="Russian by Killerbyte"/>
                     <TextBlock x:Name="label2_Copy2"  Margin="3" Text="Indonesian by [-Alv-]"/>
                     <TextBlock x:Name="label2_Copy3"  Margin="3" Text="Hungarian by Zozimoto"/>
-                    <TextBlock x:Name="label2_Copy4"  Margin="3" Text="Portuguese (Brasil) by nh__"/>
+                    <TextBlock x:Name="label2_Copy4"  Margin="3" Text="Portuguese (Brasil) by nh__ and Tark"/>
                     <TextBlock x:Name="label2_Copy5"  Margin="3" Text="Turkish by oralekin"/>
                     <TextBlock x:Name="label2_Copy6"  Margin="3" Text="Spanish by Yoshitake"/>
                     <TextBlock x:Name="label2_Copy7"  Margin="3" Text="German by guro"/>
