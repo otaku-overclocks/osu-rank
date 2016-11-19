@@ -1,4 +1,4 @@
-# osu!rank 4.3.0
+# osu!rank 4.3.1
 Small open-source utility to show your rank or compare two players without the need to open the website
 
 Requires you to use your own API key, available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated.
