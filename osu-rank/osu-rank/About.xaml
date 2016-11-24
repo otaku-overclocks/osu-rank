@@ -17,7 +17,7 @@
     <Grid>
         <Label x:Name="about" Content="osu!rank" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="17.333"/>
         <Label x:Name="whoDidThis" Content="Developed by Jeremiidesu, with the help of Mark9870" HorizontalAlignment="Center" Margin="0,38,0,0" VerticalAlignment="Top"/>
-        <Grid Margin="0,70,0,0">
+        <Grid Margin="0,82,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
@@ -30,7 +30,7 @@
             </Button>
             <Label x:Name="GeetHubLabel" Content="Check the source on GitHub" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
             <Label x:Name="TopicLabel" Content="Check out the osu! forums topic" HorizontalAlignment="Left" Margin="51,112,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
-            <ScrollViewer Grid.Column="1" HorizontalAlignment="Left" Height="234" Margin="10,47,0,0" VerticalAlignment="Top" Width="291">
+            <ScrollViewer Grid.Column="1" HorizontalAlignment="Left" Margin="10,47,0,10" Width="291">
                 <StackPanel x:Name="allDemTranslators">
                     <TextBlock x:Name="label2"        Margin="3" Text="English and French by me"/>
                     <TextBlock x:Name="label2_Copy"   Margin="3" Text="Italian by LLoyd-chan"/>
@@ -53,6 +53,11 @@
                 <materialDesign:PackIcon Kind="Bug" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" />
             </Button>
             <Label x:Name="BugLabel" Content="Report a bug" HorizontalAlignment="Left" Margin="51,61,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
+            <Button x:Name="goXial" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionButton}" Width="36" Height="36" Click="goXial_Click">
+                <Image x:Name="stdSmall" Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Source="std-small.png" />
+            </Button>
+            <Label x:Name="XialSkin" Content="Check out Xial's skins" HorizontalAlignment="Left" Margin="51,163,0,0" VerticalAlignment="Top" Height="36" VerticalContentAlignment="Center"/>
         </Grid>
+        <Label x:Name="whoDidIcon" Content="Icon by Xial" HorizontalAlignment="Center" Margin="246,55,246,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

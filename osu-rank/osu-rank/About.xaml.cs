@@ -33,6 +33,7 @@ namespace osurank
         private void page_loaded(object sender, RoutedEventArgs e)
         {
             RenderOptions.SetBitmapScalingMode(osuSmall, BitmapScalingMode.HighQuality);
+            RenderOptions.SetBitmapScalingMode(stdSmall, BitmapScalingMode.HighQuality);
         }
 
         private void goTopic_Click(object sender, RoutedEventArgs e)
@@ -53,6 +54,11 @@ namespace osurank
         private void goContribute_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("https://github.com/Jeremiidesu/osu-rank/tree/master/osu-rank/osu-rank/Stringlists");
+        }
+
+        private void goXial_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://osu.ppy.sh/u/Xial");
         }
     }
 }
