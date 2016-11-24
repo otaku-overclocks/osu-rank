@@ -141,6 +141,7 @@ Magsasarado na ang osu!rank.</text>
 		<text key="options.state.Enabled">Enabled</text>
 		<text key="options.Test key">Test key</text>
 		<text key="osu rank.About">Tungkol sa osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Huling inupdate: {time}</text>
 		<text key="osu rank.Compare">Ikumpara</text>
 		<text key="osu rank.Gamemode">Gamemode</text>
 		<text key="osu rank.One player">Isang manlalaro</text>
@@ -161,7 +162,6 @@ Pakisubukan sa susunod.</text>
 		<text key="update.text">Mayroong bagong bersyon!
 Gusto mo ba itong idownload?</text>
 		<text key="update.Title">Mayroong bagong update</text>
-		<text key="version_translatorCredits">osu!rank {version}, isinalin ni Mark9870</text>
 	</culture>
 	<culture name="es">
 		<text key="comparator.Comparator">Comparador</text>
