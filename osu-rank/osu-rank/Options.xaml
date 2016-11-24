@@ -6,7 +6,7 @@
         xmlns:Tx="http://unclassified.software/source/txtranslation"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:osurank"
-        xmlns:properties="clr-namespace:osurank.Properties"
+        xmlns:properties="clr-namespace:osu_rank.Properties"
         mc:Ignorable="d" 
         Title="{Tx:T osu rank.Settings}" Height="Auto"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
@@ -121,7 +121,7 @@
             <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="testKey" Content="{Tx:T options.Test key}" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="6,0,0,0" IsEnabled="False" Click="testKey_Click"/>
             <TextBox x:Name="keyBox" Grid.Column="1" Margin="0,3" TextWrapping="Wrap" Text="{Binding Source={x:Static properties:Settings.Default}, Path=apikey}" VerticalAlignment="Center" TextChanged="keyBox_TextChanged"/>
         </Grid>
-        <Label x:Name="label1" Content="{Tx:T options.Reset default values}" Grid.Column="1" HorizontalAlignment="Right" Margin="0,282,47,0" VerticalAlignment="Top" Height="32" VerticalContentAlignment="Center"/>
-        <Label x:Name="label1_Copy" Content="{Tx:T options.save}" Grid.Column="1" HorizontalAlignment="Right" Margin="0,319,47,0" VerticalAlignment="Top" Height="32" VerticalContentAlignment="Center"/>
+        <Label x:Name="label1" Content="{Tx:T options.Reset default values}" HorizontalAlignment="Right" Margin="0,282,47,0" VerticalAlignment="Top" Height="32" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label x:Name="label1_Copy" Content="{Tx:T options.save}" HorizontalAlignment="Right" Margin="0,319,47,0" VerticalAlignment="Top" Height="32" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>

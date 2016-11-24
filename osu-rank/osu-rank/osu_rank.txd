@@ -54,7 +54,6 @@ Bitte versuche es später erneut.</text>
 		<text key="update.text">Eine neue Version ist verfügbar!
 Willst du sie herunterladen?</text>
 		<text key="update.Title">Aktualisierung verfügbar</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, Übersetzt von guro</text>
 	</culture>
 	<culture name="en" primary="true">
 		<text key="comparator.Comparator">Comparator</text>
@@ -89,6 +88,7 @@ osu!rank will now close.</text>
 		<text key="options.state.Enabled">Enabled</text>
 		<text key="options.Test key">Test key</text>
 		<text key="osu rank.About">About osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Updated {time} ago</text>
 		<text key="osu rank.Compare">Compare</text>
 		<text key="osu rank.Gamemode">Gamemode</text>
 		<text key="osu rank.One player">One player</text>
@@ -109,7 +109,6 @@ Please try again later.</text>
 		<text key="update.text">A new version is available!
 Do you want to download it?</text>
 		<text key="update.Title">Update available</text>
-		<text key="version_translatorCredits">osu!rank {version}</text>
 	</culture>
 	<culture name="en-PH">
 		<text key="comparator.Comparator">Comparator</text>
@@ -171,7 +170,7 @@ Gusto mo ba itong idownload?</text>
 		<text key="comparator.n ranks" count="1">{#} puesto</text>
 		<text key="comparator.Player n">Jugador {#}</text>
 		<text key="errors.Did not play yet">{name} aún no ha jugado en este modo.</text>
-		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre?</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">{name} no existe. Asegúrate de haber escrito bien el nombre.</text>
 		<text key="errors.Error">Error</text>
 		<text key="errors.Invalid key">Ha introducido una clave inválida.</text>
 		<text key="errors.No key entered">Introduzca una clave!</text>
@@ -197,6 +196,7 @@ osu!rank se cerrará.</text>
 		<text key="options.state.Enabled">Activado</text>
 		<text key="options.Test key">Clave de prueba</text>
 		<text key="osu rank.About">Sobre osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Última actualización hace {time}</text>
 		<text key="osu rank.Compare">Comparar</text>
 		<text key="osu rank.Gamemode">Modo de juego</text>
 		<text key="osu rank.One player">Un solo jugador</text>
@@ -217,7 +217,6 @@ Inténtalo más tarde.</text>
 		<text key="update.text">Hay una nueva versión disponible.
 ¿Deseas descargarla?</text>
 		<text key="update.Title">Nueva versión disponible</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traducido por Yoshitake</text>
 	</culture>
 	<culture name="fr">
 		<text key="comparator.Comparator">Comparateur</text>
@@ -252,6 +251,7 @@ osu!rank va maintenant fermer.</text>
 		<text key="options.state.Enabled">Activé</text>
 		<text key="options.Test key">Tester la clé</text>
 		<text key="osu rank.About">A propos de osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Mis à jour il y a {time}</text>
 		<text key="osu rank.Compare">Comparer</text>
 		<text key="osu rank.Gamemode">Mode de jeu</text>
 		<text key="osu rank.One player">Un joueur</text>
@@ -272,7 +272,6 @@ Veuillez réessayer plus tard.</text>
 		<text key="update.text">Une nouvelle version est disponible!
 Voulez-vous la télécharger?</text>
 		<text key="update.Title">Mise à jour disponible</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traduit par Jeremiidesu</text>
 	</culture>
 	<culture name="hu">
 		<text key="comparator.Comparator">Komparátor</text>
@@ -305,6 +304,7 @@ osu!rank Most Be Fog Záródni.</text>
 		<text key="options.state.Enabled">Bekapcsolva</text>
 		<text key="options.Test key">Teszt Kulcs</text>
 		<text key="osu rank.About">osu!rankról</text>
+		<text key="osu rank.auto refresh.updated ago">Legútóbb {time} idővel ezelőtt volt frissítve</text>
 		<text key="osu rank.Compare">Összehasonlítás</text>
 		<text key="osu rank.Gamemode">Játékmód</text>
 		<text key="osu rank.One player">Egy Játékos</text>
@@ -325,7 +325,6 @@ Légyszives Próbáld Meg Később.</text>
 		<text key="update.text">Egy Új Verzió Elérhető!
 Le Akarod Tölteni?</text>
 		<text key="update.Title">Frissítés Elérhető</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, lefordította Zozimoto</text>
 	</culture>
 	<culture name="id">
 		<text key="comparator.Comparator">Perbandingan</text>
@@ -378,7 +377,6 @@ Coba sesaat lagi.</text>
 		<text key="update.text">Versi terbaru telah tersedia!
 Apa kau mau mengunduhnya?</text>
 		<text key="update.Title">Pembaruan Tersedia</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, terjemahan oleh [-Alv-]</text>
 	</culture>
 	<culture name="it">
 		<text key="comparator.Comparator">Comparatore</text>
@@ -413,6 +411,7 @@ osu!rank si chiuderà a breve.</text>
 		<text key="options.state.Enabled">Abilitato</text>
 		<text key="options.Test key">Chiave di prova</text>
 		<text key="osu rank.About">Riguardo a osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Ultimo aggiornamento {time}</text>
 		<text key="osu rank.Compare">Confronta</text>
 		<text key="osu rank.Gamemode">Modalità</text>
 		<text key="osu rank.One player">Un giocatore</text>
@@ -432,7 +431,6 @@ osu!rank si chiuderà a breve.</text>
 		<text key="update.text">È disponibile una nuova versione!
 Vuoi scaricarla?</text>
 		<text key="update.Title">Aggiornamento disponibile</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, tradotto da LLoyd-chan</text>
 	</culture>
 	<culture name="pl">
 		<text key="comparator.Comparator">Porównywacz</text>
@@ -467,6 +465,7 @@ osu!rank wyłączy się.</text>
 		<text key="options.state.Enabled">Włączone</text>
 		<text key="options.Test key">Klucz testowy</text>
 		<text key="osu rank.About">O osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Aktualizowano {time} temu</text>
 		<text key="osu rank.Compare">Porównaj</text>
 		<text key="osu rank.Gamemode">Tryb</text>
 		<text key="osu rank.One player">Jeden gracz</text>
@@ -487,7 +486,6 @@ Spróbuj później.</text>
 		<text key="update.text">Nowa wersja jest dostępna!
 Czy chcesz ją pobrać?</text>
 		<text key="update.Title">Aktualizacja dostępna</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, przetłumaczone przez Zain Sugieres</text>
 	</culture>
 	<culture name="pt-BR">
 		<text key="comparator.Comparator">Comparador</text>
@@ -498,51 +496,51 @@ Czy chcesz ją pobrać?</text>
 		<text key="errors.Did not play yet">{name} não jogou este modo de jogo.</text>
 		<text key="errors.Does not exist">{name} não existe. Você digitou errado?</text>
 		<text key="errors.Error">Erro</text>
-		<text key="errors.Invalid key">Sua chave API está incorreta.</text>
+		<text key="errors.Invalid key">A sua chave da API está incorreta.</text>
 		<text key="errors.No key entered">Você não inseriu uma chave!</text>
-		<text key="errors.No name entered">Você não digitou um nome!</text>
-		<text key="errors.You need a key">Você precisa de uma chave API caso queira usar o programa.
+		<text key="errors.No name entered">Você não inseriu um nome!</text>
+		<text key="errors.You need a key">Você precisa de uma chave da API caso deseje usar o programa.
 osu!rank será fechado agora.</text>
 		<text key="Language">Idioma</text>
-		<text key="options.API key">Chave API</text>
+		<text key="options.API key">Chave da API</text>
 		<text key="options.autorefresh.Auto refresh">Atualizar automaticamente</text>
 		<text key="options.autorefresh.Delay">Atraso: {#} minutos</text>
 		<text key="options.autorefresh.Delay" count="1">Atraso: {#} minuto</text>
 		<text key="options.Cancel">Cancelar</text>
-		<text key="options.Enter api key" acceptpunctuation="true">Insira sua chave API do osu!</text>
-		<text key="options.Get api key">Não possuí uma chave? Consiga uma aqui!</text>
+		<text key="options.Enter api key" acceptpunctuation="true">Insira a sua chave da API do osu!</text>
+		<text key="options.Get api key">Não possui uma chave? Consiga uma aqui!</text>
 		<text key="options.OK">OK</text>
 		<text key="options.player settings.Check on startup">Verificar ao iniciar</text>
-		<text key="options.player settings.Default player settings">Configuração padrão de jogador</text>
-		<text key="options.Report a bug">Roportar um erro</text>
-		<text key="options.Reset default values">Resetar aos valores padrões</text>
+		<text key="options.player settings.Default player settings">Configurações de jogador padrão</text>
+		<text key="options.Report a bug">Relatar um bug</text>
+		<text key="options.Reset default values">Restaurar padrões</text>
 		<text key="options.save">Salvar</text>
 		<text key="options.saved">Salvo!</text>
 		<text key="options.state.Disabled">Desabilitado</text>
 		<text key="options.state.Enabled">Habilitado</text>
 		<text key="options.Test key">Chave de teste</text>
 		<text key="osu rank.About">Sobre o osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Atualizado há {time} atrás</text>
 		<text key="osu rank.Compare">Comparar</text>
 		<text key="osu rank.Gamemode">Modo de jogo</text>
 		<text key="osu rank.One player">Um jogador</text>
-		<text key="osu rank.Search">Pesquisar</text>
-		<text key="osu rank.Servers unavailable">Sentimos muito, mas parece que os servidores do osu! estão indisponíveis.
+		<text key="osu rank.Search">Buscar</text>
+		<text key="osu rank.Servers unavailable">Lamentamos, mas parece que os servidores do osu! estão indisponíveis.
 Por favor tente novamente mais tarde.</text>
 		<text key="osu rank.Settings">Configurações</text>
 		<text key="player.Accuracy">Precisão</text>
-		<text key="player.Enter name">Digite um nome</text>
+		<text key="player.Enter name">Insira um nome</text>
 		<text key="player.Level">Nível</text>
 		<text key="player.name">Nome do jogador</text>
-		<text key="player.Performance">Performance</text>
-		<text key="player.Play count">Vezes Jogadas</text>
+		<text key="player.Performance">Desempenho</text>
+		<text key="player.Play count">Vezes jogadas</text>
 		<text key="player.Ranked score">Pontuação ranqueada</text>
 		<text key="player.Ranking">Rank</text>
 		<text key="player.Total score">Pontuação total</text>
-		<text key="player.User ID">ID do Usuário</text>
+		<text key="player.User ID">ID de usuário</text>
 		<text key="update.text">Uma nova versão está disponível!
-Quer fazer o download?</text>
+Deseja baixar agora?</text>
 		<text key="update.Title">Atualização disponível</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, traduzido por nh__</text>
 	</culture>
 	<culture name="ru">
 		<text key="comparator.Comparator">Сравниватель</text>
@@ -596,7 +594,6 @@ osu!rank сейчас закроется.</text>
 		<text key="player.User ID">ID Пользователя</text>
 		<text key="update.text">Доступна новая версия! Вы желаете ее скачать?</text>
 		<text key="update.Title">Доступно Обновление</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, Перевод от Killerbyte</text>
 	</culture>
 	<culture name="sv">
 		<text key="comparator.Comparator">Jämförare</text>
@@ -631,6 +628,7 @@ osu!rank kommer nu att stängas.</text>
 		<text key="options.state.Enabled">Aktiverad</text>
 		<text key="options.Test key">Test nyckel</text>
 		<text key="osu rank.About">Om osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Uppdaterades för {time} timmar sedan</text>
 		<text key="osu rank.Compare">Jämför</text>
 		<text key="osu rank.Gamemode">Spelläge</text>
 		<text key="osu rank.One player">En spelare</text>
@@ -650,7 +648,6 @@ Vänligen försök igen senare.</text>
 		<text key="player.User ID">Användar ID</text>
 		<text key="update.text">En ny version finns tillgänglig! Vill du ladda ner den?</text>
 		<text key="update.Title">Uppdatering tillgänglig</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, översatt av - Kameyo -</text>
 	</culture>
 	<culture name="tr">
 		<text key="comparator.Comparator">Karşılaştırma</text>
@@ -702,7 +699,6 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="player.User ID">Kullanıcı numarası</text>
 		<text key="update.text">Yeni bir versiyon mevcut! Şimdi indirmek ister misiniz?</text>
 		<text key="update.Title">Güncelleme mevcut</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, oralekin tarafından çevrildi</text>
 	</culture>
 	<culture name="zh-CN">
 		<text key="comparator.Comparator">比较器</text>
@@ -753,6 +749,5 @@ osu!rank现在将关闭.</text>
 		<text key="player.User ID">玩家ID</text>
 		<text key="update.text" acceptpunctuation="true">一个新的版本可用!要下载吗?</text>
 		<text key="update.Title">有新更新可用</text>
-		<text key="version_translatorCredits" acceptpunctuation="true">osu!rank {version}, 翻译者:Karma和zheshenmeyouxi</text>
 	</culture>
 </translation>
