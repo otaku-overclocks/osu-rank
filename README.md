@@ -1,5 +1,7 @@
 ![icon by xial](http://puu.sh/stg7G/04ad0ed806.png)
 
+_Icon by Xial_
+
 # osu!rank 4.3.2
 
 Small open-source utility to show your rank or compare two players without the need to open the website
