@@ -110,7 +110,7 @@ Please try again later.</text>
 Do you want to download it?</text>
 		<text key="update.Title">Update available</text>
 	</culture>
-	<culture name="en-PH">
+	<culture name="fil-PH">
 		<text key="comparator.Comparator">Comparator</text>
 		<text key="comparator.Difference">Pagkakaiba</text>
 		<text key="comparator.n ranks">{#} ranggo</text>
