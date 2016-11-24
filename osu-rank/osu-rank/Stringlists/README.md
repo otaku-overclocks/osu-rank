@@ -29,3 +29,4 @@ A bolded line means the language is up to date.
 | Chinese (Simplified)   | Karma, zheshenmeyouxi | 4.0                  |
 | **Polish**             | **Zain Sugieres**     | **4.3**              |
 | **Swedish**            | **- Kameyo -**        | **4.3**              |
+| **Filipino**           | **Mark9870**          | **4.3**              |
