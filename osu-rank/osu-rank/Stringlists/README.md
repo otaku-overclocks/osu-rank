@@ -3,9 +3,11 @@
 * If it is, you can update it if its line isn't bolded
 * Just translate all the files with an higher version number than the current one, then open an issue with translated strings
 * If it's not there, just translate all the files. 
+
 ### If you have a GitHub account, you can either...
 * [Open an issue](https://github.com/Jeremiidesu/osu-rank/issues)
 * Edit the file yourself and open a pull request
+
 ### If you don't have a GitHub account
 * Fill up [this form](https://goo.gl/forms/YBbGcH07QCLvfBMw1) with the translations so I can add it into the program for the next update :)
 

@@ -44,6 +44,7 @@
                     <TextBlock x:Name="label2_Copy8"  Margin="3" Text="Chinese (Simplified) by Karma and zheshenmeyouxi" TextWrapping="Wrap"/>
                     <TextBlock x:Name="label2_Copy9"  Margin="3" Text="Polish by Zain Sugieres"/>
                     <TextBlock x:Name="label2_Copy10" Margin="3" Text="Swedish by - Kameyo -"/>
+                    <TextBlock x:Name="label2_Copy11" Margin="3" Text="Filipino by Mark9870"/>
                 </StackPanel>
             </ScrollViewer>
             <Label x:Name="TranslatorsTitle" Content="Translators" Grid.Column="1" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top"/>
