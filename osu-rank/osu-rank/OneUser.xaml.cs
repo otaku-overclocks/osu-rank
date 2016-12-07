@@ -91,6 +91,8 @@ namespace osurank
             S.Content = Convert.ToInt32(userdata.count_rank_s).ToString("n", NFInoDecimal);
             A.Content = Convert.ToInt32(userdata.count_rank_a).ToString("n", NFInoDecimal);
             userID.Content = Tx.TC("player.User ID") + " " + userdata.user_id;
+            flag.Source = new BitmapImage(new Uri("Drapeaux/"+userdata.country+".png", UriKind.Relative));
+            // {pack://application:,,,/osu!rank;component/Drapeaux/unknown.png}
             levelProgress.Value = ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100);
             if (samename==true && samemode==true)
             {
@@ -357,6 +359,7 @@ namespace osurank
         {
             
             RenderOptions.SetBitmapScalingMode(Avatar, BitmapScalingMode.HighQuality);
+            RenderOptions.SetBitmapScalingMode(flag, BitmapScalingMode.HighQuality);
             Settings.Default.LastWindow = "OneUser";
 
             // NumberFormatInfo for Ranked/total score and play count

@@ -50,7 +50,7 @@
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label x:Name="playername" Content="{Tx:T player.Enter name}" HorizontalAlignment="Left" Margin="5,10,0,0" FontSize="18" FontWeight="Bold" Height="35" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label x:Name="playername" Content="{Tx:T player.Enter name}" HorizontalAlignment="Left" Margin="47,10,0,0" FontSize="18" FontWeight="Bold" Height="35" VerticalAlignment="Top" Grid.Column="1"/>
                 <Image x:Name="Avatar" Margin="10,5" Source="http://a.ppy.sh/1" Height="80">
                     <Image.Effect>
                         <DropShadowEffect Direction="270" Opacity="0.25" RenderingBias="Quality" BlurRadius="6" ShadowDepth="3"/>
@@ -70,13 +70,18 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Label x:Name="countryRank" VerticalAlignment="Top" Content="#0 (N/A)" Padding="5,0" FontStyle="Italic" HorizontalAlignment="Right" Grid.ColumnSpan="2" Grid.Column="2"/>
+                        <Label x:Name="countryRank" VerticalAlignment="Top" Content="#0" Padding="5,0" FontStyle="Italic" HorizontalAlignment="Right" Grid.ColumnSpan="2" Grid.Column="2"/>
                         <Label x:Name="countryRank_diff" VerticalAlignment="Top" Content="+420" Padding="5,0" FontStyle="Italic" HorizontalAlignment="Right" Margin="0,0,5,0" FontWeight="Normal" Foreground="#DD00A80F" Visibility="Hidden"/>
                     </Grid>
                 </Grid>
                 <Label x:Name="level" Content="{Tx:TC player.Level}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="10,64,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
                 <ProgressBar x:Name="levelProgress" Grid.Column="1" Margin="10,86,10,0" VerticalAlignment="Top" Value="-1"/>
                 <Label x:Name="userID" Content="{Tx:TC player.User ID}" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" Margin="0,0,10,19" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontWeight="Light" FontStyle="Italic" Grid.Column="1"/>
+                <Image x:Name="flag" Grid.Column="1" HorizontalAlignment="Left" Margin="5,15,0,0" VerticalAlignment="Top" Source="Drapeaux/unknown.png" Height="25">
+                    <Image.Effect>
+                        <DropShadowEffect Direction="270" ShadowDepth="3" Opacity="0.25" BlurRadius="6" RenderingBias="Quality"/>
+                    </Image.Effect>
+                </Image>
             </Grid>
             <Image x:Name="X_pic" Margin="10,84,0,0" Source="X@2x.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" Height="32" Grid.Row="1" RenderTransformOrigin="0.96,0.52" />
             <Image x:Name="S_pic" Margin="116,84,0,0" Width="96" Source="S@2x.png" Height="32" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -111,16 +116,16 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Label x:Name="acc" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Top" Content="0.00%" FontSize="16" Grid.Column="1"/>
-                <Label x:Name="acc_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Top" Content="-13.37%" FontSize="16" Margin="0,0,5,0" Foreground="#DDDA0000" Visibility="Hidden"/>
+                <Label x:Name="acc" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Top" Content="0.00%" FontSize="18" Grid.Column="1"/>
+                <Label x:Name="acc_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Top" Content="-13.37%" FontSize="18" Margin="0,0,5,0" Foreground="#DDDA0000" Visibility="Hidden"/>
             </Grid>
             <Grid HorizontalAlignment="Right" Margin="0,32,10,0" Grid.Row="1" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <Label x:Name="pp" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="0pp" FontSize="16" HorizontalAlignment="Right" Grid.Column="1"/>
-                <Label x:Name="pp_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="+727pp" FontSize="16" HorizontalAlignment="Right" Margin="0,0,5,0" Foreground="#DD00A80F" Visibility="Hidden"/>
+                <Label x:Name="pp" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="0pp" FontSize="18" HorizontalAlignment="Right" Grid.Column="1"/>
+                <Label x:Name="pp_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" VerticalAlignment="Top" Content="+727pp" FontSize="18" HorizontalAlignment="Right" Margin="0,0,5,0" Foreground="#DD00A80F" Visibility="Hidden"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="20" Margin="10,121,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96">
                 <Grid HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top">

@@ -304,7 +304,7 @@
         <Frame x:Name="WindowContent" Content="Frame" Margin="0,60,0,0" Source="/osu!rank;component/OneUser.xaml" NavigationUIVisibility="Hidden"/>
         <Border BorderThickness="0" Height="60" VerticalAlignment="Top" Background="{StaticResource PrimaryHueMidBrush}" Margin="-10,0" >
             <Border.Effect>
-                <DropShadowEffect BlurRadius="14" Direction="270" ShadowDepth="4.5" Opacity="0.5" RenderingBias="Quality"/>
+                <DropShadowEffect BlurRadius="10" Direction="270" ShadowDepth="3" Opacity="0.35" RenderingBias="Quality"/>
             </Border.Effect>
             <Grid Margin="10,0">
                 <Label x:Name="actionBar_Text" Content="osu!rank" Margin="60,0,0,0" VerticalContentAlignment="Center" FontSize="20" Foreground="#DDFFFFFF"/>
