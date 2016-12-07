@@ -1,5 +1,7 @@
 ![icon by xial](http://puu.sh/stg7G/04ad0ed806.png)
 
+_Icon by [Xial](https://osu.ppy.sh/u/Xial)
+
 # osu!rank 4.3.2
 
 Small open-source utility to show your rank or compare two players without the need to open the website
@@ -16,7 +18,7 @@ What it can do
 * Performance points
 * Ranked and total score
 * Your level and experience
-* Your play count
+* Your playcount
 * Your SS/S/A
 * Your UID <-- mainly to fill the space, but just in case it can still be useful
 
@@ -35,7 +37,7 @@ What it doesn't do (but might happen if asked, drop an issue if interested)
 
 What it won't ever do
 ---------------------
-* Compare more than two players (looks quite hard to implement the way i'm doing things)
+* Compare more than two players (looks quite hard to implement the way I'm doing things)
 
 If you want to build yourself...
 --------------------------------
