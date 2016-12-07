@@ -110,59 +110,6 @@ Please try again later.</text>
 Do you want to download it?</text>
 		<text key="update.Title">Update available</text>
 	</culture>
-	<culture name="fil-PH">
-		<text key="comparator.Comparator">Comparator</text>
-		<text key="comparator.Difference">Pagkakaiba</text>
-		<text key="comparator.n ranks">{#} ranggo</text>
-		<text key="comparator.Player n">Manlalaro {#}</text>
-		<text key="errors.Did not play yet">Si {name} ay hindi pa nilalaro ang gamemode na ito.</text>
-		<text key="errors.Does not exist">Si {name} ay hindi nahanap. Nakagawa ka ba ng typo?</text>
-		<text key="errors.Error">Error</text>
-		<text key="errors.Invalid key">Mali ang iyong API key.</text>
-		<text key="errors.No key entered">Wala kang nilagay na key!</text>
-		<text key="errors.No name entered">Wala kang nilagay na pangalan!</text>
-		<text key="errors.You need a key">Kailangan mo ng API key kung gusto mong gamitin ang programa.
-Magsasarado na ang osu!rank.</text>
-		<text key="Language">Wika</text>
-		<text key="options.API key">API key</text>
-		<text key="options.autorefresh.Auto refresh">Automatik na refresh</text>
-		<text key="options.autorefresh.Delay">Delay: {#} minuto</text>
-		<text key="options.Cancel">Kanselahin</text>
-		<text key="options.Enter api key">Ilagay ang iyong osu! API Key</text>
-		<text key="options.Get api key">Walang key? Kumuha ng isa dito!</text>
-		<text key="options.OK">OK</text>
-		<text key="options.player settings.Check on startup">Icheck sa pagbukas</text>
-		<text key="options.player settings.Default player settings">Default na setting ng manlalaro</text>
-		<text key="options.Report a bug">Magreport ng problema</text>
-		<text key="options.Reset default values">Ireset ang mga value sa default</text>
-		<text key="options.save">Save</text>
-		<text key="options.saved">Na save na!</text>
-		<text key="options.state.Disabled">Disabled</text>
-		<text key="options.state.Enabled">Enabled</text>
-		<text key="options.Test key">Test key</text>
-		<text key="osu rank.About">Tungkol sa osu!rank</text>
-		<text key="osu rank.auto refresh.updated ago">Huling inupdate: {time}</text>
-		<text key="osu rank.Compare">Ikumpara</text>
-		<text key="osu rank.Gamemode">Gamemode</text>
-		<text key="osu rank.One player">Isang manlalaro</text>
-		<text key="osu rank.Search">Hanapin</text>
-		<text key="osu rank.Servers unavailable">Pasensiya na, ngunit mukhang hindi available ang osu!servers.
-Pakisubukan sa susunod.</text>
-		<text key="osu rank.Settings">Settings</text>
-		<text key="player.Accuracy">Accuracy</text>
-		<text key="player.Enter name">Ilagay ang pangalan</text>
-		<text key="player.Level">Level</text>
-		<text key="player.name">Pangalan ng manlalaro</text>
-		<text key="player.Performance">Performance</text>
-		<text key="player.Play count">Bilang ng laro</text>
-		<text key="player.Ranked score">Ranked score</text>
-		<text key="player.Ranking">Pwesto</text>
-		<text key="player.Total score">Score ng kalahatan</text>
-		<text key="player.User ID">Id ng gumagamit</text>
-		<text key="update.text">Mayroong bagong bersyon!
-Gusto mo ba itong idownload?</text>
-		<text key="update.Title">Mayroong bagong update</text>
-	</culture>
 	<culture name="es">
 		<text key="comparator.Comparator">Comparador</text>
 		<text key="comparator.Difference">Diferencia</text>
@@ -217,6 +164,59 @@ Inténtalo más tarde.</text>
 		<text key="update.text">Hay una nueva versión disponible.
 ¿Deseas descargarla?</text>
 		<text key="update.Title">Nueva versión disponible</text>
+	</culture>
+	<culture name="fil-PH">
+		<text key="comparator.Comparator">Comparator</text>
+		<text key="comparator.Difference">Pagkakaiba</text>
+		<text key="comparator.n ranks">{#} ranggo</text>
+		<text key="comparator.Player n">Manlalaro {#}</text>
+		<text key="errors.Did not play yet">Si {name} ay hindi pa nilalaro ang gamemode na ito.</text>
+		<text key="errors.Does not exist">Si {name} ay hindi nahanap. Nakagawa ka ba ng typo?</text>
+		<text key="errors.Error">Error</text>
+		<text key="errors.Invalid key">Mali ang iyong API key.</text>
+		<text key="errors.No key entered">Wala kang nilagay na key!</text>
+		<text key="errors.No name entered">Wala kang nilagay na pangalan!</text>
+		<text key="errors.You need a key">Kailangan mo ng API key kung gusto mong gamitin ang programa.
+Magsasarado na ang osu!rank.</text>
+		<text key="Language">Wika</text>
+		<text key="options.API key">API key</text>
+		<text key="options.autorefresh.Auto refresh">Automatik na refresh</text>
+		<text key="options.autorefresh.Delay">Delay: {#} minuto</text>
+		<text key="options.Cancel">Kanselahin</text>
+		<text key="options.Enter api key">Ilagay ang iyong osu! API Key</text>
+		<text key="options.Get api key">Walang key? Kumuha ng isa dito!</text>
+		<text key="options.OK">OK</text>
+		<text key="options.player settings.Check on startup">Icheck sa pagbukas</text>
+		<text key="options.player settings.Default player settings">Default na setting ng manlalaro</text>
+		<text key="options.Report a bug">Magreport ng problema</text>
+		<text key="options.Reset default values">Ireset ang mga value sa default</text>
+		<text key="options.save">Save</text>
+		<text key="options.saved">Na save na!</text>
+		<text key="options.state.Disabled">Disabled</text>
+		<text key="options.state.Enabled">Enabled</text>
+		<text key="options.Test key">Test key</text>
+		<text key="osu rank.About">Tungkol sa osu!rank</text>
+		<text key="osu rank.auto refresh.updated ago">Huling inupdate: {time}</text>
+		<text key="osu rank.Compare">Ikumpara</text>
+		<text key="osu rank.Gamemode">Gamemode</text>
+		<text key="osu rank.One player">Isang manlalaro</text>
+		<text key="osu rank.Search">Hanapin</text>
+		<text key="osu rank.Servers unavailable">Pasensiya na, ngunit mukhang hindi available ang osu!servers.
+Pakisubukan sa susunod.</text>
+		<text key="osu rank.Settings">Settings</text>
+		<text key="player.Accuracy">Accuracy</text>
+		<text key="player.Enter name">Ilagay ang pangalan</text>
+		<text key="player.Level">Level</text>
+		<text key="player.name">Pangalan ng manlalaro</text>
+		<text key="player.Performance">Performance</text>
+		<text key="player.Play count">Bilang ng laro</text>
+		<text key="player.Ranked score">Ranked score</text>
+		<text key="player.Ranking">Pwesto</text>
+		<text key="player.Total score">Score ng kalahatan</text>
+		<text key="player.User ID">Id ng gumagamit</text>
+		<text key="update.text">Mayroong bagong bersyon!
+Gusto mo ba itong idownload?</text>
+		<text key="update.Title">Mayroong bagong update</text>
 	</culture>
 	<culture name="fr">
 		<text key="comparator.Comparator">Comparateur</text>
@@ -276,55 +276,55 @@ Voulez-vous la télécharger?</text>
 	<culture name="hu">
 		<text key="comparator.Comparator">Komparátor</text>
 		<text key="comparator.Difference">Külömbség</text>
-		<text key="comparator.n ranks">{#} Rang</text>
+		<text key="comparator.n ranks">{#} rang</text>
 		<text key="comparator.Player n">Játékos {#}</text>
-		<text key="errors.Did not play yet">{name} Nem Játszott Még Ezzel A Játékmóddal.</text>
-		<text key="errors.Does not exist">{name} Nem Léteszik. El Írtad?</text>
+		<text key="errors.Did not play yet">{name} nem játszott még ezzel a játékmóddal.</text>
+		<text key="errors.Does not exist">{name} nem léteszik. El írtad?</text>
 		<text key="errors.Error">Hiba</text>
-		<text key="errors.Invalid key">A Te API Kulcsod Helytelen.</text>
-		<text key="errors.No key entered">Te Nem Írtál Be Egy Kulcsot!</text>
-		<text key="errors.No name entered">Te Nem Írtál Be Nevet!</text>
-		<text key="errors.You need a key">Kell Neked Egy API Kulcs Ha Akarod Használni A Programot.
-osu!rank Most Be Fog Záródni.</text>
+		<text key="errors.Invalid key">A te API kulcsod helytelen.</text>
+		<text key="errors.No key entered">Te nem írtál be egy kulcsot!</text>
+		<text key="errors.No name entered">Te nem írtál be nevet!</text>
+		<text key="errors.You need a key">Kell neked egy API kulcs ha akarod használni a programot.
+osu!rank most be fog záródni.</text>
 		<text key="Language">Nyelv</text>
-		<text key="options.API key">API Kulcs</text>
-		<text key="options.autorefresh.Auto refresh">Autómata Frissítés</text>
-		<text key="options.autorefresh.Delay">Késeltetés: {#} Perc</text>
+		<text key="options.API key">API kulcs</text>
+		<text key="options.autorefresh.Auto refresh">Autómata frissítés</text>
+		<text key="options.autorefresh.Delay">Késeltetés: {#} perc</text>
 		<text key="options.Cancel">Mégse</text>
-		<text key="options.Enter api key">Írd Be Az API Kulcsodat</text>
-		<text key="options.Get api key">Nincs Kulcs? Szerezz Egyet Itt!</text>
+		<text key="options.Enter api key">Írd be az API kulcsodat</text>
+		<text key="options.Get api key">Nincs kulcs? Szerezz egyet itt!</text>
 		<text key="options.OK">Igen</text>
-		<text key="options.player settings.Check on startup">Ellenőrzés Indításkor</text>
-		<text key="options.player settings.Default player settings">Rendes Játékos Beállítások</text>
-		<text key="options.Report a bug">Jelents Fel Egy Bugot</text>
-		<text key="options.Reset default values">Visszaállítás Az Alapértelmezett Értékekre</text>
+		<text key="options.player settings.Check on startup">Ellenőrzés indításkor</text>
+		<text key="options.player settings.Default player settings">Rendes játékos beállítások</text>
+		<text key="options.Report a bug">Jelents fel egy bugot</text>
+		<text key="options.Reset default values">Visszaállítás az alapértelmezett értékekre</text>
 		<text key="options.save">Mentés</text>
 		<text key="options.saved">Mentett!</text>
 		<text key="options.state.Disabled">Kikapcsolva</text>
 		<text key="options.state.Enabled">Bekapcsolva</text>
-		<text key="options.Test key">Teszt Kulcs</text>
+		<text key="options.Test key">Teszt kulcs</text>
 		<text key="osu rank.About">osu!rankról</text>
 		<text key="osu rank.auto refresh.updated ago">Legútóbb {time} idővel ezelőtt volt frissítve</text>
 		<text key="osu rank.Compare">Összehasonlítás</text>
 		<text key="osu rank.Gamemode">Játékmód</text>
-		<text key="osu rank.One player">Egy Játékos</text>
+		<text key="osu rank.One player">Egy játékos</text>
 		<text key="osu rank.Search">Keresés</text>
-		<text key="osu rank.Servers unavailable">Bocsánatot Kérünk De Úgy Látszik Hogy A osu! Szerverei Nem Elérhetők.
-Légyszives Próbáld Meg Később.</text>
+		<text key="osu rank.Servers unavailable">Bocsánatot kérünk de úgy látszik hogy a osu! dzerverei nem elérhetők.
+Légyszives próbáld meg később.</text>
 		<text key="osu rank.Settings">Beállítások</text>
 		<text key="player.Accuracy">Pontosság</text>
-		<text key="player.Enter name">Írj Be Egy Nevet</text>
+		<text key="player.Enter name">Írj be egy nevet</text>
 		<text key="player.Level">Szint</text>
-		<text key="player.name">Játékos Név</text>
+		<text key="player.name">Játékos név</text>
 		<text key="player.Performance">Teljesítmény</text>
 		<text key="player.Play count">Játszások</text>
-		<text key="player.Ranked score">Rankolt Pont</text>
+		<text key="player.Ranked score">Rankolt pont</text>
 		<text key="player.Ranking">Rankolás</text>
-		<text key="player.Total score">Összes Pont</text>
+		<text key="player.Total score">Összes pont</text>
 		<text key="player.User ID">Játékos ID</text>
-		<text key="update.text">Egy Új Verzió Elérhető!
-Le Akarod Tölteni?</text>
-		<text key="update.Title">Frissítés Elérhető</text>
+		<text key="update.text">Egy új verzió elérhető!
+Le akarod tölteni?</text>
+		<text key="update.Title">Frissítés elérhető</text>
 	</culture>
 	<culture name="id">
 		<text key="comparator.Comparator">Perbandingan</text>
