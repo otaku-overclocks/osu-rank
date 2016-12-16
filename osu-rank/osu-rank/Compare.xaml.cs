@@ -39,17 +39,17 @@ namespace osurank
             InitializeComponent();
         }
 
-        private void autoRefresh_Tick(object sender, EventArgs e)
+        private async void autoRefresh_Tick(object sender, EventArgs e)
         {
-            fetchUserData(username1,username2, gamemode, false);
+            await fetchUserData(username1,username2, gamemode, false);
         }
 
-        private void goCompare_Click(object sender, RoutedEventArgs e)
+        private async void goCompare_Click(object sender, RoutedEventArgs e)
         {
             username1 = player1Input.Text;
             username2 = player2Input.Text;
             gamemode = gamemodeDropdown.SelectedIndex;
-            fetchUserData(username1, username2, gamemode);
+            await fetchUserData(username1, username2, gamemode);
             timerReset();
         }        
 
@@ -62,11 +62,11 @@ namespace osurank
             diff_totalscore.Content = "0";
             diff_rankedscore.Content = "0";
         }
-        private void fetchUserData(string player_name1, string player_name2, int gamemode_index, bool show_errors = true)
+        private async Task fetchUserData(string player_name1, string player_name2, int gamemode_index, bool show_errors = true)
         {
             // retrieve userdata
-            dynamic userdata1 = osu.GetUser(player: player_name1, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors);
-            dynamic userdata2 = osu.GetUser(player: player_name2, gamemode: gamemode_index, apikey: Settings.Default.apikey);
+            dynamic userdata1 = await osu.GetUserAsync(player: player_name1, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors);
+            dynamic userdata2 = await osu.GetUserAsync(player: player_name2, gamemode: gamemode_index, apikey: Settings.Default.apikey);
             dynamic player1 = null;
             dynamic player2 = null;
 
@@ -290,7 +290,7 @@ namespace osurank
             autoRefresh.Start();
         }
 
-        private void page_loaded(object sender, RoutedEventArgs e)
+        private async void page_loaded(object sender, RoutedEventArgs e)
         {
             RenderOptions.SetBitmapScalingMode(p1_avatar, BitmapScalingMode.HighQuality);   // Completes what the designer can't do
             RenderOptions.SetBitmapScalingMode(p2_avatar, BitmapScalingMode.HighQuality);   // 
@@ -309,7 +309,7 @@ namespace osurank
             autoRefresh.Interval = new TimeSpan(0, Settings.Default.RefreshDelay, 0);
             if (Settings.Default.StartupCheck == true)
             {
-                fetchUserData(username1, username2, gamemode);
+                await fetchUserData(username1, username2, gamemode);
                 if (Settings.Default.RefreshEnable == true)
                 {
                     autoRefresh.Start();

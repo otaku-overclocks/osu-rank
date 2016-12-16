@@ -38,7 +38,7 @@ osu!rank wird sich nun schließen.</text>
 		<text key="osu rank.Gamemode">Spielmodus</text>
 		<text key="osu rank.One player">Ein Spieler</text>
 		<text key="osu rank.Search">Suchen</text>
-		<text key="osu rank.Servers unavailable">Es tut uns Leid, aber es scheint, als seien die osu! Server nicht erreichbar.
+		<text key="osu rank.Servers unavailable">Es tut uns Leid, aber es scheint, als seien die {server} Server nicht erreichbar.
 Bitte versuche es später erneut.</text>
 		<text key="osu rank.Settings">Einstellungen</text>
 		<text key="player.Accuracy">Genaugkeit</text>
@@ -93,7 +93,7 @@ osu!rank will now close.</text>
 		<text key="osu rank.Gamemode">Gamemode</text>
 		<text key="osu rank.One player">One player</text>
 		<text key="osu rank.Search">Search</text>
-		<text key="osu rank.Servers unavailable">We're sorry but it looks like the osu! servers are unavailable.
+		<text key="osu rank.Servers unavailable">We're sorry but it looks like the {server} servers are unavailable.
 Please try again later.</text>
 		<text key="osu rank.Settings">Settings</text>
 		<text key="player.Accuracy">Accuracy</text>
@@ -148,7 +148,7 @@ osu!rank se cerrará.</text>
 		<text key="osu rank.Gamemode">Modo de juego</text>
 		<text key="osu rank.One player">Un solo jugador</text>
 		<text key="osu rank.Search">Buscar</text>
-		<text key="osu rank.Servers unavailable">Parece que los servidores de osu! no están disponibles en este momento.
+		<text key="osu rank.Servers unavailable">Parece que los servidores de {server} no están disponibles en este momento.
 Inténtalo más tarde.</text>
 		<text key="osu rank.Settings">Ajustes</text>
 		<text key="player.Accuracy">Precisión</text>
@@ -201,7 +201,7 @@ Magsasarado na ang osu!rank.</text>
 		<text key="osu rank.Gamemode">Gamemode</text>
 		<text key="osu rank.One player">Isang manlalaro</text>
 		<text key="osu rank.Search">Hanapin</text>
-		<text key="osu rank.Servers unavailable">Pasensiya na, ngunit mukhang hindi available ang osu!servers.
+		<text key="osu rank.Servers unavailable">Pasensiya na, ngunit mukhang hindi available ang {server} servers.
 Pakisubukan sa susunod.</text>
 		<text key="osu rank.Settings">Settings</text>
 		<text key="player.Accuracy">Accuracy</text>
@@ -256,7 +256,7 @@ osu!rank va maintenant fermer.</text>
 		<text key="osu rank.Gamemode">Mode de jeu</text>
 		<text key="osu rank.One player">Un joueur</text>
 		<text key="osu rank.Search">Rechercher</text>
-		<text key="osu rank.Servers unavailable">Nous sommes désolés, mais il semble que les serveurs de osu! soient inaccessibles.
+		<text key="osu rank.Servers unavailable">Nous sommes désolés, mais il semble que les serveurs de {server} soient inaccessibles.
 Veuillez réessayer plus tard.</text>
 		<text key="osu rank.Settings">Paramètres</text>
 		<text key="player.Accuracy">Précision</text>
@@ -309,7 +309,7 @@ osu!rank most be fog záródni.</text>
 		<text key="osu rank.Gamemode">Játékmód</text>
 		<text key="osu rank.One player">Egy játékos</text>
 		<text key="osu rank.Search">Keresés</text>
-		<text key="osu rank.Servers unavailable">Bocsánatot kérünk de úgy látszik hogy a osu! dzerverei nem elérhetők.
+		<text key="osu rank.Servers unavailable">Bocsánatot kérünk de úgy látszik hogy a {server} dzerverei nem elérhetők.
 Légyszives próbáld meg később.</text>
 		<text key="osu rank.Settings">Beállítások</text>
 		<text key="player.Accuracy">Pontosság</text>
@@ -361,7 +361,7 @@ osu!rank akan ditutup.</text>
 		<text key="osu rank.Gamemode">Mode permainan</text>
 		<text key="osu rank.One player">Satu pemain</text>
 		<text key="osu rank.Search">Cari</text>
-		<text key="osu rank.Servers unavailable">Mohon maaf sepertinya server osu! sedang tidak tersedia.
+		<text key="osu rank.Servers unavailable">Mohon maaf sepertinya server {server} sedang tidak tersedia.
 Coba sesaat lagi.</text>
 		<text key="osu rank.Settings">Pengaturan</text>
 		<text key="player.Accuracy">Akurasi</text>
@@ -416,7 +416,7 @@ osu!rank si chiuderà a breve.</text>
 		<text key="osu rank.Gamemode">Modalità</text>
 		<text key="osu rank.One player">Un giocatore</text>
 		<text key="osu rank.Search">Cerca</text>
-		<text key="osu rank.Servers unavailable">Ci dispiace ma sembrerebbe che i server di osu! non sono disponibili.</text>
+		<text key="osu rank.Servers unavailable">Ci dispiace ma sembrerebbe che i server di {server} non sono disponibili.</text>
 		<text key="osu rank.Settings">Impostazioni</text>
 		<text key="player.Accuracy">Precisione</text>
 		<text key="player.Enter name">Inserisci un nome</text>
@@ -470,7 +470,7 @@ osu!rank wyłączy się.</text>
 		<text key="osu rank.Gamemode">Tryb</text>
 		<text key="osu rank.One player">Jeden gracz</text>
 		<text key="osu rank.Search">Szukaj</text>
-		<text key="osu rank.Servers unavailable">Przepraszamy, wygląda na to, że serwery osu! są niedostępne.
+		<text key="osu rank.Servers unavailable">Przepraszamy, wygląda na to, że serwery {server} są niedostępne.
 Spróbuj później.</text>
 		<text key="osu rank.Settings">Ustawienia</text>
 		<text key="player.Accuracy">Celność</text>
@@ -525,7 +525,7 @@ osu!rank será fechado agora.</text>
 		<text key="osu rank.Gamemode">Modo de jogo</text>
 		<text key="osu rank.One player">Um jogador</text>
 		<text key="osu rank.Search">Buscar</text>
-		<text key="osu rank.Servers unavailable">Lamentamos, mas parece que os servidores do osu! estão indisponíveis.
+		<text key="osu rank.Servers unavailable">Lamentamos, mas parece que os servidores do {server} estão indisponíveis.
 Por favor tente novamente mais tarde.</text>
 		<text key="osu rank.Settings">Configurações</text>
 		<text key="player.Accuracy">Precisão</text>
@@ -579,7 +579,7 @@ osu!rank сейчас закроется.</text>
 		<text key="osu rank.Gamemode">Режим</text>
 		<text key="osu rank.One player">Один Игрок</text>
 		<text key="osu rank.Search">Пойск</text>
-		<text key="osu rank.Servers unavailable">Мы сожалеем, но это выглядит как оsu! серверы недоступны.
+		<text key="osu rank.Servers unavailable">Мы сожалеем, но это выглядит как {server} серверы недоступны.
 Пожалуйста, повторите попытку позже.</text>
 		<text key="osu rank.Settings">Настройки</text>
 		<text key="player.Accuracy">Точность</text>
@@ -633,7 +633,7 @@ osu!rank kommer nu att stängas.</text>
 		<text key="osu rank.Gamemode">Spelläge</text>
 		<text key="osu rank.One player">En spelare</text>
 		<text key="osu rank.Search">Sök</text>
-		<text key="osu rank.Servers unavailable">Vi är lesdna men det ser ut som att osu!’s servrar inte är tillgängliga.
+		<text key="osu rank.Servers unavailable">Vi är lesdna men det ser ut som att {server}’s servrar inte är tillgängliga.
 Vänligen försök igen senare.</text>
 		<text key="osu rank.Settings">Inställningar</text>
 		<text key="player.Accuracy">Pricksäkerhet</text>
@@ -684,7 +684,7 @@ osu!rank kapanıyor.</text>
 		<text key="osu rank.Gamemode">Oyun Modu</text>
 		<text key="osu rank.One player">Tek oyuncu</text>
 		<text key="osu rank.Search">Ara</text>
-		<text key="osu rank.Servers unavailable">Özür dileriz, görülene göre osu! sunucuları hizmet dışı.
+		<text key="osu rank.Servers unavailable">Özür dileriz, görülene göre {server} sunucuları hizmet dışı.
 Lütfen daha sonra deneyiniz.</text>
 		<text key="osu rank.Settings">Ayarlar</text>
 		<text key="player.Accuracy">Accuracy</text>
@@ -735,7 +735,7 @@ osu!rank现在将关闭.</text>
 		<text key="osu rank.Gamemode">游戏模式</text>
 		<text key="osu rank.One player">一个玩家</text>
 		<text key="osu rank.Search">搜索</text>
-		<text key="osu rank.Servers unavailable" acceptpunctuation="true">很抱歉，osu!服务器暂时不在线，请稍后重试.</text>
+		<text key="osu rank.Servers unavailable" acceptpunctuation="true">很抱歉，{server}服务器暂时不在线，请稍后重试.</text>
 		<text key="osu rank.Settings">设置</text>
 		<text key="player.Accuracy">准确率</text>
 		<text key="player.Enter name">请输入玩家名称</text>

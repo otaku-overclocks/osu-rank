@@ -41,9 +41,9 @@ namespace osurank
         int previousGamemode;
         #endregion
 
-        private void autoRefresh_Tick(object sender, EventArgs e)
+        private async void autoRefresh_Tick(object sender, EventArgs e)
         {
-            fetchUserData(username, gamemode, false);
+            await fetchUserData(username, gamemode, false);
         }
         
         public OneUser()
@@ -51,21 +51,22 @@ namespace osurank
             InitializeComponent();
         }
         
-        private void searchButton_Click(object sender, RoutedEventArgs e)
+        private async void searchButton_Click(object sender, RoutedEventArgs e)
         {
             timerReset();
             username = nameInput.Text;
             gamemode = gamemodeDropdown.SelectedIndex;
-            fetchUserData(nameInput.Text, gamemodeDropdown.SelectedIndex);
+            await fetchUserData(nameInput.Text, gamemodeDropdown.SelectedIndex);
         }
-        private void fetchUserData(string player_name, int gamemode_index, bool show_errors = true)
+        private async Task fetchUserData(string player_name, int gamemode_index, bool show_errors = true)
         {
             bool samename = false;
             bool samemode = false;
             if (player_name == previousUsername) samename = true;
             if (gamemode_index == previousGamemode) samemode = true;
             if (samemode==true && samename==true) previousRefresh = userdata;
-            userdata = osu.GetUser(player: player_name, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors)[0];
+            dynamic rawreturns = await osu.GetUserAsync(player: player_name, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors: show_errors);
+            userdata = rawreturns[0];
             previousUsername = player_name;
             previousGamemode = gamemode_index;
             // do nothing if player did not play or player is invalid
@@ -355,7 +356,7 @@ namespace osurank
             acc_diff.Content = "";
         }
 
-        private void page_loaded(object sender, RoutedEventArgs e)
+        private async void page_loaded(object sender, RoutedEventArgs e)
         {
             
             RenderOptions.SetBitmapScalingMode(Avatar, BitmapScalingMode.HighQuality);
@@ -381,7 +382,7 @@ namespace osurank
             gamemodeDropdown.SelectedIndex = Settings.Default.DefaultGamemode;
             if (Settings.Default.StartupCheck == true)
             {
-                fetchUserData(username, gamemode);
+                await fetchUserData(username, gamemode);
                 if (Settings.Default.RefreshEnable == true)
                 {
                     autoRefresh.IsEnabled = true;
