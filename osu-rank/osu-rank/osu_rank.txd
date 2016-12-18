@@ -106,6 +106,7 @@ Please try again later.</text>
 		<text key="player.Ranking">Ranking</text>
 		<text key="player.Total score">Total score</text>
 		<text key="player.User ID">User ID</text>
+		<text key="ripple.pp not implemented">PP not implemented yet</text>
 		<text key="update.text">A new version is available!
 Do you want to download it?</text>
 		<text key="update.Title">Update available</text>
@@ -214,6 +215,7 @@ Pakisubukan sa susunod.</text>
 		<text key="player.Ranking">Pwesto</text>
 		<text key="player.Total score">Score ng kalahatan</text>
 		<text key="player.User ID">Id ng gumagamit</text>
+		<text key="ripple.pp not implemented">Ang PP ay hindi pa naiimplement</text>
 		<text key="update.text">Mayroong bagong bersyon!
 Gusto mo ba itong idownload?</text>
 		<text key="update.Title">Mayroong bagong update</text>
@@ -269,6 +271,7 @@ Veuillez réessayer plus tard.</text>
 		<text key="player.Ranking">Classement</text>
 		<text key="player.Total score">Score total</text>
 		<text key="player.User ID">ID d'utilisateur</text>
+		<text key="ripple.pp not implemented">PP non implémentés</text>
 		<text key="update.text">Une nouvelle version est disponible!
 Voulez-vous la télécharger?</text>
 		<text key="update.Title">Mise à jour disponible</text>
