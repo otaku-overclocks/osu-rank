@@ -44,7 +44,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <GroupBox x:Name="autoRefresh" Header="{Tx:T options.autorefresh.Auto refresh}" Margin="10,10,10,0" VerticalAlignment="Top" Height="124">
+        <GroupBox x:Name="autoRefresh" Header="{Tx:T options.autorefresh.Auto refresh}" Margin="10,10,10,0" VerticalAlignment="Top">
             <Grid Margin="0">
                 <Label x:Name="AutorefreshStatus" Content="{Tx:T options.autorefresh.Delay, 15}" Margin="10,54,10,0" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top"/>
                 <Slider x:Name="delay" Margin="10,31,10,0" VerticalAlignment="Top" Minimum="1" Maximum="60" Value="15" SmallChange="1" IsSnapToTickEnabled="True" ValueChanged="delaySlider_ValueChanged"/>
@@ -111,7 +111,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Grid Margin="10,193,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <Grid Margin="10,203,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
