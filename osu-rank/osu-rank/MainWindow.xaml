@@ -298,41 +298,20 @@
                     <Button x:Name="keyPrompt" Content="{Tx:T options.Get api key}" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" FontSize="12" Height="26" Padding="5" Click="keyPrompt_Click"/>
                 </Grid>
             </Grid>
-        </materialDesign:DialogHost.DialogContent>  
-    
-    <Grid Margin="0">
-        <Frame x:Name="WindowContent" Content="Frame" Margin="0,60,0,0" Source="/osu!rank;component/OneUser.xaml" NavigationUIVisibility="Hidden"/>
-        <Border BorderThickness="0" Height="60" VerticalAlignment="Top" Background="{StaticResource PrimaryHueMidBrush}" Margin="-10,0" >
-            <Border.Effect>
-                <DropShadowEffect BlurRadius="10" Direction="270" ShadowDepth="3" Opacity="0.35" RenderingBias="Quality"/>
-            </Border.Effect>
-            <Grid Margin="10,0">
-                <Label x:Name="actionBar_Text" Content="osu!rank" Margin="60,0,0,0" VerticalContentAlignment="Center" FontSize="20" Foreground="#DDFFFFFF"/>
-            </Grid>
-        </Border>
-        <Rectangle x:Name="rectangle" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeThickness="0" Fill="Black" Opacity="0" d:IsHidden="True" Visibility="Hidden" MouseUp="drawerClose"/>
-        <Grid x:Name="drawer" HorizontalAlignment="Left" Width="250" Background="{DynamicResource MaterialDesignPaper}" RenderTransformOrigin="0.5,0.5" Margin="-270,0,0,0">
-            <Grid.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Grid.RenderTransform>
-            <Grid.Effect>
-                <DropShadowEffect BlurRadius="14" Direction="270" ShadowDepth="4.5" Opacity="0.5" RenderingBias="Quality"/>
-            </Grid.Effect>
-            <StackPanel x:Name="drawerNavigation" Margin="5,60,5,5">
-                <Label x:Name="goOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goOneUser_Click" FontWeight="Bold"/>
-                <Label x:Name="goComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goCompare_Click" FontWeight="Normal"/>
-                <Label x:Name="goSettings" Content="{Tx:T osu rank.Settings}" Padding="10"       MouseDown="goSettings_Click" FontWeight="Normal"/>
-                    <Label x:Name="goAbout" Content="{Tx:T osu rank.About}" Padding="10"  MouseDown="goAbout_MouseDown" FontWeight="Normal"/>
-                </StackPanel>
-            <Label x:Name="label_Copy" Content="osu!rank" Margin="60,0,0,0" VerticalAlignment="Top" Height="60" d:LayoutOverrides="Width" VerticalContentAlignment="Center" FontSize="16" />
-        </Grid>
-        <Grid x:Name="drawerButton" HorizontalAlignment="Left" Height="60" Width="60" MouseDown="menuMouseDown" VerticalAlignment="Top" Background="#00000000">
-            <Grid x:Name="grid" Margin="10" RenderTransformOrigin="0.5,0.5" Width="30" Height="30" >
+        </materialDesign:DialogHost.DialogContent>
+
+        <Grid Margin="0">
+            <Frame x:Name="WindowContent" Content="Frame" Margin="0,60,0,0" Source="/osu!rank;component/OsuPages/oOneUser.xaml" NavigationUIVisibility="Hidden" FontFamily="Roboto"/>
+            <Border BorderThickness="0" Height="60" VerticalAlignment="Top" Background="{StaticResource PrimaryHueMidBrush}" Margin="-10,0" >
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Direction="270" ShadowDepth="3" Opacity="0.35" RenderingBias="Quality"/>
+                </Border.Effect>
+                <Grid Margin="10,0">
+                    <Label x:Name="actionBar_Text" Content="osu!rank" Margin="60,0,0,0" VerticalContentAlignment="Center" FontSize="20" Foreground="#DDFFFFFF"/>
+                </Grid>
+            </Border>
+            <Rectangle x:Name="rectangle" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeThickness="0" Fill="Black" Opacity="0" d:IsHidden="True" Visibility="Hidden" MouseUp="drawerClose"/>
+            <Grid x:Name="drawer" HorizontalAlignment="Left" Width="250" Background="{DynamicResource MaterialDesignPaper}" RenderTransformOrigin="0.5,0.5" Margin="-270,0,0,0">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -341,29 +320,62 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Grid.RenderTransform>
-                <Path x:Name="path" Data="M10,10L20,10" Margin="0" Stretch="Fill" Stroke="White" StrokeEndLineCap="Square" StrokeStartLineCap="Square" VerticalAlignment="Center" StrokeThickness="3"/>
-                <Path x:Name="path1" Data="M10,10L20,10" Margin="0,5.5,0,0" Stretch="Fill" Stroke="White" StrokeEndLineCap="Square" StrokeStartLineCap="Square" VerticalAlignment="Top" StrokeThickness="3" RenderTransformOrigin="0.5,0.5">
-                    <Path.RenderTransform>
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="14" Direction="270" ShadowDepth="4.5" Opacity="0.5" RenderingBias="Quality"/>
+                </Grid.Effect>
+                <StackPanel x:Name="drawerNavigation" Margin="0,60,0,5">
+
+                    <Expander Header="osu!">
+                        <StackPanel x:Name="osuExpander" Margin="0" Background="#0C000000">
+                            <Label x:Name="goOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goOneUser_Click" FontWeight="Medium" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0"/>
+                            <Label x:Name="goComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goCompare_Click" FontWeight="Normal" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0"/>
+                        </StackPanel>
+                    </Expander>
+                    <Expander Header="Ripple">
+                        <StackPanel x:Name="rippleExpander" Margin="0" Background="#0C000000">
+                            <Label x:Name="goRippleOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goRippleOneUser_Click" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0" FontWeight="Normal"/>
+                            <Label x:Name="goRippleComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goRippleCompare_Click" FontWeight="Normal" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0"/>
+                        </StackPanel>
+                    </Expander>
+
+                    <Label x:Name="goSettings" Content="{Tx:T osu rank.Settings}" Padding="10"       MouseDown="goSettings_Click" FontWeight="Normal" Foreground="#D8000000" Margin="14,0"/>
+                    <Label x:Name="goAbout" Content="{Tx:T osu rank.About}" Padding="10"  MouseDown="goAbout_MouseDown" FontWeight="Normal" Foreground="#D8000000" Margin="14,0"/>
+                </StackPanel>
+                <Label x:Name="label_Copy" Content="osu!rank" Margin="60,0,0,0" VerticalAlignment="Top" Height="60" d:LayoutOverrides="Width" VerticalContentAlignment="Center" FontSize="16" />
+            </Grid>
+            <Grid x:Name="drawerButton" HorizontalAlignment="Left" Height="60" Width="60" MouseDown="menuMouseDown" VerticalAlignment="Top" Background="#00000000">
+                <Grid x:Name="grid" Margin="10" RenderTransformOrigin="0.5,0.5" Width="30" Height="30" >
+                    <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
                             <SkewTransform/>
                             <RotateTransform/>
                             <TranslateTransform/>
                         </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-                <Path x:Name="path2" Data="M10,10L20,10" Margin="0,0,0,5.5" Stretch="Fill" Stroke="White" StrokeEndLineCap="Square" StrokeStartLineCap="Square" VerticalAlignment="Bottom" StrokeThickness="3" RenderTransformOrigin="0.5,0.5">
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
+                    </Grid.RenderTransform>
+                    <Path x:Name="path" Data="M10,10L20,10" Margin="0" Stretch="Fill" Stroke="White" StrokeEndLineCap="Square" StrokeStartLineCap="Square" VerticalAlignment="Center" StrokeThickness="3"/>
+                    <Path x:Name="path1" Data="M10,10L20,10" Margin="0,5.5,0,0" Stretch="Fill" Stroke="White" StrokeEndLineCap="Square" StrokeStartLineCap="Square" VerticalAlignment="Top" StrokeThickness="3" RenderTransformOrigin="0.5,0.5">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path x:Name="path2" Data="M10,10L20,10" Margin="0,0,0,5.5" Stretch="Fill" Stroke="White" StrokeEndLineCap="Square" StrokeStartLineCap="Square" VerticalAlignment="Bottom" StrokeThickness="3" RenderTransformOrigin="0.5,0.5">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
             </Grid>
         </Grid>
-    </Grid>
     </materialDesign:DialogHost>
 </Window>
