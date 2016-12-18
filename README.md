@@ -1,6 +1,6 @@
 ![icon by xial](http://puu.sh/stg7G/04ad0ed806.png)
 
-_Icon by [Xial](https://osu.ppy.sh/u/Xial)
+_Icon by [Xial](https://osu.ppy.sh/u/Xial)_
 
 # osu!rank 4.3.2
 
