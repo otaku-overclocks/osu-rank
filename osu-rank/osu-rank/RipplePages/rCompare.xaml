@@ -1,0 +1,101 @@
+﻿<Page x:Name="RippleComparator" x:Class="osurank.RipplePages.Compare"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Tx="http://unclassified.software/source/txtranslation"
+        xmlns:local="clr-namespace:osurank.RipplePages"
+        mc:Ignorable="d"
+        Title="{Tx:T comparator.Comparator}" MinWidth="482" MinHeight="325" SnapsToDevicePixels="True"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" Loaded="page_loaded" >
+    <Grid x:Name="WindowContent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="TopBar">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="player1label" Content="{Tx:T comparator.Player n, 1}" Margin="10,10,5,0" VerticalAlignment="Top" Height="26"/>
+            <Label x:Name="gamemodeLabel" Margin="0,10,0,0" VerticalContentAlignment="Center" Padding="5" RenderTransformOrigin="0.5,0.5" Content="{Tx:T Key=osu rank.Gamemode}" VerticalAlignment="Top" Grid.Column="1"/>
+            <ComboBox x:Name="gamemodeDropdown" Margin="0,41,0,5" SelectedIndex="0" VerticalAlignment="Top" Grid.Column="1" SelectionChanged="gamemode_changed" FontFamily="Roboto">
+                <ComboBoxItem Content="osu!std"/>
+                <ComboBoxItem Content="osu!taiko"/>
+                <ComboBoxItem Content="osu!ctb"/>
+                <ComboBoxItem Content="osu!mania"/>
+            </ComboBox>
+            <TextBox x:Name="player1Input" Height="29" Margin="10,41,5,5" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <Label x:Name="player2label" Content="{Tx:T comparator.Player n, 2}" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Grid.Column="2" HorizontalContentAlignment="Right" Width="157"/>
+            <TextBox x:Name="player2Input" Height="29" Margin="5,41,10,5" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="ButtonBar" Grid.Row="1" Grid.RowSpan="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="goCompare" Content="{Tx:T osu rank.Compare}" Margin="10,5" VerticalAlignment="Top" Click="goCompare_Click"/>
+        </Grid>
+        <Grid x:Name="data" Grid.Row="2" Margin="10,5,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="113*" />
+                <ColumnDefinition Width="114*" />
+                <ColumnDefinition Width="113*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel x:Name="p1_Data" Grid.Column="1">
+                <Grid x:Name="p1_Header" Height="24" Margin="0,0,0,5">
+                    <Image x:Name="p1_avatar" HorizontalAlignment="Left" Width="24" Height="24"/>
+                    <Label x:Name="p1_name" Content="{Tx:T comparator.Player n, 1}" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Center" Padding="0"/>
+                </Grid>
+                <Label x:Name="p1_ranking"     Content="#0" Margin="0,0,0,5" FontWeight="Normal"/>
+                <Label x:Name="p1_performance" Content="0 pp" Margin="0,0,0,5" FontWeight="Normal"/>
+                <Label x:Name="p1_acc"         Content="0.00%" Margin="0,0,0,5" FontWeight="Normal"/>
+                <Label x:Name="p1_playcount"   Content="0" Margin="0,0,0,5" FontWeight="Normal"/>
+                <Label x:Name="p1_totalscore"  Content="0" Margin="0,0,0,5" FontWeight="Normal"/>
+                <Label x:Name="p1_rankedscore" Content="0" Margin="0,0,0,5" FontWeight="Normal"/>
+            </StackPanel>
+            <StackPanel x:Name="Difference" Grid.Column="2" Margin="0">
+                <Label x:Name="diff_title"           Content="{Tx:T comparator.Difference}" HorizontalContentAlignment="Center" Height="24" Margin="0,0,0,5"/>
+                <Label x:Name="diff_ranking"     Content="{Tx:T comparator.n ranks, 0}" Margin="0,0,0,5" HorizontalContentAlignment="Center" FontWeight="Normal"/>
+                <Label x:Name="diff_performance" Content="0 pp" Margin="0,0,0,5" HorizontalContentAlignment="Center" FontWeight="Normal"/>
+                <Label x:Name="diff_acc"         Content="0.00%" Margin="0,0,0,5" HorizontalContentAlignment="Center" FontWeight="Normal"/>
+                <Label x:Name="diff_playcount"   Content="0" Margin="0,0,0,5" HorizontalContentAlignment="Center" FontWeight="Normal"/>
+                <Label x:Name="diff_totalscore"  Content="0" Margin="0,0,0,5" HorizontalContentAlignment="Center" FontWeight="Normal"/>
+                <Label x:Name="diff_rankedscore" Content="0" Margin="0,0,0,5" HorizontalContentAlignment="Center" FontWeight="Normal"/>
+            </StackPanel>
+            <StackPanel x:Name="p2_Data" Grid.Column="3">
+                <Grid x:Name="p2_Header" Height="24" Margin="0,0,0,5">
+                    <Image x:Name="p2_avatar" HorizontalAlignment="Right" Width="24" Height="24"/>
+                    <Label x:Name="p2_name" Content="{Tx:T comparator.Player n, 2}" VerticalAlignment="Center" HorizontalContentAlignment="Right" Margin="0,0,24,0" HorizontalAlignment="Right" Padding="0"/>
+                </Grid>
+                <Label x:Name="p2_ranking"     Content="#0" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
+                <Label x:Name="p2_performance" Content="0pp" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
+                <Label x:Name="p2_acc"         Content="0.00%" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
+                <Label x:Name="p2_playcount"   Content="0" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
+                <Label x:Name="p2_totalscore"  Content="0" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
+                <Label x:Name="p2_rankedscore" Content="0" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
+            </StackPanel>
+            <StackPanel x:Name="dataLabels" MinWidth="106" Margin="0,29,0,2">
+                <Label x:Name="ranking" Content="{Tx:T player.Ranking}" Margin="0,0,0,5"/>
+                <Label x:Name="performance" Content="{Tx:T player.Performance}" Margin="0,0,0,5"/>
+                <Label x:Name="acc" Content="{Tx:T player.Accuracy}" Margin="0,0,0,5"/>
+                <Label x:Name="playcount" Content="{Tx:T player.Play count}" Margin="0,0,0,5"/>
+                <Label x:Name="totalscore" Content="{Tx:T player.Total score}" Margin="0,0,0,5"/>
+                <Label x:Name="rankedscore" Content="{Tx:T player.Ranked score}" Margin="0,0,0,5"/>
+            </StackPanel>
+            <Border x:Name="pp_not_implemented" HorizontalAlignment="Stretch" Height="28" Margin="0,61,0,0"  VerticalAlignment="Top"  Grid.Column="1" Grid.ColumnSpan="3" Background="#FFFAFAFA" CornerRadius="10" Visibility="Hidden">
+                <Border.Effect>
+                    <DropShadowEffect Direction="270" BlurRadius="4" ShadowDepth="1" RenderingBias="Quality" Opacity="0.25"/>
+                </Border.Effect>
+                <Label Content="{Tx:T ripple.pp not implemented}" FontFamily="Roboto" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>
