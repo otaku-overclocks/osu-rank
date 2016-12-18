@@ -12,7 +12,7 @@ Our discord server is located right [here](https://discord.gg/Uydavrp). Come and
 
 [osu!forums topic](https://osu.ppy.sh/forum/t/478865)
 
-# Notes to translators:
+### Notes to translators:
 
 The stringlists are [here](https://github.com/otaku-overclocks/osu-rank/tree/master/osu-rank/osu-rank/Stringlists)
 
