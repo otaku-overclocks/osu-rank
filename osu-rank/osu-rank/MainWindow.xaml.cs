@@ -19,6 +19,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Net.NetworkInformation;
 using osu_rank.Properties;
+using System.Net.Http;
 
 namespace osurank
 {
@@ -67,6 +68,8 @@ namespace osurank
         {
             goOnePlayer.FontWeight = FontWeights.Regular;
             goComparator.FontWeight = FontWeights.Regular;
+            goRippleOnePlayer.FontWeight = FontWeights.Regular;
+            goRippleComparator.FontWeight = FontWeights.Regular;
             goSettings.FontWeight = FontWeights.Regular;
             goAbout.FontWeight = FontWeights.Regular;
         }
@@ -77,9 +80,9 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Bold;
+            lbl.FontWeight = FontWeights.Medium;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.One player");
-            WindowContent.Navigate(new OneUser());
+            WindowContent.Navigate(new osuPages.OneUser());
             closeDrawer();
         }
 
@@ -87,22 +90,22 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Bold;
+            lbl.FontWeight = FontWeights.Medium;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.Compare");            
-            WindowContent.Navigate(new Compare());
+            WindowContent.Navigate(new osuPages.Compare());
             closeDrawer();
         }
         private void goSettings_Click(object sender, MouseButtonEventArgs e)
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Bold;
+            lbl.FontWeight = FontWeights.Medium;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.Settings");
             WindowContent.Navigate(new Options());
             closeDrawer();
         }
 
-        private void apiDialog_DialogClosing(object sender, MaterialDesignThemes.Wpf.DialogClosingEventArgs eventArgs)
+        private async void apiDialog_DialogClosing(object sender, MaterialDesignThemes.Wpf.DialogClosingEventArgs eventArgs)
         {
             if ((bool)eventArgs.Parameter==true)
             {
@@ -115,9 +118,9 @@ namespace osurank
                 {
                     string test;
                     try {
-                        using (WebClient wc = new WebClient())
+                        using (HttpClient wc = new HttpClient())
                         {
-                            test = wc.DownloadString("https://osu.ppy.sh/api/get_user?k=" + keyBox.Text + "&u=Cookiezi&m=3");
+                            test = await wc.GetStringAsync("https://osu.ppy.sh/api/get_user?k=" + keyBox.Text + "&u=Cookiezi&m=3");
                             Settings.Default.apikey = keyBox.Text;
                         }
                     }
@@ -180,9 +183,29 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Bold;
+            lbl.FontWeight = FontWeights.Medium;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.About");
             WindowContent.Navigate(new About());
+            closeDrawer();
+        }
+
+        private void goRippleOneUser_Click(object sender, MouseButtonEventArgs e)
+        {
+            drawerUnbold();
+            Label lbl = sender as Label;
+            lbl.FontWeight = FontWeights.Medium;
+            actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.One player");
+            WindowContent.Navigate(new RipplePages.OneUser());
+            closeDrawer();
+        }
+
+        private void goRippleCompare_Click(object sender, MouseButtonEventArgs e)
+        {
+            drawerUnbold();
+            Label lbl = sender as Label;
+            lbl.FontWeight = FontWeights.Medium;
+            actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.Compare");
+            WindowContent.Navigate(new RipplePages.Compare());
             closeDrawer();
         }
     }
