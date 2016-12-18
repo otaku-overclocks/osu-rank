@@ -17,7 +17,7 @@ using System.Windows.Threading;
 using Newtonsoft.Json.Linq;
 using osu_rank.Properties;
 
-namespace osurank
+namespace osurank.osuPages
 {
     /// <summary>
     /// Logique d'interaction pour Compare.xaml

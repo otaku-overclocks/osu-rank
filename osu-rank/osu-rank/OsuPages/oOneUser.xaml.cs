@@ -19,7 +19,7 @@ using System.Diagnostics;
 using System.Net.NetworkInformation;
 using osu_rank.Properties;
 
-namespace osurank                                                                                                                                       
+namespace osurank.osuPages                                                                                                                                       
 {
     /// <summary>                                                                                                                                        
     /// Logique d'interaction pour MainWindow.xaml                                                                                                       
@@ -77,7 +77,7 @@ namespace osurank
             playername.Content = Convert.ToString(userdata.username);
             Avatar.Source = new ImageSourceConverter().ConvertFromString("http://a.ppy.sh/" + userdata.user_id) as ImageSource;
             globalrank.Content = "#" + userdata.pp_rank;
-            countryRank.Content = "#" + userdata.pp_country_rank + " (" + userdata.country + ")";
+            countryRank.Content = "#" + userdata.pp_country_rank;
 
             rankedScore.Content = Tx.TC("player.Ranked score") + " " + Convert.ToInt64(userdata.ranked_score).ToString("n", NFInoDecimal);
             playCount.Content = Tx.TC("player.Play count") + " " + Convert.ToInt32(userdata.playcount).ToString("n", NFInoDecimal);
@@ -92,7 +92,7 @@ namespace osurank
             S.Content = Convert.ToInt32(userdata.count_rank_s).ToString("n", NFInoDecimal);
             A.Content = Convert.ToInt32(userdata.count_rank_a).ToString("n", NFInoDecimal);
             userID.Content = Tx.TC("player.User ID") + " " + userdata.user_id;
-            flag.Source = new BitmapImage(new Uri("Drapeaux/"+userdata.country+".png", UriKind.Relative));
+            flag.Source = new BitmapImage(new Uri("/osu!rank;component/Drapeaux/" + userdata.country+".png", UriKind.Relative));
             // {pack://application:,,,/osu!rank;component/Drapeaux/unknown.png}
             levelProgress.Value = ((Convert.ToDouble(userdata.level) - Math.Truncate(Convert.ToDouble(userdata.level))) * 100);
             if (samename==true && samemode==true)
