@@ -12,21 +12,20 @@
 * Fill up [this form](https://goo.gl/forms/YBbGcH07QCLvfBMw1) with the translations so I can add it into the program for the next update :)
 
 ## Translation support
-A bolded line means the language is up to date.
 
 | Language               | Translators           | Last updated version |
 |------------------------|-----------------------|----------------------|
-| **English**            | **Jeremiidesu**       | **4.3**              |
-| **French**             | **Jeremiidesu**       | **4.3**              |
-| **Italian**            | **LLoyd-chan**        | **4.3**              |
+| English                | Jeremiidesu           | 4.4                  |
+| French                 | Jeremiidesu           | 4.4                  |
+| Italian                | LLoyd-chan            | 4.3                  |
 | Russian                | Killerbyte            | 4.0                  |
 | Indonesian             | Alv                   | 4.0                  |
-| **Hungarian**          | **Zozimoto**          | **4.3**              |
-| **Portuguese (Brasil)**| **nh__, Tark**        | **4.3**              |
+| Hungarian              | Zozimoto              | 4.3                  |
+| Portuguese (Brasil)    | nh__, Tark            | 4.3                  |
 | Turkish                | oralekin              | 4.0                  |
-| **Spanish**            | **Yoshitake**         | **4.3**              |
+| Spanish                | Yoshitake             | 4.3                  |
 | German                 | guro                  | 4.0                  |
 | Chinese (Simplified)   | Karma, zheshenmeyouxi | 4.0                  |
-| **Polish**             | **Zain Sugieres**     | **4.3**              |
-| **Swedish**            | **- Kameyo -**        | **4.3**              |
-| **Filipino**           | **Mark9870**          | **4.3**              |
+| Polish                 | Zain Sugieres         | 4.3                  |
+| Swedish                | - Kameyo -            | 4.3                  |
+| Filipino               | Mark9870              | 4.4                  |

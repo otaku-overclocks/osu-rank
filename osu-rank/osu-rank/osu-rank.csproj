@@ -448,7 +448,9 @@
     <Resource Include="Drapeaux\ZA.png" />
     <Resource Include="Drapeaux\ZM.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Stringlists\StringList 4.4.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
