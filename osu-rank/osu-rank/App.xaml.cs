@@ -21,6 +21,7 @@ namespace osurank
         // Needed for update logic
         public static bool HasCheckedForUpdates = false;
         public static int version = 29;
+        public static int minTxdVersionRequired = 1;
 
         private void App_Startup(object sender, StartupEventArgs e)
         {

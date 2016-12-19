@@ -216,7 +216,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="osu_rank.txd">
+    <EmbeddedResource Include="Translation\osu_rank.txd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Resource Include="Fonts\Exo2-Black.ttf" />
@@ -470,7 +470,9 @@
   <ItemGroup>
     <Resource Include="Stringlists\StringList 4.4.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Translation\txdVersion.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Fonts\Exo2 - OFL.txt" />
   </ItemGroup>
