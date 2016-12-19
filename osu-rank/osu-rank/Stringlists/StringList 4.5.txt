@@ -1,0 +1,6 @@
+﻿Language you're translating to: 
+Your username:
+
+---- Translate under this line ----
+
+I only want Ripple=
