@@ -49,6 +49,7 @@
 
             <!-- tell Dragablz tab control to use the Material Design theme -->
             <Style TargetType="{x:Type dragablz:TabablzControl}" BasedOn="{StaticResource MaterialDesignTabablzControlStyle}" />
+            <FontFamily x:Key="Exo2">pack://application:,,,/Fonts/#Exo 2</FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
