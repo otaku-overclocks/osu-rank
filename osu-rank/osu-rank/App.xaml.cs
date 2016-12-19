@@ -30,9 +30,7 @@ namespace osurank
                 Settings.Default.Upgrade();
                 Settings.Default.CanUpgrade = false;
                 Settings.Default.Save();
-            }
-
-            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
+            }            
             #region language
             if (Settings.Default.LanguageCode != "")
             {

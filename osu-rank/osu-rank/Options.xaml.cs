@@ -18,6 +18,7 @@ using System.Diagnostics;
 using System.Windows.Media.Animation;
 using System.Net;
 using osu_rank.Properties;
+using System.IO;
 
 namespace osurank
 {
@@ -97,6 +98,7 @@ namespace osurank
             Settings.Default.StartupCheck = (bool)startupCheck.IsChecked;
             Settings.Default.Save();
         }
+        string osuRankAppdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\osu-rank";
         private void OK_Click(object sender, RoutedEventArgs e)
         {
             saveSettings();
@@ -109,7 +111,11 @@ namespace osurank
             {
                 System.Threading.Thread.CurrentThread.CurrentCulture = App.systemCulture;
             }
-            Tx.LoadFromEmbeddedResource("osu_rank.osu_rank.txd");
+
+            if (Convert.ToInt32(File.ReadAllText(osuRankAppdata + @"\txdVersion.txt")) > App.minTxdVersionRequired)
+                Tx.LoadFromXmlFile(osuRankAppdata + @"\osu_rank.txd");
+            else Tx.LoadFromEmbeddedResource("osu_rank.Translation.osu_rank.txd");
+
             #endregion
             if (Settings.Default.RefreshEnable == false)
                 AutorefreshStatus.Content = Tx.T("options.state.Disabled");

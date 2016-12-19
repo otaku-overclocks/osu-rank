@@ -20,6 +20,7 @@ using System.Globalization;
 using System.Net.NetworkInformation;
 using osu_rank.Properties;
 using System.Net.Http;
+using System.IO;
 
 namespace osurank
 {
@@ -147,15 +148,64 @@ namespace osurank
                 Settings.Default.Save();
             }
         }
-
-        private void windowLoaded(object sender, RoutedEventArgs e)
+        string osuRankAppdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\osu-rank";
+        private async Task checkForDictUpdate()
         {
+
+            if (!Directory.Exists(osuRankAppdata))
+            {
+                Directory.CreateDirectory(osuRankAppdata);
+            }
+            if (!File.Exists(osuRankAppdata + @"\txdVersion.txt"))
+            {
+                await WebUtils.DownloadAsync(@"https://raw.githubusercontent.com/otaku-overclocks/osu-rank/master/osu-rank/osu-rank/Translation/txdVersion.txt", osuRankAppdata + @"\txdVersion.txt");
+                await WebUtils.DownloadAsync(@"https://raw.githubusercontent.com/otaku-overclocks/osu-rank/master/osu-rank/osu-rank/Translation/osu_rank.txd", osuRankAppdata + @"\osu_rank.txd");
+
+            }
+            else
+            {
+                int onlineTxdVersion = Convert.ToInt32(await new HttpClient().GetStringAsync(@"https://raw.githubusercontent.com/otaku-overclocks/osu-rank/master/osu-rank/osu-rank/Translation/txdVersion.txt"));
+                int localTxdVersion = Convert.ToInt32(File.ReadAllText(osuRankAppdata + @"\txdVersion.txt"));
+                if (onlineTxdVersion <= localTxdVersion)
+                {
+                    await WebUtils.DownloadAsync(@"https://raw.githubusercontent.com/otaku-overclocks/osu-rank/master/osu-rank/osu-rank/Translation/txdVersion.txt", osuRankAppdata + @"\txdVersion.txt");
+                    await WebUtils.DownloadAsync(@"https://raw.githubusercontent.com/otaku-overclocks/osu-rank/master/osu-rank/osu-rank/Translation/osu_rank.txd", osuRankAppdata + @"\osu_rank.txd");
+                }
+            }
+        }
+
+        private async void windowLoaded(object sender, RoutedEventArgs e)
+        {
+            Tx.LoadFromEmbeddedResource("osu_rank.Translation.osu_rank.txd");
+            if (Settings.Default.apikey == "" && Settings.Default.RippleOnly == false)
+            {
+                osuExpander.IsEnabled = true;
+                hasApiKey = false;
+                apiDialog.IsOpen = true;
+            }
+            else if (Settings.Default.RippleOnly == true)
+            {
+                osuExpander.IsEnabled = false;
+                hasApiKey = false;
+                drawerUnbold();
+                goRippleOnePlayer.FontWeight = FontWeights.SemiBold;
+                actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.One player");
+                WindowContent.Navigate(new RipplePages.OneUser());
+            }
+            else if (Settings.Default.apikey != "" && Settings.Default.RippleOnly == false)
+            {
+                osuExpander.IsEnabled = true;
+                hasApiKey = true;
+            }
+            await checkForDictUpdate();
+            if (Convert.ToInt32(File.ReadAllText(osuRankAppdata + @"\txdVersion.txt"))>App.minTxdVersionRequired)
+                Tx.LoadFromXmlFile(osuRankAppdata + @"\osu_rank.txd");
             if (App.HasCheckedForUpdates == false)
             {
                 App.HasCheckedForUpdates = true;
                 try
                 {
-                    string webVersion = new System.Net.WebClient().DownloadString("https://raw.githubusercontent.com/Jeremiidesu/osu-rank/master/osu-rank/osu-rank/version.txt");
+                    string webVersion = await new HttpClient().GetStringAsync("https://raw.githubusercontent.com/Jeremiidesu/osu-rank/master/osu-rank/osu-rank/version.txt");
                     if (Convert.ToInt32(webVersion) > App.version)
                     { // New release available
                         var updateYesNo = MessageBox.Show(Tx.T("update.text"), Tx.T("update.Title"), MessageBoxButton.YesNo, MessageBoxImage.Information);
@@ -177,26 +227,6 @@ namespace osurank
             {
                 MessageBox.Show(Tx.T("osu rank.Servers unavailable"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                 Environment.Exit(0);
-            }
-            if (Settings.Default.apikey=="" && Settings.Default.RippleOnly == false)
-            {
-                osuExpander.IsEnabled = true;
-                hasApiKey = false;
-                apiDialog.IsOpen = true;
-            }
-            else if (Settings.Default.RippleOnly == true)
-            {
-                osuExpander.IsEnabled = false;
-                hasApiKey = false;
-                drawerUnbold();
-                goRippleOnePlayer.FontWeight = FontWeights.SemiBold;
-                actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.One player");
-                WindowContent.Navigate(new RipplePages.OneUser());
-            }
-            else if (Settings.Default.apikey!="" && Settings.Default.RippleOnly == false)
-            {
-                osuExpander.IsEnabled = true;
-                hasApiKey = true;
             }
         }
 
