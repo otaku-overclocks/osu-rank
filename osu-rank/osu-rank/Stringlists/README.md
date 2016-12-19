@@ -15,8 +15,8 @@
 
 | Language               | Translators           | Last updated version |
 |------------------------|-----------------------|----------------------|
-| English                | Jeremiidesu           | 4.4                  |
-| French                 | Jeremiidesu           | 4.4                  |
+| **English**            | **Jeremiidesu**       | **4.4**              |
+| **French**             | **Jeremiidesu**       | **4.4**              |
 | Italian                | LLoyd-chan            | 4.3                  |
 | Russian                | Killerbyte            | 4.0                  |
 | Indonesian             | Alv                   | 4.0                  |
@@ -28,4 +28,4 @@
 | Chinese (Simplified)   | Karma, zheshenmeyouxi | 4.0                  |
 | Polish                 | Zain Sugieres         | 4.3                  |
 | Swedish                | - Kameyo -            | 4.3                  |
-| Filipino               | Mark9870              | 4.4                  |
+| **Filipino**           | **Mark9870**          | **4.4**              |
