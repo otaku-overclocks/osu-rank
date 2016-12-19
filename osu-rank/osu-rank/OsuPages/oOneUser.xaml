@@ -10,7 +10,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" Loaded="page_loaded" d:DesignWidth="594" d:DesignHeight="361" >
+        FontFamily="{StaticResource Exo2}" Loaded="page_loaded" d:DesignWidth="594" d:DesignHeight="361" >
     <Grid x:Name="WindowContent" Margin="0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

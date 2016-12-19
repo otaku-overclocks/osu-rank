@@ -13,7 +13,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" d:DesignHeight="361" d:DesignWidth="576" Loaded="page_loaded">
+        FontFamily="{StaticResource Exo2}" d:DesignHeight="361" d:DesignWidth="576" Loaded="page_loaded">
     <Page.Resources>
         <Storyboard x:Key="settingsSaved">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="saved">

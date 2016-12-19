@@ -10,7 +10,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" Loaded="page_loaded" d:DesignWidth="594" d:DesignHeight="361" >
+        FontFamily="{StaticResource Exo2}" Loaded="page_loaded" d:DesignWidth="594" d:DesignHeight="361" >
     <Grid x:Name="WindowContent" Margin="0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -157,7 +157,7 @@
                     <Label x:Name="A_diff" VerticalContentAlignment="Center" Padding="0" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Content="" Grid.Column="1" Foreground="#DDDA0000" Margin="5,0,0,0" Visibility="Hidden"/>
                 </Grid>
             </Grid>
-            <Label x:Name="pp_not_implemented" Content="{Tx:T ripple.pp not implemented}" HorizontalAlignment="Right" Margin="0,59,10,0" Grid.Row="1" VerticalAlignment="Top" FontSize="12" FontStyle="Italic" Visibility="Hidden" FontFamily="Roboto"/>
+            <Label x:Name="pp_not_implemented" Content="{Tx:T ripple.pp not implemented}" HorizontalAlignment="Right" Margin="0,59,10,0" Grid.Row="1" VerticalAlignment="Top" FontSize="12" FontStyle="Italic" Visibility="Hidden" FontFamily="{StaticResource Exo2}"/>
         </Grid>
     </Grid>
 </Page>

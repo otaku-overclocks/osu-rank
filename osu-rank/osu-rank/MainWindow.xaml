@@ -14,7 +14,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" ResizeMode="NoResize" Loaded="windowLoaded" >
+        FontFamily="{StaticResource Exo2}" ResizeMode="NoResize" Loaded="windowLoaded" >
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="path1">
@@ -272,20 +272,26 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="keyBox" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Padding="0" MaxLines="1"/>
+                <TextBox x:Name="keyBox" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Padding="0" MaxLines="1" FontFamily="{StaticResource Exo2}"/>
                 <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="1" Margin="0,10,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="button1" Content="{Tx:UT options.Cancel}" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">
+                    <Button x:Name="button1" Content="{Tx:UT options.Cancel}" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
                         <Button.CommandParameter>
-                            <system:Boolean>False</system:Boolean>
+                            <system:Int16>0</system:Int16>
                         </Button.CommandParameter>
                     </Button>
-                    <Button x:Name="button2" Content="{Tx:UT options.OK}" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">
+                    <Button x:Name="button2" Content="{Tx:UT options.OK}" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
                         <Button.CommandParameter>
-                            <system:Boolean>True</system:Boolean>
+                            <system:Int16>1</system:Int16>
+                        </Button.CommandParameter>
+                    </Button>
+                    <Button x:Name="button3" Content="{Tx:UT ripple.want ripple only}" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="2" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
+                        <Button.CommandParameter>
+                            <system:Int16>-1</system:Int16>
                         </Button.CommandParameter>
                     </Button>
                 </Grid>
@@ -294,14 +300,14 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="getKey" Content="{Tx:T options.Enter api key}" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="0,1,0,0"/>
-                    <Button x:Name="keyPrompt" Content="{Tx:T options.Get api key}" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" FontSize="12" Height="26" Padding="5" Click="keyPrompt_Click"/>
+                    <Label x:Name="getKey" Content="{Tx:T options.Enter api key}" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="0,1,0,0" FontFamily="{StaticResource Exo2}" />
+                    <Button x:Name="keyPrompt" Content="{Tx:T options.Get api key}" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" FontSize="12" Height="26" Padding="5" Click="keyPrompt_Click" FontFamily="{StaticResource Exo2}"/>
                 </Grid>
             </Grid>
         </materialDesign:DialogHost.DialogContent>
 
         <Grid Margin="0">
-            <Frame x:Name="WindowContent" Content="Frame" Margin="0,60,0,0" Source="/osu!rank;component/OsuPages/oOneUser.xaml" NavigationUIVisibility="Hidden" FontFamily="Roboto"/>
+            <Frame x:Name="WindowContent" Content="Frame" Margin="0,60,0,0" Source="/osu!rank;component/OsuPages/oOneUser.xaml" NavigationUIVisibility="Hidden" FontFamily="{StaticResource Exo2}"/>
             <Border BorderThickness="0" Height="60" VerticalAlignment="Top" Background="{StaticResource PrimaryHueMidBrush}" Margin="-10,0" >
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="10" Direction="270" ShadowDepth="3" Opacity="0.35" RenderingBias="Quality"/>
@@ -325,16 +331,16 @@
                 </Grid.Effect>
                 <StackPanel x:Name="drawerNavigation" Margin="0,60,0,5">
 
-                    <Expander Header="osu!">
+                    <Expander Header="osu!" MouseUp="osuExpander_mouseUp">
                         <StackPanel x:Name="osuExpander" Margin="0" Background="#0C000000">
-                            <Label x:Name="goOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goOneUser_Click" FontWeight="Medium" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0"/>
-                            <Label x:Name="goComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goCompare_Click" FontWeight="Normal" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0"/>
+                            <Label x:Name="goOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goOneUser_Click" FontWeight="Medium" FontFamily="{StaticResource Exo2}" Foreground="#D8000000" Margin="20,0"/>
+                            <Label x:Name="goComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goCompare_Click" FontWeight="Normal" FontFamily="{StaticResource Exo2}" Foreground="#D8000000" Margin="20,0"/>
                         </StackPanel>
                     </Expander>
                     <Expander Header="Ripple">
                         <StackPanel x:Name="rippleExpander" Margin="0" Background="#0C000000">
-                            <Label x:Name="goRippleOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goRippleOneUser_Click" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0" FontWeight="Normal"/>
-                            <Label x:Name="goRippleComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goRippleCompare_Click" FontWeight="Normal" FontFamily="Roboto" Foreground="#D8000000" Margin="20,0"/>
+                            <Label x:Name="goRippleOnePlayer" Content="{Tx:T osu rank.One player}" Padding="10"     MouseDown="goRippleOneUser_Click" FontFamily="{StaticResource Exo2}" Foreground="#D8000000" Margin="20,0" FontWeight="Normal"/>
+                            <Label x:Name="goRippleComparator" Content="{Tx:T comparator.Comparator}" Padding="10"  MouseDown="goRippleCompare_Click" FontWeight="Normal" FontFamily="{StaticResource Exo2}" Foreground="#D8000000" Margin="20,0"/>
                         </StackPanel>
                     </Expander>
 

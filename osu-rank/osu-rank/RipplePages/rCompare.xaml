@@ -11,7 +11,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
-        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto" Loaded="page_loaded" >
+        FontFamily="{StaticResource Exo2}" Loaded="page_loaded" >
     <Grid x:Name="WindowContent">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -26,7 +26,7 @@
             </Grid.ColumnDefinitions>
             <Label x:Name="player1label" Content="{Tx:T comparator.Player n, 1}" Margin="10,10,5,0" VerticalAlignment="Top" Height="26"/>
             <Label x:Name="gamemodeLabel" Margin="0,10,0,0" VerticalContentAlignment="Center" Padding="5" RenderTransformOrigin="0.5,0.5" Content="{Tx:T Key=osu rank.Gamemode}" VerticalAlignment="Top" Grid.Column="1"/>
-            <ComboBox x:Name="gamemodeDropdown" Margin="0,41,0,5" SelectedIndex="0" VerticalAlignment="Top" Grid.Column="1" SelectionChanged="gamemode_changed" FontFamily="Roboto">
+            <ComboBox x:Name="gamemodeDropdown" Margin="0,41,0,5" SelectedIndex="0" VerticalAlignment="Top" Grid.Column="1" SelectionChanged="gamemode_changed" FontFamily="{StaticResource Exo2}">
                 <ComboBoxItem Content="osu!std"/>
                 <ComboBoxItem Content="osu!taiko"/>
                 <ComboBoxItem Content="osu!ctb"/>
@@ -94,7 +94,7 @@
                 <Border.Effect>
                     <DropShadowEffect Direction="270" BlurRadius="4" ShadowDepth="1" RenderingBias="Quality" Opacity="0.25"/>
                 </Border.Effect>
-                <Label Content="{Tx:T ripple.pp not implemented}" FontFamily="Roboto" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="{Tx:T ripple.pp not implemented}" FontFamily="{StaticResource Exo2}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
             </Border>
         </Grid>
     </Grid>

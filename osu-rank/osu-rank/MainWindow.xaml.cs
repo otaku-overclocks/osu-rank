@@ -34,6 +34,7 @@ namespace osurank
             InitializeComponent();
         }
 
+        bool hasApiKey = false;
         // Navigation drawer
         private void menuMouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -80,7 +81,7 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Medium;
+            lbl.FontWeight = FontWeights.SemiBold;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.One player");
             WindowContent.Navigate(new osuPages.OneUser());
             closeDrawer();
@@ -90,7 +91,7 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Medium;
+            lbl.FontWeight = FontWeights.SemiBold;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.Compare");            
             WindowContent.Navigate(new osuPages.Compare());
             closeDrawer();
@@ -99,7 +100,7 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Medium;
+            lbl.FontWeight = FontWeights.SemiBold;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.Settings");
             WindowContent.Navigate(new Options());
             closeDrawer();
@@ -107,7 +108,7 @@ namespace osurank
 
         private async void apiDialog_DialogClosing(object sender, MaterialDesignThemes.Wpf.DialogClosingEventArgs eventArgs)
         {
-            if ((bool)eventArgs.Parameter==true)
+            if ((Int16)eventArgs.Parameter == 1)
             {
                 if (keyBox.Text == "")
                 {
@@ -117,12 +118,14 @@ namespace osurank
                 else
                 {
                     string test;
-                    try {
+                    try
+                    {
                         using (HttpClient wc = new HttpClient())
                         {
                             test = await wc.GetStringAsync("https://osu.ppy.sh/api/get_user?k=" + keyBox.Text + "&u=Cookiezi&m=3");
                             Settings.Default.apikey = keyBox.Text;
                         }
+                        hasApiKey = true;
                     }
                     catch (Exception)
                     {
@@ -131,10 +134,17 @@ namespace osurank
                     }
                 }
             }
-            else
+            else if ((Int16)eventArgs.Parameter == 0)
             {
                 MessageBox.Show(Tx.T("errors.You need a key"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                 Application.Current.Shutdown();
+            }
+            else if ((Int16)eventArgs.Parameter == -1)
+            {
+                osuExpander.IsEnabled = false;
+                hasApiKey = false;
+                Settings.Default.RippleOnly = true;
+                Settings.Default.Save();
             }
         }
 
@@ -168,10 +178,26 @@ namespace osurank
                 MessageBox.Show(Tx.T("osu rank.Servers unavailable"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                 Environment.Exit(0);
             }
-            if (Settings.Default.apikey=="")
+            if (Settings.Default.apikey=="" && Settings.Default.RippleOnly == false)
             {
+                osuExpander.IsEnabled = true;
+                hasApiKey = false;
                 apiDialog.IsOpen = true;
-            }            
+            }
+            else if (Settings.Default.RippleOnly == true)
+            {
+                osuExpander.IsEnabled = false;
+                hasApiKey = false;
+                drawerUnbold();
+                goRippleOnePlayer.FontWeight = FontWeights.SemiBold;
+                actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.One player");
+                WindowContent.Navigate(new RipplePages.OneUser());
+            }
+            else if (Settings.Default.apikey!="" && Settings.Default.RippleOnly == false)
+            {
+                osuExpander.IsEnabled = true;
+                hasApiKey = true;
+            }
         }
 
         private void keyPrompt_Click(object sender, RoutedEventArgs e)
@@ -183,7 +209,7 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Medium;
+            lbl.FontWeight = FontWeights.SemiBold;
             actionBar_Text.Content = "osu!rank - " + Tx.T("osu rank.About");
             WindowContent.Navigate(new About());
             closeDrawer();
@@ -193,7 +219,7 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Medium;
+            lbl.FontWeight = FontWeights.SemiBold;
             actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.One player");
             WindowContent.Navigate(new RipplePages.OneUser());
             closeDrawer();
@@ -203,10 +229,18 @@ namespace osurank
         {
             drawerUnbold();
             Label lbl = sender as Label;
-            lbl.FontWeight = FontWeights.Medium;
+            lbl.FontWeight = FontWeights.SemiBold;
             actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.Compare");
             WindowContent.Navigate(new RipplePages.Compare());
             closeDrawer();
+        }
+
+        private void osuExpander_mouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (hasApiKey==false)
+            {
+                apiDialog.IsOpen = true;
+            }
         }
     }
 }

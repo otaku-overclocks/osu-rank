@@ -150,6 +150,7 @@
     <Compile Include="RipplePages\rOneUser.xaml.cs">
       <DependentUpon>rOneUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <Page Include="OsuPages\oCompare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -218,6 +219,24 @@
     <EmbeddedResource Include="osu_rank.txd">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Resource Include="Fonts\Exo2-Black.ttf" />
+    <Resource Include="Fonts\Exo2-BlackItalic.ttf" />
+    <Resource Include="Fonts\Exo2-Bold.ttf" />
+    <Resource Include="Fonts\Exo2-BoldItalic.ttf" />
+    <Resource Include="Fonts\Exo2-ExtraBold.ttf" />
+    <Resource Include="Fonts\Exo2-ExtraBoldItalic.ttf" />
+    <Resource Include="Fonts\Exo2-ExtraLight.ttf" />
+    <Resource Include="Fonts\Exo2-ExtraLightItalic.ttf" />
+    <Resource Include="Fonts\Exo2-Italic.ttf" />
+    <Resource Include="Fonts\Exo2-Light.ttf" />
+    <Resource Include="Fonts\Exo2-LightItalic.ttf" />
+    <Resource Include="Fonts\Exo2-Medium.ttf" />
+    <Resource Include="Fonts\Exo2-MediumItalic.ttf" />
+    <Resource Include="Fonts\Exo2-Regular.ttf" />
+    <Resource Include="Fonts\Exo2-SemiBold.ttf" />
+    <Resource Include="Fonts\Exo2-SemiBoldItalic.ttf" />
+    <Resource Include="Fonts\Exo2-Thin.ttf" />
+    <Resource Include="Fonts\Exo2-ThinItalic.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Resources.resx.xlf">
       <DependentUpon>Resources.resx</DependentUpon>
@@ -450,6 +469,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Stringlists\StringList 4.4.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Fonts\Exo2 - OFL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
