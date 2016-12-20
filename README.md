@@ -14,7 +14,7 @@ Our discord server is located right [here](https://discord.gg/Uydavrp). Come and
 
 ### Notes to translators:
 
-The stringlists are [here](https://github.com/otaku-overclocks/osu-rank/tree/master/osu-rank/osu-rank/Stringlists)
+**Please translate on [OneSky](http://osbr5ar.oneskyapp.com/collaboration/project?id=91868) now please. It will be easier afterwards to add translations in.**
 
 What it can do
 --------------
