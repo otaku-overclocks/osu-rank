@@ -1,3 +1,7 @@
+# THIS IS OUTDATED
+
+We now use [OneSky](http://osbr5ar.oneskyapp.com/collaboration/project?id=91868) to keep track of the translations!
+
 ## How to translate:
 * Look first if your language is in the table below.
 * If it is, you can update it if its line isn't bolded
