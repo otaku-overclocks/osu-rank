@@ -52,7 +52,7 @@
             <StackPanel x:Name="p1_Data" Grid.Column="1">
                 <Grid x:Name="p1_Header" Height="24" Margin="0,0,0,5">
                     <Image x:Name="p1_avatar" HorizontalAlignment="Left" Width="24" Height="24"/>
-                    <Label x:Name="p1_name" Content="{Tx:T comparator.Player n, 1}" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Center" Padding="0"/>
+                    <Label x:Name="p1_name" Content="{Tx:T comparator.Player n, 1}" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Center" Padding="5,0,0,0"/>
                 </Grid>
                 <Label x:Name="p1_ranking"     Content="#0" Margin="0,0,0,5" FontWeight="Normal"/>
                 <Label x:Name="p1_performance" Content="0 pp" Margin="0,0,0,5" FontWeight="Normal"/>
@@ -73,7 +73,7 @@
             <StackPanel x:Name="p2_Data" Grid.Column="3">
                 <Grid x:Name="p2_Header" Height="24" Margin="0,0,0,5">
                     <Image x:Name="p2_avatar" HorizontalAlignment="Right" Width="24" Height="24"/>
-                    <Label x:Name="p2_name" Content="{Tx:T comparator.Player n, 2}" VerticalAlignment="Center" HorizontalContentAlignment="Right" Margin="0,0,24,0" HorizontalAlignment="Right" Padding="0"/>
+                    <Label x:Name="p2_name" Content="{Tx:T comparator.Player n, 2}" VerticalAlignment="Center" Padding="0,0,5,0" HorizontalContentAlignment="Right" Margin="0,0,24,0" HorizontalAlignment="Right" />
                 </Grid>
                 <Label x:Name="p2_ranking"     Content="#0" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
                 <Label x:Name="p2_performance" Content="0pp" Margin="0,0,0,5" HorizontalContentAlignment="Right" FontWeight="Normal"/>
