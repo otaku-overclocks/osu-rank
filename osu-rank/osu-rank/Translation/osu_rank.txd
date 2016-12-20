@@ -16,7 +16,6 @@
 		<text key="errors.You need a key">Du benötigst einen API Schlüssel, wenn du das Programm verwenden möchtest.
 osu!rank wird sich nun schließen.</text>
 		<text key="Language">Sprache</text>
-		<text key="options.API key">API Schlüssel</text>
 		<text key="options.autorefresh.Auto refresh">Automatisches Aktualisieren</text>
 		<text key="options.autorefresh.Delay">Verzögerung: {#} Minuten</text>
 		<text key="options.autorefresh.Delay" count="1">Verzögerung: {#} Minute</text>
@@ -70,7 +69,7 @@ Willst du sie herunterladen?</text>
 		<text key="errors.You need a key">You need an API key if you want to use the program.
 osu!rank will now close.</text>
 		<text key="Language">Language</text>
-		<text key="options.API key">API key</text>
+		<text key="options.API key">osu! API key</text>
 		<text key="options.autorefresh.Auto refresh">Auto refresh</text>
 		<text key="options.autorefresh.Delay">Delay: {#} minutes</text>
 		<text key="options.autorefresh.Delay" count="1">Delay: {#} minute</text>
@@ -127,7 +126,6 @@ Do you want to download it?</text>
 		<text key="errors.You need a key">Se necesita una clave API para utilizar el programa.
 osu!rank se cerrará.</text>
 		<text key="Language">Idioma</text>
-		<text key="options.API key">Clave API</text>
 		<text key="options.autorefresh.Auto refresh">Actualizar automáticamente</text>
 		<text key="options.autorefresh.Delay">Frecuencia: {#} minutos</text>
 		<text key="options.autorefresh.Delay" count="1">Frecuencia: {#} minuto</text>
@@ -181,7 +179,6 @@ Inténtalo más tarde.</text>
 		<text key="errors.You need a key">Kailangan mo ng API key kung gusto mong gamitin ang programa.
 Magsasarado na ang osu!rank.</text>
 		<text key="Language">Wika</text>
-		<text key="options.API key">API key</text>
 		<text key="options.autorefresh.Auto refresh">Automatik na refresh</text>
 		<text key="options.autorefresh.Delay">Delay: {#} minuto</text>
 		<text key="options.Cancel">Kanselahin</text>
@@ -236,7 +233,7 @@ Gusto mo ba itong idownload?</text>
 		<text key="errors.You need a key">Vous avez besoin d'une clé d'API si vous voulez utiliser le programme.
 osu!rank va maintenant fermer.</text>
 		<text key="Language">Langue</text>
-		<text key="options.API key">Clé d'API</text>
+		<text key="options.API key" acceptpunctuation="true">Clé d'API osu!</text>
 		<text key="options.autorefresh.Auto refresh">Actualisation automatique</text>
 		<text key="options.autorefresh.Delay">Délai: {#} minutes</text>
 		<text key="options.autorefresh.Delay" count="1">Délai: {#} minute</text>
@@ -279,55 +276,58 @@ Voulez-vous la télécharger?</text>
 		<text key="update.Title">Mise à jour disponible</text>
 	</culture>
 	<culture name="hu">
-		<text key="comparator.Comparator">Komparátor</text>
+		<text key="comparator.Comparator">Összehasonlító</text>
 		<text key="comparator.Difference">Külömbség</text>
-		<text key="comparator.n ranks">{#} rang</text>
+		<text key="comparator.n ranks">{#} rangok</text>
+		<text key="comparator.n ranks" count="1">{#} rang</text>
 		<text key="comparator.Player n">Játékos {#}</text>
 		<text key="errors.Did not play yet">{name} nem játszott még ezzel a játékmóddal.</text>
-		<text key="errors.Does not exist">{name} nem léteszik. El írtad?</text>
+		<text key="errors.Does not exist">{name} nem léteszik. Elírtad?</text>
 		<text key="errors.Error">Hiba</text>
-		<text key="errors.Invalid key">A te API kulcsod helytelen.</text>
-		<text key="errors.No key entered">Te nem írtál be egy kulcsot!</text>
+		<text key="errors.Invalid key">A te API kulcsod nem elfogadható.</text>
+		<text key="errors.No key entered">Te nem írtál be kulcsot!</text>
 		<text key="errors.No name entered">Te nem írtál be nevet!</text>
-		<text key="errors.You need a key">Kell neked egy API kulcs ha akarod használni a programot.
-osu!rank most be fog záródni.</text>
+		<text key="errors.You need a key">Kell egy API kulcs ha akarod használni a programot. 
+Az osu!rank most be fog záródni.</text>
 		<text key="Language">Nyelv</text>
-		<text key="options.API key">API kulcs</text>
+		<text key="options.API key">osu! API kulcs</text>
 		<text key="options.autorefresh.Auto refresh">Autómata frissítés</text>
 		<text key="options.autorefresh.Delay">Késeltetés: {#} perc</text>
 		<text key="options.Cancel">Mégse</text>
-		<text key="options.Enter api key">Írd be az API kulcsodat</text>
-		<text key="options.Get api key">Nincs kulcs? Szerezz egyet itt!</text>
-		<text key="options.OK">Igen</text>
+		<text key="options.Enter api key">Írd be a API kulcsodat</text>
+		<text key="options.Get api key">Nincs kulcsod? Szerezz egyet it!</text>
+		<text key="options.OK">Oké</text>
 		<text key="options.player settings.Check on startup">Ellenőrzés indításkor</text>
-		<text key="options.player settings.Default player settings">Rendes játékos beállítások</text>
+		<text key="options.player settings.Default player settings">Alapértelmezett játékos beállítások</text>
 		<text key="options.Report a bug">Jelents fel egy bugot</text>
-		<text key="options.Reset default values">Visszaállítás az alapértelmezett értékekre</text>
+		<text key="options.Reset default values">Visszaállítás az alapértékezett beállításokra</text>
 		<text key="options.save">Mentés</text>
 		<text key="options.saved">Mentett!</text>
 		<text key="options.state.Disabled">Kikapcsolva</text>
 		<text key="options.state.Enabled">Bekapcsolva</text>
 		<text key="options.Test key">Teszt kulcs</text>
-		<text key="osu rank.About">osu!rankról</text>
-		<text key="osu rank.auto refresh.updated ago">Legútóbb {time} idővel ezelőtt volt frissítve</text>
+		<text key="osu rank.About">osu!rank-ról</text>
+		<text key="osu rank.auto refresh.updated ago">Frissített {time}-val ezelőtt</text>
 		<text key="osu rank.Compare">Összehasonlítás</text>
 		<text key="osu rank.Gamemode">Játékmód</text>
 		<text key="osu rank.One player">Egy játékos</text>
 		<text key="osu rank.Search">Keresés</text>
-		<text key="osu rank.Servers unavailable">Bocsánatot kérünk de úgy látszik hogy a {server} dzerverei nem elérhetők.
-Légyszives próbáld meg később.</text>
+		<text key="osu rank.Servers unavailable">Bocsánatot kérek, de úgy látszik a {server} szerverei nem érhetőek el.
+Légyszives később próbáld meg.</text>
 		<text key="osu rank.Settings">Beállítások</text>
 		<text key="player.Accuracy">Pontosság</text>
 		<text key="player.Enter name">Írj be egy nevet</text>
 		<text key="player.Level">Szint</text>
 		<text key="player.name">Játékos név</text>
 		<text key="player.Performance">Teljesítmény</text>
-		<text key="player.Play count">Játszások</text>
+		<text key="player.Play count">Menetek száma</text>
 		<text key="player.Ranked score">Rankolt pont</text>
-		<text key="player.Ranking">Rankolás</text>
+		<text key="player.Ranking">Rangok</text>
 		<text key="player.Total score">Összes pont</text>
 		<text key="player.User ID">Játékos ID</text>
-		<text key="update.text">Egy új verzió elérhető!
+		<text key="ripple.pp not implemented">A pp még nincs be programozva</text>
+		<text key="ripple.want ripple only">Csak a Ripple-t akarom</text>
+		<text key="update.text">Egy új verzió elérhető.
 Le akarod tölteni?</text>
 		<text key="update.Title">Frissítés elérhető</text>
 	</culture>
@@ -345,7 +345,6 @@ Le akarod tölteni?</text>
 		<text key="errors.You need a key">Anda membutuhkan kunci API jika ingin menggunakan program.
 osu!rank akan ditutup.</text>
 		<text key="Language">Bahasa</text>
-		<text key="options.API key">Kunci API</text>
 		<text key="options.autorefresh.Auto refresh">Segarkan otomatis</text>
 		<text key="options.autorefresh.Delay">Delay: {#} menit</text>
 		<text key="options.Cancel">Batal</text>
@@ -398,7 +397,6 @@ Apa kau mau mengunduhnya?</text>
 		<text key="errors.You need a key">Hai bisogno di una chiave APi per usare questo programma.
 osu!rank si chiuderà a breve.</text>
 		<text key="Language">Lingua</text>
-		<text key="options.API key">Chiave API</text>
 		<text key="options.autorefresh.Auto refresh">Refresh automatico</text>
 		<text key="options.autorefresh.Delay">Ritardo: {#} minuti</text>
 		<text key="options.autorefresh.Delay" count="1">Ritardo: {#} minuto</text>
@@ -452,7 +450,6 @@ Vuoi scaricarla?</text>
 		<text key="errors.You need a key">Potrzebujesz klucza API żeby korzystać z programu.
 osu!rank wyłączy się.</text>
 		<text key="Language">Język</text>
-		<text key="options.API key">Klucz API</text>
 		<text key="options.autorefresh.Auto refresh">Automatyczne odświeżanie</text>
 		<text key="options.autorefresh.Delay">Opóźnienie: {#} minut</text>
 		<text key="options.autorefresh.Delay" count="1">Opóźnienie: {#} minuta</text>
@@ -507,7 +504,6 @@ Czy chcesz ją pobrać?</text>
 		<text key="errors.You need a key">Você precisa de uma chave da API caso deseje usar o programa.
 osu!rank será fechado agora.</text>
 		<text key="Language">Idioma</text>
-		<text key="options.API key">Chave da API</text>
 		<text key="options.autorefresh.Auto refresh">Atualizar automaticamente</text>
 		<text key="options.autorefresh.Delay">Atraso: {#} minutos</text>
 		<text key="options.autorefresh.Delay" count="1">Atraso: {#} minuto</text>
@@ -562,7 +558,6 @@ Deseja baixar agora?</text>
 		<text key="errors.You need a key">Вам нужен ключ API если вы хотите использовать программу.
 osu!rank сейчас закроется.</text>
 		<text key="Language">Язык</text>
-		<text key="options.API key">Ключ API</text>
 		<text key="options.autorefresh.Auto refresh">Авто обновление</text>
 		<text key="options.autorefresh.Delay">Задержка: {#} минутов</text>
 		<text key="options.autorefresh.Delay" count="1">Задержка: {#} минута</text>
@@ -615,7 +610,6 @@ osu!rank сейчас закроется.</text>
 		<text key="errors.You need a key">Du behöver en API nyckel om du vill använda programmet.
 osu!rank kommer nu att stängas.</text>
 		<text key="Language">Språk</text>
-		<text key="options.API key">API Nyckel</text>
 		<text key="options.autorefresh.Auto refresh">Ladda om automatiskt</text>
 		<text key="options.autorefresh.Delay">Tidsskillnad: {#} minuter</text>
 		<text key="options.autorefresh.Delay" count="1">Tidsskillnad: {#} minut</text>
@@ -670,7 +664,6 @@ Vänligen försök igen senare.</text>
 		<text key="errors.You need a key">Bu programı kullanmak için bir API koduna ihtiyacınız var.
 osu!rank kapanıyor.</text>
 		<text key="Language">Dil</text>
-		<text key="options.API key">API kodu</text>
 		<text key="options.autorefresh.Auto refresh">Otomatik yenileme</text>
 		<text key="options.autorefresh.Delay">Aralık: {#} dakika</text>
 		<text key="options.Cancel">İptal</text>
@@ -721,7 +714,6 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="errors.You need a key">此程序需API密钥启动.
 osu!rank现在将关闭.</text>
 		<text key="Language">语言</text>
-		<text key="options.API key">API钥</text>
 		<text key="options.autorefresh.Auto refresh">自动刷新</text>
 		<text key="options.autorefresh.Delay">延迟: {#} 分钟</text>
 		<text key="options.Cancel">取消</text>
