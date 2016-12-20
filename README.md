@@ -2,19 +2,21 @@
 
 _Icon by [Xial](https://osu.ppy.sh/u/Xial)_
 
-# osu!rank 4.4.0
+# osu!rank 4.5.0
 
 Small open-source utility to show your rank or compare two players without the need to open the website (osu! and Ripple)
 
-Requires you to use your own API key, available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated.
+Requires you to use your own osu! API key (if you want to use the osu! part), available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated.
 
 Our discord server is located right [here](https://discord.gg/Uydavrp). Come and say hi (or drop some feedback)! 
 
 [osu!forums topic](https://osu.ppy.sh/forum/t/478865)
 
+ripple forums topic - as soon as ripple forums come (if they ever come)
+
 ### Notes to translators:
 
-The stringlists are [here](https://github.com/otaku-overclocks/osu-rank/tree/master/osu-rank/osu-rank/Stringlists)
+Please use OneSky to translate now (link available [here](https://github.com/otaku-overclocks/osu-rank/tree/master/osu-rank/osu-rank/Stringlists))
 
 What it can do
 --------------
