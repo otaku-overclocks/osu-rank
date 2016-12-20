@@ -277,19 +277,18 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="button1" Content="{Tx:UT options.Cancel}" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
+                    <!-- <Button x:Name="button1" Content="{Tx:UT options.Cancel}" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
                         <Button.CommandParameter>
                             <system:Int16>0</system:Int16>
                         </Button.CommandParameter>
-                    </Button>
+                    </Button> -->
                     <Button x:Name="button2" Content="{Tx:UT options.OK}" HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
                         <Button.CommandParameter>
                             <system:Int16>1</system:Int16>
                         </Button.CommandParameter>
                     </Button>
-                    <Button x:Name="button3" Content="{Tx:UT ripple.want ripple only}" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="2" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
+                    <Button x:Name="button3" Content="{Tx:UT ripple.want ripple only}" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Bottom" Style="{StaticResource MaterialDesignFlatButton}" Grid.Column="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" FontFamily="{StaticResource Exo2}">
                         <Button.CommandParameter>
                             <system:Int16>-1</system:Int16>
                         </Button.CommandParameter>

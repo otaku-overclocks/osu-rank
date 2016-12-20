@@ -127,6 +127,9 @@ namespace osurank
                             Settings.Default.apikey = keyBox.Text;
                         }
                         hasApiKey = true;
+                        osuExpander.IsEnabled = true;
+                        Settings.Default.RippleOnly = false;
+                        Settings.Default.Save();
                     }
                     catch (Exception)
                     {
@@ -146,6 +149,10 @@ namespace osurank
                 hasApiKey = false;
                 Settings.Default.RippleOnly = true;
                 Settings.Default.Save();
+                drawerUnbold();
+                goRippleOnePlayer.FontWeight = FontWeights.SemiBold;
+                actionBar_Text.Content = "Ripple!rank - " + Tx.T("osu rank.One player");
+                WindowContent.Navigate(new RipplePages.OneUser());
             }
         }
         string osuRankAppdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\osu-rank";
