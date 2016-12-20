@@ -65,8 +65,8 @@ namespace osurank.RipplePages
         private async Task fetchUserData(string player_name1, string player_name2, int gamemode_index, bool show_errors = true)
         {
             // retrieve userdata
-            dynamic userdata1 = await ripple.GetUserAsync(player: player_name1, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors:show_errors);
-            dynamic userdata2 = await ripple.GetUserAsync(player: player_name2, gamemode: gamemode_index, apikey: Settings.Default.apikey);
+            dynamic userdata1 = await ripple.GetUserAsync(player: player_name1, gamemode: gamemode_index, showErrors:show_errors);
+            dynamic userdata2 = await ripple.GetUserAsync(player: player_name2, gamemode: gamemode_index, showErrors:show_errors);
             dynamic player1 = null;
             dynamic player2 = null;
 

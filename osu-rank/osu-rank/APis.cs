@@ -11,6 +11,7 @@ using System.IO;
 
 namespace osurank
 {
+    // osu!rank related
     public class osu
     {
         static int[] maxIntgr = {int.MaxValue}; 
@@ -90,13 +91,13 @@ namespace osurank
     {
         static int[] maxIntgr = { int.MaxValue };
         // sync
-        static public dynamic GetUser(string player, string apikey, int gamemode = 0, bool showErrors = true)
+        static public dynamic GetUser(string player, int gamemode = 0, bool showErrors = true)
         {
             if (player != "")
             {
                 try
                 {
-                    dynamic userdata = JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://ripple.moe/api/get_user?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey));
+                    dynamic userdata = JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://ripple.moe/api/get_user?type=string&u=" + player + "&m=" + gamemode));
                     if (Convert.ToString(userdata) == "[]" || userdata == null)
                     {
                         if (showErrors == true) MessageBox.Show(Tx.T("errors.Does not exist", "name", player), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
@@ -124,7 +125,7 @@ namespace osurank
         }
 
         //async
-        static public async Task<dynamic> GetUserAsync(string player, string apikey, int gamemode = 0, bool showErrors = true)
+        static public async Task<dynamic> GetUserAsync(string player, int gamemode = 0, bool showErrors = true)
         {
             if (player != "")
             {
@@ -133,7 +134,7 @@ namespace osurank
                     dynamic userdata = null;
                     using (HttpClient apiCall = new HttpClient())
                     {
-                        userdata = JsonConvert.DeserializeObject(await apiCall.GetStringAsync("http://ripple.moe/api/get_user?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey));
+                        userdata = JsonConvert.DeserializeObject(await apiCall.GetStringAsync("http://ripple.moe/api/get_user?type=string&u=" + player + "&m=" + gamemode));
                     }
                     if (Convert.ToString(userdata) == "[]" || userdata == null)
                     {
@@ -162,6 +163,7 @@ namespace osurank
         }
     }
 
+    // helper
     public static class WebUtils
     {
         public static Task DownloadAsync(string requestUri, string filename)

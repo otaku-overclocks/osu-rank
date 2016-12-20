@@ -65,7 +65,7 @@ namespace osurank.RipplePages
             if (player_name == previousUsername) samename = true;
             if (gamemode_index == previousGamemode) samemode = true;
             if (samemode==true && samename==true) previousRefresh = userdata;
-            dynamic rawreturns = await ripple.GetUserAsync(player: player_name, gamemode: gamemode_index, apikey: Settings.Default.apikey, showErrors: show_errors);
+            dynamic rawreturns = await ripple.GetUserAsync(player: player_name, gamemode: gamemode_index, showErrors: show_errors);
             userdata = rawreturns[0];
             previousUsername = player_name;
             previousGamemode = gamemode_index;
