@@ -144,14 +144,17 @@
     <Compile Include="About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RipplePages\rCompare.xaml.cs">
-      <DependentUpon>rCompare.xaml</DependentUpon>
+    <Compile Include="osuPages\ScoreCompare.xaml.cs">
+      <DependentUpon>ScoreCompare.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RipplePages\rOneUser.xaml.cs">
-      <DependentUpon>rOneUser.xaml</DependentUpon>
+    <Compile Include="RipplePages\Compare.xaml.cs">
+      <DependentUpon>Compare.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RipplePages\OneUser.xaml.cs">
+      <DependentUpon>OneUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Page Include="OsuPages\oCompare.xaml">
+    <Page Include="osuPages\Compare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,7 +162,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="OsuPages\oOneUser.xaml">
+    <Page Include="osuPages\OneUser.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -167,14 +170,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="OsuPages\oCompare.xaml.cs">
-      <DependentUpon>oCompare.xaml</DependentUpon>
+    <Compile Include="osuPages\Compare.xaml.cs">
+      <DependentUpon>Compare.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="OsuPages\oOneUser.xaml.cs">
-      <DependentUpon>oOneUser.xaml</DependentUpon>
+    <Compile Include="osuPages\OneUser.xaml.cs">
+      <DependentUpon>OneUser.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Options.xaml">
@@ -185,11 +188,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RipplePages\rCompare.xaml">
+    <Page Include="osuPages\ScoreCompare.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RipplePages\Compare.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="RipplePages\rOneUser.xaml">
+    <Page Include="RipplePages\OneUser.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
