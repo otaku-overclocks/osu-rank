@@ -9,6 +9,14 @@ using Unclassified.TxLib;
 using System.Net.Http;
 using System.IO;
 
+// TODO: Look closely at all possible cases for the get_scores API method on both osu! and Ripple servers
+// and return an "universal" format (aka if i accidentally use osu!'s method into a ripple page osu!rank
+// doesn't insult me)
+// example: get_scores when there's no result: 
+//   - osu! returns `[]` (empty json array)
+//   - ripple returns `null` (null json value)
+// mark's fix with maxIntgr might be of some help...
+
 namespace osurank
 {
     // osu!rank related
@@ -46,6 +54,10 @@ namespace osurank
                 if (showErrors == true) MessageBox.Show(Tx.T("errors.No name entered"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                 return maxIntgr; 
             }
+        }
+        static public dynamic GetScores(string apikey, int beatmap, int gamemode = 0, string player = "")
+        {
+            return JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://osu.ppy.sh/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey + "&b=" + beatmap));
         }
 
         //async
@@ -85,6 +97,10 @@ namespace osurank
                 return maxIntgr;
             }
         }
+        static public async Task<dynamic> GetScoresAsync(string apikey, int beatmap, int gamemode = 0, string player = "")
+        {
+            return JsonConvert.DeserializeObject(await new HttpClient().GetStringAsync("http://osu.ppy.sh/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey + "&b=" + beatmap));            
+        }
     }
 
     public class ripple
@@ -123,6 +139,10 @@ namespace osurank
                 return maxIntgr;
             }
         }
+        static public dynamic GetScores(int beatmap, int gamemode = 0, string player = "")
+        {
+            return JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://ripple.moe/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&b=" + beatmap));
+        }
 
         //async
         static public async Task<dynamic> GetUserAsync(string player, int gamemode = 0, bool showErrors = true)
@@ -160,6 +180,10 @@ namespace osurank
                 if (showErrors == true) MessageBox.Show(Tx.T("errors.No name entered"), Tx.T("errors.Error"), MessageBoxButton.OK, MessageBoxImage.Error);
                 return maxIntgr;
             }
+        }
+        static public async Task<dynamic> GetScoresAsync(int beatmap, int gamemode = 0, string player = "")
+        {
+            return JsonConvert.DeserializeObject(await new HttpClient().GetStringAsync("http://ripple.moe/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&b=" + beatmap));
         }
     }
 
