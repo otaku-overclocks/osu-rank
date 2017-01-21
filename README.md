@@ -8,7 +8,7 @@ Small open-source utility to show your rank or compare two players without the n
 
 Requires you to use your own osu! API key (if you want to use the osu! part), available [here](http://osu.ppy.sh/p/api). Just fill in whatever name and website, it's automated.
 
-Our discord server is located right [here](https://discord.gg/Uydavrp). Come and say hi (or drop some feedback)! 
+Our discord server is located right [here](https://discord.gg/3DkH4q6). Come and say hi (or drop some feedback)! 
 
 [osu!forums topic](https://osu.ppy.sh/forum/t/478865)
 
