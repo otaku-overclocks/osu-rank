@@ -2,7 +2,7 @@
 
 _Icon by [Xial](https://osu.ppy.sh/u/Xial)_
 
-# osu!rank 4.5.0
+# osu!rank 4.5.1
 
 Small open-source utility to show your rank or compare two players without the need to open the website (osu! and Ripple)
 
@@ -16,7 +16,7 @@ ripple forums topic - as soon as ripple forums come (if they ever come)
 
 ### Notes to translators:
 
-**Please translate on [OneSky](http://osbr5ar.oneskyapp.com/collaboration/project?id=91868) now please. It will be easier afterwards to add translations in.**
+**lol forget onesky, please stick to pull requests or stringlists + issues. works well**
 
 What it can do
 --------------
