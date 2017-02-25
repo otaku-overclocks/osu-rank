@@ -144,9 +144,6 @@
     <Compile Include="About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
-    <Compile Include="osuPages\ScoreCompare.xaml.cs">
-      <DependentUpon>ScoreCompare.xaml</DependentUpon>
-    </Compile>
     <Compile Include="RipplePages\Compare.xaml.cs">
       <DependentUpon>Compare.xaml</DependentUpon>
     </Compile>
@@ -185,10 +182,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="About.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="osuPages\ScoreCompare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
