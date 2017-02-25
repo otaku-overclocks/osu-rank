@@ -297,7 +297,6 @@ namespace osurank.RipplePages
             }
             else if (ppDiff < 0)
             {
-                MessageBox.Show("less pp 4 u, u little shit");
                 pp_diff.Content = ppDiff.ToString("n", NFIperformance);
                 pp_diff.Foreground = decreaseColor;
             }
