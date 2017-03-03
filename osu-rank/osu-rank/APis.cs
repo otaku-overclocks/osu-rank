@@ -57,7 +57,7 @@ namespace osurank
         }
         static public dynamic GetScores(string apikey, int beatmap, int gamemode = 0, string player = "")
         {
-            return JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://osu.ppy.sh/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey + "&b=" + beatmap));
+            return JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://osu.ppy.sh/api/get_scores?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey + "&b=" + beatmap));
         }
 
         //async
@@ -99,7 +99,7 @@ namespace osurank
         }
         static public async Task<dynamic> GetScoresAsync(string apikey, int beatmap, int gamemode = 0, string player = "")
         {
-            return JsonConvert.DeserializeObject(await new HttpClient().GetStringAsync("http://osu.ppy.sh/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey + "&b=" + beatmap));            
+            return JsonConvert.DeserializeObject(await new HttpClient().GetStringAsync("http://osu.ppy.sh/api/get_scores?type=string&u=" + player + "&m=" + gamemode + "&k=" + apikey + "&b=" + beatmap));            
         }
     }
 
@@ -141,7 +141,7 @@ namespace osurank
         }
         static public dynamic GetScores(int beatmap, int gamemode = 0, string player = "")
         {
-            return JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://ripple.moe/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&b=" + beatmap));
+            return JsonConvert.DeserializeObject(new System.Net.WebClient().DownloadString("http://ripple.moe/api/get_scores?type=string&u=" + player + "&m=" + gamemode + "&b=" + beatmap));
         }
 
         //async
@@ -183,7 +183,7 @@ namespace osurank
         }
         static public async Task<dynamic> GetScoresAsync(int beatmap, int gamemode = 0, string player = "")
         {
-            return JsonConvert.DeserializeObject(await new HttpClient().GetStringAsync("http://ripple.moe/api/get_scroes?type=string&u=" + player + "&m=" + gamemode + "&b=" + beatmap));
+            return JsonConvert.DeserializeObject(await new HttpClient().GetStringAsync("http://ripple.moe/api/get_scores?type=string&u=" + player + "&m=" + gamemode + "&b=" + beatmap));
         }
     }
 
