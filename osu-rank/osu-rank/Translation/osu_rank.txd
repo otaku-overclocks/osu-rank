@@ -704,34 +704,34 @@ Lütfen daha sonra deneyiniz.</text>
 		<text key="update.Title">Güncelleme mevcut</text>
 	</culture>
 	<culture name="zh-CN">
-		<text key="comparator.Comparator">比较器</text>
+		<text key="comparator.Comparator">比较玩家</text>
 		<text key="comparator.Difference">区别</text>
 		<text key="comparator.n ranks">{#} 排名</text>
 		<text key="comparator.Player n">玩家 {#}</text>
 		<text key="errors.Did not play yet" acceptpunctuation="true">{name} 暂未游玩这个游戏模式.</text>
-		<text key="errors.Does not exist" acceptpunctuation="true">{name} 用户不存在. 请检查输入的用户名后重试?</text>
+		<text key="errors.Does not exist" acceptpunctuation="true">用户{name} 不存在，请检查输入的用户名后重试.</text>
 		<text key="errors.Error">错误</text>
-		<text key="errors.Invalid key">你的API密钥不正确.</text>
-		<text key="errors.No key entered">您没有输入密钥!</text>
-		<text key="errors.No name entered" acceptpunctuation="true">您没有输入用户名!</text>
-		<text key="errors.You need a key">此程序需API密钥启动.
-osu!rank现在将关闭.</text>
+		<text key="errors.Invalid key">您输入的API密钥不正确.</text>
+		<text key="errors.No key entered">您还没有输入API密钥!</text>
+		<text key="errors.No name entered" acceptpunctuation="true">您还没有输入用户名!</text>
+		<text key="errors.You need a key">此程序需要API密钥来运行.
+osu!rank即将关闭.</text>
 		<text key="Language">语言</text>
 		<text key="options.autorefresh.Auto refresh">自动刷新</text>
 		<text key="options.autorefresh.Delay">延迟: {#} 分钟</text>
 		<text key="options.Cancel">取消</text>
 		<text key="options.Enter api key">输入您的 OSU! API密钥</text>
-		<text key="options.Get api key">没有API密钥?在这里!</text>
+		<text key="options.Get api key">没有API密钥?点这里来获取!</text>
 		<text key="options.OK">确定</text>
 		<text key="options.player settings.Check on startup">正在检查更新</text>
 		<text key="options.player settings.Default player settings">默认玩家设置</text>
-		<text key="options.Report a bug">举报漏洞</text>
-		<text key="options.Reset default values">重置默认值</text>
+		<text key="options.Report a bug">提交漏洞</text>
+		<text key="options.Reset default values">重置为默认值</text>
 		<text key="options.save">保存</text>
 		<text key="options.saved">已保存!</text>
 		<text key="options.state.Disabled">禁用</text>
 		<text key="options.state.Enabled">启用</text>
-		<text key="options.Test key">测试密钥</text>
+		<text key="options.Test key">测试密钥可用性</text>
 		<text key="osu rank.About">关于osu!rank</text>
 		<text key="osu rank.Compare">比较</text>
 		<text key="osu rank.Gamemode">游戏模式</text>
@@ -742,11 +742,11 @@ osu!rank现在将关闭.</text>
 		<text key="player.Accuracy">准确率</text>
 		<text key="player.Enter name">请输入玩家名称</text>
 		<text key="player.Level">等级</text>
-		<text key="player.name">玩家昵称</text>
+		<text key="player.name">玩家名称</text>
 		<text key="player.Performance">表现</text>
-		<text key="player.Play count">播放统计数</text>
+		<text key="player.Play count">游玩次数</text>
 		<text key="player.Ranked score">排名得分</text>
-		<text key="player.Ranking">排行</text>
+		<text key="player.Ranking">排名</text>
 		<text key="player.Total score">总得分</text>
 		<text key="player.User ID">玩家ID</text>
 		<text key="update.text" acceptpunctuation="true">一个新的版本可用!要下载吗?</text>
